@@ -2,7 +2,7 @@
 #define scanf_s scanf
 int main()
 {
-  char string[11];
+  char string[999];
 
   printf("Geben Sie ihre Zeichen ein: ");
   scanf_s("%[^'\n']", &string);
