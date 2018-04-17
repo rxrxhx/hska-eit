@@ -10,9 +10,11 @@ int main()
 		}
 		smax = i;
 		i++;
-		
+
 	}
-	
+
 	printf("max short = %d", smax);
 	getchar();
+
+	return 0;
 }

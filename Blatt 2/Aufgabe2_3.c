@@ -27,4 +27,5 @@ int main()
   printf("Minimum = %d\n", min);
 
   getchar();
+  return 0;
 }

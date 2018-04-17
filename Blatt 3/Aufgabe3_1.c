@@ -8,4 +8,5 @@ int main()
   scanf_s("%[^'\n']", &string);
 
   printf("\nEingabe war: %s \n", string);
+  return 0;
 }

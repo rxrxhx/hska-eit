@@ -14,4 +14,5 @@ int main()
   }
   printf("\n");
   getchar();
+  return 0;
 }

@@ -22,4 +22,5 @@ int main()
 
   printf("Durchschnitt = %d\n", avg);
   getchar();
+  return 0;
 }
