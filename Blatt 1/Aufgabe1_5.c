@@ -15,6 +15,10 @@ int main()
 	if (a > b) {
 		printf("%d\n", a);
 	}
+	else if (a == b)
+	{
+		printf("a und b sind gleich %d \n", a);
+	}
 	else {
 		printf("%d\n", b);
 	}

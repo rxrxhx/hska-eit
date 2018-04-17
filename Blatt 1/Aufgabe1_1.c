@@ -2,18 +2,13 @@
 
 int main()
 {
-	unsigned short i = 1;
-	unsigned short smax = 0;
-	while(1) {
-		if(i == 0) {
-			break;
-		}
-		smax = i;
+	short i = 1;
+	while(i > 0) {
 		i++;
-
 	}
 
-	printf("max short = %d", smax);
+	i--;
+	printf("max short = %d", i);
 	getchar();
 
 	return 0;
