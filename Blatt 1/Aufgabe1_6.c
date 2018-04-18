@@ -21,7 +21,7 @@ int main()
 		a = 0;
 		b = 0;
 		o = 0;
-		
+
 		//read a
 		printf("a = ");
 		scanf_s("%d", &a);
@@ -58,4 +58,6 @@ int main()
 			break;
 		}
 	}
+
+	return 0;
 }
