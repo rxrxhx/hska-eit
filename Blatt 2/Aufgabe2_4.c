@@ -4,7 +4,7 @@ int main()
 {
   int i = 0;
   int array[5];
-  int avg = 0;
+  float avg = 0;
 
   for (int k = 0; k < 5; k++)
   {
@@ -26,7 +26,7 @@ int main()
 
   avg = avg/5;
 
-  printf("Durchschnitt = %d\n", avg);
+  printf("Durchschnitt = %f\n", avg);
   getchar();
   return 0;
 }
