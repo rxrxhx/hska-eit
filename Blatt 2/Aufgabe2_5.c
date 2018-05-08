@@ -12,7 +12,7 @@ int main()
   {
     for (x = 0; x < 3; x++)
     {
-	  printf("(%d,%d)", y, x);
+	  printf("(%d,%d) = ", y + 1, x + 1);
       scanf_s("%d", &mat1[x][y]);
     }
   }
@@ -22,7 +22,7 @@ int main()
   {
     for (x = 0; x < 3; x++)
     {
-	  printf("(%d,%d)", y, x);
+	  printf("(%d,%d) = ", y + 1, x + 1);
       scanf_s("%d", &mat2[x][y]);
     }
   }
