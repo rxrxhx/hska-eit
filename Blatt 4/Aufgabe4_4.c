@@ -6,9 +6,7 @@ int bits(unsigned int input)
 {
 	unsigned int c;
 	for (c = 0; input; input >>= 1)
-	{
 		c += input & 1;
-	}
 	return c;
 }
 
