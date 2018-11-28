@@ -1,0 +1,412 @@
+           Lattice Mapping Report File for Design Module 'Stoppuhr'
+
+Design Information
+------------------
+
+Command line:   map -a MachXO2 -p LCMXO2-256HC -t TQFP100 -s 4 -oc Commercial
+     stp_stp.ngd -o stp_stp_map.ncd -pr stp_stp.prf -mp stp_stp.mrp
+     C:/Users/rrhar/Desktop/DIGITALTECHNIK/DT/Stoppuhr/stp.lpf -c 0 -gui
+Target Vendor:  LATTICE
+Target Device:  LCMXO2-256HCTQFP100
+Target Performance:   4
+Mapper:  xo2c00,  version:  Diamond (64-bit) 3.1.0.96
+Mapped on:  11/14/18  13:16:54
+
+Design Summary
+--------------
+
+   Number of registers:     68 out of   424 (16%)
+      PFU registers:           68 out of   256 (27%)
+      PIO registers:            0 out of   168 (0%)
+   Number of SLICEs:        72 out of   128 (56%)
+      SLICEs as Logic/ROM:     72 out of   128 (56%)
+      SLICEs as RAM:            0 out of    96 (0%)
+      SLICEs as Carry:         17 out of   128 (13%)
+   Number of LUT4s:        133 out of   256 (52%)
+      Number of logic LUTs:       99
+      Number of distributed RAM:   0 (0 LUT4s)
+      Number of ripple logic:     17 (34 LUT4s)
+      Number of shift registers:   0
+   Number of PIO sites used: 19 + 4(JTAG) out of 56 (41%)
+   Number of block RAMs:  0 out of 0
+   Number of GSRs:  1 out of 1 (100%)
+   EFB used :       Yes
+   JTAG used :      No
+   Readback used :  No
+   Oscillator used :  Yes
+   Startup used :   No
+   POR :            On
+   Bandgap :        On
+   Number of Power Controller:  0 out of 1 (0%)
+   Number of Dynamic Bank Controller (BCINRD):  0 out of 4 (0%)
+   Number of DCCA:  0 out of 8 (0%)
+   Number of DCMA:  0 out of 2 (0%)
+   Notes:-
+      1. Total number of LUT4s = (Number of logic LUT4s) + 2*(Number of
+     distributed RAMs) + 2*(Number of ripple logic)
+      2. Number of logic LUT4s does not include count of distributed RAM and
+     ripple logic.
+   Number of clocks:  7
+     Net D15_c: 5 loads, 5 rising, 0 falling (Driver: I6/i1940/GATE )
+     Net Start_c: 1 loads, 0 rising, 1 falling (Driver: PIO Start )
+     Net N_4: 4 loads, 4 rising, 0 falling (Driver: I3/Cout_18 )
+     Net N_3: 2 loads, 2 rising, 0 falling (Driver: I2/Cout_18 )
+     Net N_2: 28 loads, 28 rising, 0 falling (Driver: I6/CTInst0/EFBInst_0 )
+     Net N_5: 5 loads, 5 rising, 0 falling (Driver: I4/Cout_18 )
+     Net I6/ClkOsc: 1 loads, 1 rising, 0 falling (Driver: I6/OscInst0 )
+   Number of Clock Enables:  2
+     Net N_8: 13 loads, 13 LSLICEs
+     Net n628: 3 loads, 3 LSLICEs
+   Number of LSRs:  9
+
+                                    Page 1
+
+
+
+
+Design:  Stoppuhr                                      Date:  11/14/18  13:16:54
+
+Design Summary (cont)
+---------------------
+     Net N_10: 1 loads, 1 LSLICEs
+     Net I2/n1173: 3 loads, 3 LSLICEs
+     Net I7/n1022: 17 loads, 17 LSLICEs
+     Net I3/n1029: 4 loads, 4 LSLICEs
+     Net I4/n1026: 4 loads, 4 LSLICEs
+     Net I1/n1036: 2 loads, 2 LSLICEs
+     Net I6/n1021: 4 loads, 4 LSLICEs
+     Net I6/n1023: 4 loads, 4 LSLICEs
+     Net VCC_net: 1 loads, 0 LSLICEs
+   Number of nets driven by tri-state buffers:  0
+   Top 10 highest fanout non-clock nets:
+     Net N_8: 18 loads
+     Net I7/n1022: 17 loads
+     Net dec.cnt_1: 13 loads
+     Net RES_c: 11 loads
+     Net I7/dec.cnt_0: 9 loads
+     Net I7/s_0: 8 loads
+     Net I7/s_1: 8 loads
+     Net I7/s_2: 8 loads
+     Net I7/s_3: 8 loads
+     Net I2/cnt_0_adj_9: 7 loads
+
+
+
+
+   Number of warnings:  3
+   Number of errors:    0
+
+Design Errors/Warnings
+----------------------
+
+WARNING - map: C:/Users/rrhar/Desktop/DIGITALTECHNIK/DT/Stoppuhr/stp.lpf(17):
+     Semantic error in "LOCATE COMP "EN" SITE "1" ;": COMP "EN" not found in
+     design. Disable this preference.
+WARNING - map: Preference parsing results:  1 semantic error detected
+WARNING - map: There are semantic errors in the preference file
+     C:/Users/rrhar/Desktop/DIGITALTECHNIK/DT/Stoppuhr/stp.lpf.
+
+IO (PIO) Attributes
+-------------------
+
++---------------------+-----------+-----------+------------+
+| IO Name             | Direction | Levelmode | IO         |
+|                     |           |  IO_TYPE  | Register   |
++---------------------+-----------+-----------+------------+
+| y[2]                | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| y[3]                | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| y[1]                | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| SEG[0]              | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| SEG[1]              | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| SEG[2]              | OUTPUT    | LVCMOS33  |            |
+
+                                    Page 2
+
+
+
+
+Design:  Stoppuhr                                      Date:  11/14/18  13:16:54
+
+IO (PIO) Attributes (cont)
+--------------------------
++---------------------+-----------+-----------+------------+
+| SEG[3]              | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| D15                 | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| Stop                | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| Start               | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| RES                 | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| PR                  | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| MR[0]               | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| MR[1]               | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| y[8]                | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| y[7]                | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| y[6]                | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| y[5]                | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| y[4]                | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+
+Removed logic
+-------------
+
+Signal N_11 was merged into signal Start_c
+Signal N_9 was merged into signal Stop_c
+Signal n2488 was merged into signal RES_c
+Signal GND_net undriven or does not drive anything - clipped.
+Signal I7/dec.cnt_201_add_4_1/S0 undriven or does not drive anything - clipped.
+Signal I7/dec.cnt_201_add_4_1/CI undriven or does not drive anything - clipped.
+Signal I7/dec.cnt_201_add_4_33/S1 undriven or does not drive anything - clipped.
+Signal I7/dec.cnt_201_add_4_33/CO undriven or does not drive anything - clipped.
+Block I10 was optimized away.
+Block I9 was optimized away.
+Block I7/i905_1_lut_rep_31 was optimized away.
+Block i1 was optimized away.
+
+Memory Usage
+------------
+
+
+OSC Summary
+-----------
+
+OSC 1:                                     Pin/Node Value
+  OSC Instance Name:                                I6/OscInst0
+  OSC Type:                                         OSCH
+  STDBY Input:                                      NONE
+
+                                    Page 3
+
+
+
+
+Design:  Stoppuhr                                      Date:  11/14/18  13:16:54
+
+OSC Summary (cont)
+------------------
+  OSC Output:                              NODE     I6/ClkOsc
+  OSC Nominal Frequency (MHz):                      2.08
+
+Embedded Functional Block Connection Summary:
+---------------------------------------------
+
+   Desired WISHBONE clock frequency: 50.0 MHz
+   Clock source:                     NONE
+   Reset source:                     NONE
+   Functions mode:
+      I2C #1 (Primary) Function:     DISABLED
+      I2C #2 (Secondary) Function:   DISABLED
+      SPI Function:                  DISABLED
+      Timer/Counter Function:        ENABLED
+      Timer/Counter Mode:            NO_WB
+      UFM Connection:                DISABLED
+      PLL0 Connection:               DISABLED
+      PLL1 Connection:               DISABLED
+   I2C Function Summary:
+   --------------------
+      None
+   SPI Function Summary:
+   --------------------
+      None
+   Timer/Counter Function Summary:
+   ------------------------------
+      TC_MODE:                CTCM
+      TC_SCLK_SEL:            Positive Edge
+      TC_CCLK_SEL:            1
+      GSR:                    ENABLED
+      TC_TOP_SET:             5200
+      TC_OCR_SET:             32767
+      TC_OC_MODE:             TOGGLE
+      TC_RESETN:              ENABLED
+      TC_TOP_SEL:             ON
+      TC_OV_INT:              OFF
+      TC_OCR_INT:             OFF
+      TC_ICR_INT:             OFF
+      TC_OVERFLOW:            DISABLED
+      TC_ICAPTURE:            DISABLED
+   UFM Function Summary:
+   --------------------
+      UFM Utilization:        General Purpose Flash Memory
+      Available General
+      Purpose Flash Memory:   0 Pages (0*128 Bits)
+
+      EBR Blocks with Unique
+      Initialization Data:    0
+
+      WID		EBR Instance
+      ---		------------
+
+ASIC Components
+---------------
+
+Instance Name: I6/OscInst0
+         Type: OSCH
+
+                                    Page 4
+
+
+
+
+Design:  Stoppuhr                                      Date:  11/14/18  13:16:54
+
+ASIC Components (cont)
+----------------------
+Instance Name: I6/CTInst0/EFBInst_0
+         Type: EFB
+
+GSR Usage
+---------
+
+GSR Component:
+   The Global Set Reset (GSR) resource has been used to implement a global reset
+        of the design. The reset signal used for GSR control is 'RES_c'.
+
+GSR Property:
+   The design components with GSR property set to ENABLED will respond to global
+        set reset while the components with GSR property set to DISABLED will
+        not.
+
+Components with disabled GSR Property
+-------------------------------------
+
+These components have the GSR property set to DISABLED. The components will not
+     respond to the reset signal 'RES_c' via the GSR component.
+
+Type and number of components of the type:
+   Register = 52
+
+Type and instance name of component:
+   Register : I8/dec.v_8
+   Register : I2/Cout_18
+   Register : I7/dec.cnt_201__i0
+   Register : I7/dec.cnt_201__i31
+   Register : I7/dec.cnt_201__i30
+   Register : I7/dec.cnt_201__i29
+   Register : I7/dec.cnt_201__i28
+   Register : I7/dec.cnt_201__i27
+   Register : I7/dec.cnt_201__i26
+   Register : I7/dec.cnt_201__i25
+   Register : I7/dec.cnt_201__i24
+   Register : I7/dec.cnt_201__i23
+   Register : I7/dec.cnt_201__i22
+   Register : I7/dec.cnt_201__i21
+   Register : I7/dec.cnt_201__i20
+   Register : I7/dec.cnt_201__i19
+   Register : I7/dec.cnt_201__i18
+   Register : I7/dec.cnt_201__i17
+   Register : I7/dec.cnt_201__i16
+   Register : I7/dec.cnt_201__i15
+   Register : I7/dec.cnt_201__i14
+   Register : I7/dec.cnt_201__i13
+   Register : I7/dec.cnt_201__i12
+   Register : I7/dec.cnt_201__i11
+   Register : I7/dec.cnt_201__i10
+   Register : I7/dec.cnt_201__i9
+   Register : I7/dec.cnt_201__i8
+   Register : I7/dec.cnt_201__i7
+   Register : I7/dec.cnt_201__i6
+   Register : I7/dec.cnt_201__i5
+   Register : I7/dec.cnt_201__i4
+   Register : I7/dec.cnt_201__i3
+   Register : I7/dec.cnt_201__i2
+   Register : I7/dec.cnt_201__i1
+   Register : I3/Cout_18
+   Register : I4/Cout_18
+
+                                    Page 5
+
+
+
+
+Design:  Stoppuhr                                      Date:  11/14/18  13:16:54
+
+GSR Usage (cont)
+----------------
+   Register : I6/Counter.Counter1Hz_209__i4
+   Register : I6/Counter.Clk3Hz_32
+   Register : I6/Counter.Clk1Hz_34
+   Register : I6/SigClk100Hz_37
+   Register : I6/Counter.Counter1Hz_209__i3
+   Register : I6/Counter.Counter1Hz_209__i2
+   Register : I6/Counter.Counter1Hz_209__i1
+   Register : I6/Counter.Counter1Hz_209__i0
+   Register : I6/Counter.Counter1Hz_209__i6
+   Register : I6/Counter.Counter3Hz_207__i5
+   Register : I6/Counter.Counter1Hz_209__i5
+   Register : I6/Counter.Counter3Hz_207__i4
+   Register : I6/Counter.Counter3Hz_207__i3
+   Register : I6/Counter.Counter3Hz_207__i2
+   Register : I6/Counter.Counter3Hz_207__i1
+   Register : I6/Counter.Counter3Hz_207__i0
+
+Components with synchronous local reset also reset by asynchronous GSR
+----------------------------------------------------------------------
+
+These components have the GSR property set to ENABLED and the local reset is
+     synchronous. The components will respond to the synchronous local reset and
+     to the unrelated asynchronous reset signal 'RES_c' via the GSR component.
+
+Type and number of components of the type:
+   Register = 16
+
+Type and instance name of component:
+   Register : I2/cnt_203__i1
+   Register : I2/cnt_203__i2
+   Register : I2/cnt_203__i3
+   Register : I2/cnt_203__i0
+   Register : I3/cnt_204__i3
+   Register : I3/cnt_204__i1
+   Register : I3/cnt_204__i0
+   Register : I3/cnt_204__i2
+   Register : I4/cnt_205__i0
+   Register : I4/cnt_205__i1
+   Register : I4/cnt_205__i2
+   Register : I4/cnt_205__i3
+   Register : I1/cnt_202__i1
+   Register : I1/cnt_202__i2
+   Register : I1/cnt_202__i3
+   Register : I1/cnt_202__i0
+
+Run Time and Memory Usage
+-------------------------
+
+   Total CPU Time: 1 secs
+   Total REAL Time: 2 secs
+   Peak Memory Usage: 66 MB
+
+
+
+
+
+
+
+
+
+
+                                    Page 6
+
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995
+     AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent
+     Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems
+     All rights reserved.
+Copyright (c) 2002-2014 Lattice Semiconductor
+     Corporation,  All rights reserved.

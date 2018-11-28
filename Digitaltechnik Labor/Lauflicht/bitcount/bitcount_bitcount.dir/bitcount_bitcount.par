@@ -1,0 +1,25 @@
+PAR: Place And Route Diamond (64-bit) 3.1.0.96.
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2014 Lattice Semiconductor Corporation,  All rights reserved.
+Fri Jun 01 15:33:22 2018
+
+C:/lscc/diamond/3.1_x64/ispfpga\bin\nt64\par -f bitcount_bitcount.p2t
+bitcount_bitcount_map.ncd bitcount_bitcount.dir bitcount_bitcount.prf -gui
+
+
+Preference file: bitcount_bitcount.prf.
+
+Level/      Number      Worst       Timing      Worst       Timing      Run         NCD
+Cost [ncd]  Unrouted    Slack       Score       Slack(hold) Score(hold) Time        Status
+----------  --------    -----       ------      ----------- ----------- -----       ------
+5_1   *     0           2147483.647 0           2147483.647 0           10          Complete        
+
+
+* : Design saved.
+
+Total (real) run time for 1-seed: 10 secs 
+
+par done!

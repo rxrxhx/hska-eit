@@ -1,0 +1,65 @@
+# Design Explorer: Shortcut to "C:\Users\rrhar\Desktop\DT\Timer\fff\fff.aws" design added.
+designverincludedir -clear
+designverlibrarysim -PL -clear
+designverlibrarysim -L -clear
+designverlibrarysim -PL pmi_work
+designverlibrarysim ovi_machxo3l
+designverdefinemacro -clear
+addfile C:/Users/rrhar/Desktop/DT/Timer/impl1/test.v
+# Adding file C:\Users\rrhar\Desktop\DT\Timer\impl1\test.v ... Done
+vlib C:/Users/rrhar/Desktop/DT/Timer/fff/work
+# Adding library O.K.
+adel -all
+# Library contents cleared.
+vlog -dbg -work work C:/Users/rrhar/Desktop/DT/Timer/impl1/test.v
+# Pass 1. Scanning modules hierarchy.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# ELB/DAG code generating.
+# Unit top modules: test.
+# $root top modules: test.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+module test
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: Module 'test' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Elaboration time 0.0 [s].
+vsim +access +r test -PL pmi_work -L ovi_machxo3l
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: Module 'test' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELBREAD: Warning: Too few port connections. Region: /test/I1
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... done : 0.0 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 1.5 [s]
+# SLP: Finished : 1.6 [s]
+# SLP: 3 (60.00%) primitives and 2 (40.00%) other processes in SLP
+# SLP: 8 (100.00%) signals in SLP and 0 interface signals
+# ELAB2: Elaboration final pass complete - time: 2.4 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Lattice Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5545 kB (elbread=1280 elab2=4120 kernel=144 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\rrhar\Desktop\DT\Timer\fff\src\wave.asdb
+#  00:32, Donnerstag, 20. September 2018
+#  Simulation has been initialized
+add wave *
+# 1 signal(s) traced.
+run 1000ns
+# Waveform file 'untitled.awc' connected to 'C:/Users/rrhar/Desktop/DT/Timer/fff/src/wave.asdb'.
+# KERNEL: stopped at time: 1 us
+# Error: You do not have valid license to run C Code Debug.
+# Error: Contact Aldec for ordering information sales@aldec.com

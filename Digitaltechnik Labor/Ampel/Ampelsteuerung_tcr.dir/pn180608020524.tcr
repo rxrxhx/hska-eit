@@ -1,0 +1,16 @@
+#Start recording tcl command: 6/8/2018 01:52:59
+#Project Location: D:/DT/Ampel; Project name: Ampelsteuerung
+prj_project open "D:/DT/Ampel/Ampelsteuerung.ldf"
+prj_run Synthesis -impl Ampelsteuerung
+prj_run Synthesis -impl Ampelsteuerung
+prj_run Synthesis -impl Ampelsteuerung
+prj_run Map -impl Ampelsteuerung
+prj_run Map -impl Ampelsteuerung
+prj_run Synthesis -impl Ampelsteuerung
+prj_run Synthesis -impl Ampelsteuerung
+prj_run Map -impl Ampelsteuerung
+prj_run Synthesis -impl Ampelsteuerung
+prj_run Map -impl Ampelsteuerung
+prj_run Export -impl Ampelsteuerung
+prj_run Export -impl Ampelsteuerung
+#Stop recording: 6/8/2018 02:05:24

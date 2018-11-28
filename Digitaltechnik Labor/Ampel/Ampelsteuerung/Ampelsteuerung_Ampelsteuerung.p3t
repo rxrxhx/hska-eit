@@ -1,0 +1,5 @@
+-rem
+-distrce
+-log "Ampelsteuerung_Ampelsteuerung.log"
+-o "Ampelsteuerung_Ampelsteuerung.csv"
+-pr "Ampelsteuerung_Ampelsteuerung.prf"

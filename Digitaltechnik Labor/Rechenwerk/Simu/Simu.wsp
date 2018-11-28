@@ -1,0 +1,14 @@
+[COMPILESTATUS|.\..\LAB_MULT.vhd]
+FileTimeLow=30664882
+Status=Compiled
+
+[COMPILESTATUS|.\..\mult4_tb.vhd]
+FileTimeLow=30664883
+Status=Compiled
+
+[General]
+CurrentVersion=103
+
+[CACHEDOC|Aldec.Project.Generic.7|.\Simu.adf|]
+Path=/testbench
+

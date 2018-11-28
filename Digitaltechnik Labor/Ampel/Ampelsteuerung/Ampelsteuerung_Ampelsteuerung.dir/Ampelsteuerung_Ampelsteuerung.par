@@ -1,0 +1,26 @@
+PAR: Place And Route Diamond (64-bit) 3.1.0.96.
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2014 Lattice Semiconductor Corporation,  All rights reserved.
+Fri Jun 15 13:44:37 2018
+
+C:/lscc/diamond/3.1_x64/ispfpga\bin\nt64\par -f
+Ampelsteuerung_Ampelsteuerung.p2t Ampelsteuerung_Ampelsteuerung_map.ncd
+Ampelsteuerung_Ampelsteuerung.dir Ampelsteuerung_Ampelsteuerung.prf -gui
+
+
+Preference file: Ampelsteuerung_Ampelsteuerung.prf.
+
+Level/      Number      Worst       Timing      Worst       Timing      Run         NCD
+Cost [ncd]  Unrouted    Slack       Score       Slack(hold) Score(hold) Time        Status
+----------  --------    -----       ------      ----------- ----------- -----       ------
+5_1   *     0           2147483.647 0           2147483.647 0           05          Complete        
+
+
+* : Design saved.
+
+Total (real) run time for 1-seed: 5 secs 
+
+par done!

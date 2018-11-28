@@ -1,0 +1,190 @@
+<HTML>
+<HEAD><TITLE>I/O Timing Report</TITLE>
+<STYLE TYPE="text/css">
+<!--
+ body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
+-->
+</STYLE>
+</HEAD>
+<PRE><A name="Top"></A><B><U><big>I/O Timing Report</big></U></B>
+9 potential circuit loops found in timing analysis.
+Loading design for application iotiming from file stp_stp.ncd.
+Design name: Stoppuhr
+NCD version: 3.2
+Vendor:      LATTICE
+Device:      LCMXO2-256HC
+Package:     TQFP100
+Performance: 5
+Package Status:                     Final          Version 1.37
+Performance Hardware Data Status:   Final)         Version 23.4
+Loading design for application iotiming from file stp_stp.ncd.
+Design name: Stoppuhr
+NCD version: 3.2
+Vendor:      LATTICE
+Device:      LCMXO2-256HC
+Package:     TQFP100
+Performance: 6
+Package Status:                     Final          Version 1.37
+Performance Hardware Data Status:   Final)         Version 23.4
+Loading design for application iotiming from file stp_stp.ncd.
+Design name: Stoppuhr
+NCD version: 3.2
+Vendor:      LATTICE
+Device:      LCMXO2-256HC
+Package:     TQFP100
+Performance: M
+Package Status:                     Final          Version 1.37
+Performance Hardware Data Status:   Final)         Version 23.4
+// Design: Stoppuhr
+// Package: TQFP100
+// ncd File: stp_stp.ncd
+// Version: Diamond (64-bit) 3.1.0.96
+// Written on Wed Nov 14 13:17:35 2018
+// M: Minimum Performance Grade
+// iotiming stp_stp.ncd stp_stp.prf -gui
+
+I/O Timing Report (All units are in ns)
+
+Worst Case Results across Performance Grades (M, 6, 5, 4):
+
+// Input Setup and Hold Times
+
+Port  Clock Edge  Setup Performance_Grade  Hold Performance_Grade
+----------------------------------------------------------------------
+RES   MR[0] R     1.330      4       0.965     4
+RES   PR    R     1.452      4       0.723     4
+RES   MR[1] R     1.622      4       0.320     4
+RES   Start F     3.651      4      -0.453     M
+Stop  Start F     3.209      4      -0.361     M
+
+
+// Clock to Output Delay
+
+Port  Clock Edge  Max_Delay Performance_Grade  Min_Delay Performance_Grade
+------------------------------------------------------------------------
+y[1]  MR[0] R    15.277         4        3.659          M
+y[1]  PR    R    15.035         4        3.631          M
+y[1]  MR[1] R    14.632         4        3.590          M
+y[2]  MR[0] R    16.149         4        3.771          M
+y[2]  PR    R    15.907         4        3.743          M
+y[2]  MR[1] R    15.504         4        3.702          M
+y[3]  MR[0] R    15.733         4        3.766          M
+y[3]  PR    R    15.491         4        3.738          M
+y[3]  MR[1] R    15.088         4        3.697          M
+y[4]  MR[0] R    15.535         4        3.688          M
+y[4]  PR    R    15.293         4        3.660          M
+y[4]  MR[1] R    14.890         4        3.619          M
+y[5]  MR[0] R    15.779         4        3.716          M
+y[5]  PR    R    15.537         4        3.688          M
+y[5]  MR[1] R    15.134         4        3.647          M
+y[6]  MR[0] R    15.245         4        3.775          M
+y[6]  PR    R    15.003         4        3.747          M
+y[6]  MR[1] R    14.600         4        3.706          M
+y[7]  MR[0] R    15.953         4        3.774          M
+y[7]  PR    R    15.711         4        3.746          M
+y[7]  MR[1] R    15.308         4        3.705          M
+
+
+// Internal_Clock to Input
+
+Port  Internal_Clock
+--------------------------------------------------------
+RES   N_4           
+RES   N_5           
+
+
+// Internal_Clock to Output
+
+Port   Internal_Clock
+--------------------------------------------------------
+D15    N_2           
+SEG[0] N_2           
+SEG[1] N_2           
+SEG[2] N_2           
+SEG[3] N_2           
+y[1]   N_4           
+y[1]   N_3           
+y[1]   N_2           
+y[1]   N_5           
+y[2]   N_4           
+y[2]   N_3           
+y[2]   N_2           
+y[2]   N_5           
+y[3]   N_4           
+y[3]   N_3           
+y[3]   N_2           
+y[3]   N_5           
+y[4]   N_4           
+y[4]   N_3           
+y[4]   N_2           
+y[4]   N_5           
+y[5]   N_4           
+y[5]   N_3           
+y[5]   N_2           
+y[5]   N_5           
+y[6]   N_4           
+y[6]   N_3           
+y[6]   N_2           
+y[6]   N_5           
+y[7]   N_4           
+y[7]   N_3           
+y[7]   N_2           
+y[7]   N_5           
+y[8]   N_2           
+WARNING: you must also run trce with hold speed: 4
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></FONT>
+</BODY>
+</HTML>

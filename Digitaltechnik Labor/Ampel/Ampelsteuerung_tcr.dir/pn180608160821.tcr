@@ -1,0 +1,30 @@
+#Start recording tcl command: 6/8/2018 15:14:48
+#Project Location: F:/Ampel; Project name: Ampelsteuerung
+C:/Profiles/n4-dt-18/Desktop/DT
+Count4hex
+#Start recording tcl command: 6/8/2018 16:08:20
+#Project Location: C:/Profiles/n4-dt-18/Desktop/DT; Project name: Count4hex
+prj_project open "F:/Ampel/Ampelsteuerung.ldf"
+pgr_project close
+pgr_project open "F:/Ampel/Ampelsteuerung/Ampelsteuerung.xcf"
+pgr_program run
+prj_src add "F:/Ampel/ampelmilli.vhd"
+prj_src remove "F:/Ampel/Ampelsteuerung.vhd"
+prj_run Export -impl Ampelsteuerung
+pgr_program run
+prj_run Export -impl Ampelsteuerung
+pgr_program run
+prj_run Export -impl Ampelsteuerung
+prj_run Export -impl Ampelsteuerung
+prj_run PAR -impl Ampelsteuerung
+prj_run Synthesis -impl Ampelsteuerung
+pgr_program run
+prj_run Export -impl Ampelsteuerung
+prj_run Export -impl Ampelsteuerung
+prj_run Export -impl Ampelsteuerung
+pgr_program run
+pgr_project save "F:/Ampel/Ampelsteuerung/Ampelsteuerung.xcf"
+prj_project save
+prj_project close
+prj_project open "C:/Profiles/n4-dt-18/Desktop/DT/Count4hex.ldf"
+#Stop recording: 6/8/2018 16:08:21

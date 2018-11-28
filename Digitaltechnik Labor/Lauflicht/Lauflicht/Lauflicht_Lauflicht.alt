@@ -1,0 +1,26 @@
+NOTE Copyright (C), 1992-2010, Lattice Semiconductor Corporation *
+NOTE All Rights Reserved *
+NOTE DATE CREATED: Tue Jun 19 22:59:29 2018 *
+NOTE DESIGN NAME: lauflicht *
+NOTE DEVICE NAME: LCMXO2-256HC-4TQFP100 *
+NOTE PIN ASSIGNMENTS *
+NOTE PINS LED[5] : 28 : out *
+NOTE PINS LED[6] : 31 : out *
+NOTE PINS LED[7] : 32 : out *
+NOTE PINS LED[4] : 27 : out *
+NOTE PINS LED[3] : 24 : out *
+NOTE PINS LED[2] : 21 : out *
+NOTE PINS LED[1] : 17 : out *
+NOTE PINS LED[0] : 16 : out *
+NOTE PINS D14 : 63 : out *
+NOTE PINS D15 : 62 : out *
+NOTE PINS DIR : 43 : in *
+NOTE PINS INV : 48 : in *
+NOTE PINS MLEFT[1] : 35 : in *
+NOTE PINS MLEFT[0] : 39 : in *
+NOTE PINS MRIGHT[1] : 41 : in *
+NOTE PINS MRIGHT[0] : 40 : in *
+NOTE PINS TLEFT : 20 : in *
+NOTE PINS TRIGHT : 34 : in *
+NOTE CONFIGURATION MODE: NONE *
+NOTE COMPRESSION: on *

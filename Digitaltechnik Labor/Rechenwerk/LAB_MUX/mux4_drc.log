@@ -1,0 +1,21 @@
+Results of NGD DRC are available in mux4_drc.log.
+Loading NGL library 'D:/lscc/diamond/3.1_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'D:/lscc/diamond/3.1_x64/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'D:/lscc/diamond/3.1_x64/ispfpga/or5g00/data/orc5glib.ngl'...
+
+
+Running DRC...
+
+WARNING - synthesis: logical net 'mult_3s_3s_0_cin_lr_add_0/S0' has no load
+WARNING - synthesis: logical net 'mult_3s_3s_0_cin_lr_add_0/S1' has no load
+WARNING - synthesis: logical net 'Cadd_t_mult_3s_3s_0_0_1/S0' has no load
+WARNING - synthesis: logical net 't_mult_3s_3s_0_add_0_3/COUT' has no load
+WARNING - synthesis: logical net 't_mult_3s_3s_0_add_0_3/S1' has no load
+WARNING - synthesis: logical net 'mult_3s_3s_0_mult_0_1/CO' has no load
+WARNING - synthesis: DRC complete with 6 warnings
+
+Design Results:
+     91 blocks expanded
+completed the first expansion
+All blocks are expanded and NGD expansion is successful.
+Writing NGD file LAB_MUX_LAB_MUX.ngd.

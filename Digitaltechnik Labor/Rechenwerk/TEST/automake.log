@@ -1,0 +1,201 @@
+
+map -a "MachXO2" -p LCMXO2-256HC -t TQFP100 -s 4 -oc Commercial   "TEST_TEST.ngd" -o "TEST_TEST_map.ncd" -pr "TEST_TEST.prf" -mp "TEST_TEST.mrp" "H:/digitaltechnik_labor/Projects/LAB_RW/TEST.lpf" -c 0            
+map:  version Diamond (64-bit) 3.1.0.96
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2014 Lattice Semiconductor Corporation,  All rights reserved.
+   Process the file: TEST_TEST.ngd
+   Picdevice="LCMXO2-256HC"
+
+   Pictype="TQFP100"
+
+   Picspeed=4
+
+   Remove unused logic
+
+   Do not produce over sized NCDs.
+
+Part used: LCMXO2-256HCTQFP100, Performance used: 4.
+
+Loading device for application map from file 'xo2c256.nph' in environment: D:/lscc/diamond/3.1_x64/ispfpga.
+Package Status:                     Final          Version 1.37
+
+Running general design DRC...
+
+Removing unused logic...
+
+Optimizing...
+
+
+
+
+Design Summary:
+   Number of registers:      0 out of   424 (0%)
+      PFU registers:            0 out of   256 (0%)
+      PIO registers:            0 out of   168 (0%)
+   Number of SLICEs:        13 out of   128 (10%)
+      SLICEs as Logic/ROM:     13 out of   128 (10%)
+      SLICEs as RAM:            0 out of    96 (0%)
+      SLICEs as Carry:          6 out of   128 (5%)
+   Number of LUT4s:         25 out of   256 (10%)
+      Number of logic LUTs:       13
+      Number of distributed RAM:   0 (0 LUT4s)
+      Number of ripple logic:      6 (12 LUT4s)
+      Number of shift registers:   0
+   Number of PIO sites used: 10 + 4(JTAG) out of 56 (25%)
+   Number of block RAMs:  0 out of 0
+   Number of GSRs:  0 out of 1 (0%)
+   EFB used :       No
+   JTAG used :      No
+   Readback used :  No
+   Oscillator used :  No
+   Startup used :   No
+   POR :            On
+   Bandgap :        On
+   Number of Power Controller:  0 out of 1 (0%)
+   Number of Dynamic Bank Controller (BCINRD):  0 out of 4 (0%)
+   Number of DCCA:  0 out of 8 (0%)
+   Number of DCMA:  0 out of 2 (0%)
+   Notes:-
+      1. Total number of LUT4s = (Number of logic LUT4s) + 2*(Number of distributed RAMs) + 2*(Number of ripple logic)
+      2. Number of logic LUT4s does not include count of distributed RAM and ripple logic.
+   Number of clocks:  0
+   Number of Clock Enables:  0
+   Number of LSRs:  0
+   Number of nets driven by tri-state buffers:  0
+   Top 10 highest fanout non-clock nets:
+     Net B_c_0: 4 loads
+     Net B_c_1: 4 loads
+     Net R_3: 4 loads
+     Net R_4: 4 loads
+     Net R_5: 4 loads
+     Net VCC_net: 4 loads
+     Net A_c_0: 3 loads
+     Net A_c_1: 3 loads
+     Net A_c_2: 3 loads
+     Net B_c_2: 3 loads
+ 
+
+   Number of warnings:  0
+   Number of errors:    0
+
+
+
+Total CPU Time: 0 secs  
+Total REAL Time: 0 secs  
+Peak Memory Usage: 53 MB
+
+Dumping design to file TEST_TEST_map.ncd.
+
+trce -f "TEST_TEST.mt" -o "TEST_TEST.tw1" "TEST_TEST_map.ncd" "TEST_TEST.prf"
+trce:  version Diamond (64-bit) 3.1.0.96
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2014 Lattice Semiconductor Corporation,  All rights reserved.
+
+Loading design for application trce from file test_test_map.ncd.
+Design name: mult
+NCD version: 3.2
+Vendor:      LATTICE
+Device:      LCMXO2-256HC
+Package:     TQFP100
+Performance: 4
+Loading device for application trce from file 'xo2c256.nph' in environment: D:/lscc/diamond/3.1_x64/ispfpga.
+Package Status:                     Final          Version 1.37
+Performance Hardware Data Status:   Final)         Version 23.4
+Setup and Hold Report
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.1.0.96
+Fri May 11 01:07:56 2018
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2014 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 1 -gt -mapchkpnt 0 -sethld -o TEST_TEST.tw1 -gui TEST_TEST_map.ncd TEST_TEST.prf 
+Design file:     test_test_map.ncd
+Preference file: test_test.prf
+Device,speed:    LCMXO2-256HC,4
+Report level:    verbose report, limited to 1 item per preference
+--------------------------------------------------------------------------------
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+
+Timing summary (Setup):
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 408 paths, 31 nets, and 60 connections (100.0% coverage)
+
+--------------------------------------------------------------------------------
+
+Total time: 0 secs 
+
+ldbanno "TEST_TEST_map.ncd" -n Verilog -o "TEST_TEST_mapvo.vo" -w -neg
+ldbanno: version Diamond (64-bit) 3.1.0.96
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2014 Lattice Semiconductor Corporation,  All rights reserved.
+
+Writing a Verilog netlist using the orca library type based on the TEST_TEST_map design file.
+
+
+Loading design for application ldbanno from file TEST_TEST_map.ncd.
+Design name: mult
+NCD version: 3.2
+Vendor:      LATTICE
+Device:      LCMXO2-256HC
+Package:     TQFP100
+Performance: 4
+Loading device for application ldbanno from file 'xo2c256.nph' in environment: D:/lscc/diamond/3.1_x64/ispfpga.
+Package Status:                     Final          Version 1.37
+Performance Hardware Data Status:   Final)         Version 23.4
+Converting design "TEST_TEST_map.ncd" into .ldb format.
+Writing Verilog netlist to file TEST_TEST_mapvo.vo
+Writing SDF timing to file TEST_TEST_mapvo.sdf
+    <postMsg mid="35400250" type="Info"    dynamic="1" navigation="0" arg0="0"  />
+
+ldbanno "TEST_TEST_map.ncd" -n VHDL -o "TEST_TEST_mapvho.vho" -w -neg
+ldbanno: version Diamond (64-bit) 3.1.0.96
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2014 Lattice Semiconductor Corporation,  All rights reserved.
+
+Writing a VHDL netlist using the orca library type based on the TEST_TEST_map design file.
+
+
+Loading design for application ldbanno from file TEST_TEST_map.ncd.
+Design name: mult
+NCD version: 3.2
+Vendor:      LATTICE
+Device:      LCMXO2-256HC
+Package:     TQFP100
+Performance: 4
+Loading device for application ldbanno from file 'xo2c256.nph' in environment: D:/lscc/diamond/3.1_x64/ispfpga.
+Package Status:                     Final          Version 1.37
+Performance Hardware Data Status:   Final)         Version 23.4
+Converting design "TEST_TEST_map.ncd" into .ldb format.
+Writing VHDL netlist to file TEST_TEST_mapvho.vho
+Writing SDF timing to file TEST_TEST_mapvho.sdf
+    <postMsg mid="35400250" type="Info"    dynamic="1" navigation="0" arg0="0"  />

@@ -1,0 +1,105 @@
+
+Loading design for application trce from file lab_add_lab_add_map.ncd.
+Design name: add4
+NCD version: 3.2
+Vendor:      LATTICE
+Device:      LCMXO2-256HC
+Package:     TQFP100
+Performance: 4
+Loading device for application trce from file 'xo2c256.nph' in environment: D:/lscc/diamond/3.1_x64/ispfpga.
+Package Status:                     Final          Version 1.37
+Performance Hardware Data Status:   Final)         Version 23.4
+Setup and Hold Report
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.1.0.96
+Thu May 10 15:15:35 2018
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2014 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 1 -gt -mapchkpnt 0 -sethld -o LAB_ADD_LAB_ADD.tw1 -gui LAB_ADD_LAB_ADD_map.ncd LAB_ADD_LAB_ADD.prf 
+Design file:     lab_add_lab_add_map.ncd
+Preference file: lab_add_lab_add.prf
+Device,speed:    LCMXO2-256HC,4
+Report level:    verbose report, limited to 1 item per preference
+--------------------------------------------------------------------------------
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+Preference: Default path enumeration
+            18 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+Report:    8.621ns delay A[0] to Z[3]
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     1.132          3.PAD to        3.PADDI A[0]
+ROUTE         3   e 1.234        3.PADDI to     SLICE_0.B1 A_c_0
+CTOF_DEL    ---     0.495     SLICE_0.B1 to     SLICE_0.F1 SLICE_0
+ROUTE         2   e 1.234     SLICE_0.F1 to     SLICE_2.B0 n25
+CTOF_DEL    ---     0.495     SLICE_2.B0 to     SLICE_2.F0 SLICE_2
+ROUTE         1   e 1.234     SLICE_2.F0 to       16.PADDO n42
+DOPAD_DEL   ---     2.797       16.PADDO to         16.PAD Z[3]
+                  --------
+                    8.621   (57.1% logic, 42.9% route), 4 logic levels.
+
+Report:    8.621ns is the maximum delay for this preference.
+
+
+================================================================================
+Preference: Default net enumeration
+            11 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+Report:    1.234ns maximum delay on B_c_0
+
+           Delays             Connection(s)
+         e 1.234ns          8.PADDI to SLICE_1.B1      
+         e 1.234ns          8.PADDI to SLICE_1.A0      
+         e 1.234ns          8.PADDI to SLICE_0.A1      
+
+Report:    1.234ns is the maximum delay for this preference.
+
+Report Summary
+--------------
+----------------------------------------------------------------------------
+Preference                              |   Constraint|       Actual|Levels
+----------------------------------------------------------------------------
+                                        |             |             |
+Default path enumeration                |     0.000 ns|     8.621 ns|   0  
+                                        |             |             |
+Default net enumeration                 |     0.000 ns|     1.234 ns|   0  
+                                        |             |             |
+----------------------------------------------------------------------------
+
+
+All preferences were met.
+
+
+Clock Domains Analysis
+------------------------
+
+Found 0 clocks:
+
+
+Timing summary (Setup):
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 18 paths, 11 nets, and 20 connections (100.0% coverage)
+
+--------------------------------------------------------------------------------
+

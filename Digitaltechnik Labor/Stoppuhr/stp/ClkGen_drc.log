@@ -1,0 +1,17 @@
+Results of NGD DRC are available in ClkGen_drc.log.
+Loading NGL library 'D:/lscc/diamond/3.1_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'D:/lscc/diamond/3.1_x64/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'D:/lscc/diamond/3.1_x64/ispfpga/or5g00/data/orc5glib.ngl'...
+
+
+Running DRC...
+
+WARNING - synthesis: logical net 'Counter.Counter03Hz_59_add_4_9/CO' has no load
+WARNING - synthesis: logical net 'Counter.Counter03Hz_59_add_4_1/S0' has no load
+WARNING - synthesis: DRC complete with 2 warnings
+
+Design Results:
+     84 blocks expanded
+completed the first expansion
+All blocks are expanded and NGD expansion is successful.
+Writing NGD file stp_stp.ngd.

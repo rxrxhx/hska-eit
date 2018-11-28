@@ -1,0 +1,165 @@
+
+Loading design for application trce from file bitcount_bitcount_map.ncd.
+Design name: lauflicht
+NCD version: 3.2
+Vendor:      LATTICE
+Device:      LCMXO2-256HC
+Package:     TQFP100
+Performance: 4
+Loading device for application trce from file 'xo2c256.nph' in environment: C:/lscc/diamond/3.1_x64/ispfpga.
+Package Status:                     Final          Version 1.37
+Performance Hardware Data Status:   Final)         Version 23.4
+Setup and Hold Report
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.1.0.96
+Fri Jun 01 15:33:16 2018
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2014 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 1 -gt -mapchkpnt 0 -sethld -o bitcount_bitcount.tw1 -gui bitcount_bitcount_map.ncd bitcount_bitcount.prf 
+Design file:     bitcount_bitcount_map.ncd
+Preference file: bitcount_bitcount.prf
+Device,speed:    LCMXO2-256HC,4
+Report level:    verbose report, limited to 1 item per preference
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+Preference: FREQUENCY NET "Clock/ClkOsc" 2.080000 MHz ;
+            0 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed:  The following path meets requirements by 470.995ns
+         The internal maximum frequency of the following component is 102.312 MHz
+
+ Logical Details:  Cell type  Pin name       Component name
+
+   Destination:    EFB        TCCLKI         Clock/CTInst0/EFBInst_0
+
+   Delay:               9.774ns -- based on Minimum Pulse Width
+
+Report:  102.312MHz is the maximum frequency for this preference.
+
+Report Summary
+--------------
+----------------------------------------------------------------------------
+Preference                              |   Constraint|       Actual|Levels
+----------------------------------------------------------------------------
+                                        |             |             |
+FREQUENCY NET "Clock/ClkOsc" 2.080000   |             |             |
+MHz ;                                   |    2.080 MHz|  102.312 MHz|   0  
+                                        |             |             |
+----------------------------------------------------------------------------
+
+
+All preferences were met.
+
+
+Clock Domains Analysis
+------------------------
+
+Found 3 clocks:
+
+Clock Domain: D14_c   Source: Clock/i339/SLICE_21.OFX0   Loads: 4
+   No transfer within this clock domain is found
+
+Clock Domain: Clock/Clk200Hz   Source: Clock/CTInst0/EFBInst_0.TCOC   Loads: 17
+   No transfer within this clock domain is found
+
+Clock Domain: Clock/ClkOsc   Source: Clock/OscInst0.OSC   Loads: 1
+   No transfer within this clock domain is found
+
+
+Timing summary (Setup):
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 0 paths, 1 nets, and 155 connections (81.2% coverage)
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.1.0.96
+Fri Jun 01 15:33:16 2018
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2014 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 1 -gt -mapchkpnt 0 -sethld -o bitcount_bitcount.tw1 -gui bitcount_bitcount_map.ncd bitcount_bitcount.prf 
+Design file:     bitcount_bitcount_map.ncd
+Preference file: bitcount_bitcount.prf
+Device,speed:    LCMXO2-256HC,M
+Report level:    verbose report, limited to 1 item per preference
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+Preference: FREQUENCY NET "Clock/ClkOsc" 2.080000 MHz ;
+            0 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+Report Summary
+--------------
+----------------------------------------------------------------------------
+Preference(MIN Delays)                  |   Constraint|       Actual|Levels
+----------------------------------------------------------------------------
+                                        |             |             |
+FREQUENCY NET "Clock/ClkOsc" 2.080000   |             |             |
+MHz ;                                   |            -|            -|   0  
+                                        |             |             |
+----------------------------------------------------------------------------
+
+
+All preferences were met.
+
+
+Clock Domains Analysis
+------------------------
+
+Found 3 clocks:
+
+Clock Domain: D14_c   Source: Clock/i339/SLICE_21.OFX0   Loads: 4
+   No transfer within this clock domain is found
+
+Clock Domain: Clock/Clk200Hz   Source: Clock/CTInst0/EFBInst_0.TCOC   Loads: 17
+   No transfer within this clock domain is found
+
+Clock Domain: Clock/ClkOsc   Source: Clock/OscInst0.OSC   Loads: 1
+   No transfer within this clock domain is found
+
+
+Timing summary (Hold):
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 0 paths, 1 nets, and 155 connections (81.2% coverage)
+
+
+
+Timing summary (Setup and Hold):
+---------------
+
+Timing errors: 0 (setup), 0 (hold)
+Score: 0 (setup), 0 (hold)
+Cumulative negative slack: 0 (0+0)
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+

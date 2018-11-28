@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliProject version="3.0" title="bitcount" device="LCMXO2-256HC-4TG100C" default_implementation="bitcount">
+    <Options/>
+    <Implementation title="bitcount" dir="bitcount" description="bitcount" synthesis="lse" default_strategy="Strategy1">
+        <Options def_top="lauflicht"/>
+        <Source name="clkgen.vhd" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="CT.vhd" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="bitcount4.vhd" type="VHDL" type_short="VHDL">
+            <Options top_module="lauflicht"/>
+        </Source>
+        <Source name="bitcount.lpf" type="Logic Preference" type_short="LPF">
+            <Options/>
+        </Source>
+        <Source name="bitcount/bitcount.xcf" type="Programming Project File" type_short="Programming">
+            <Options/>
+        </Source>
+    </Implementation>
+    <Strategy name="Strategy1" file="bitcount1.sty"/>
+</BaliProject>

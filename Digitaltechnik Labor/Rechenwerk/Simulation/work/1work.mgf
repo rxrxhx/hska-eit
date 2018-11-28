@@ -1,0 +1,90 @@
+V 000045 55 1363          1525953348793 task
+(_unit VHDL (add4 0 5 (task 0 12 ))
+	(_version vb4)
+	(_time 1525953348794 2018.05.10 13:55:48)
+	(_source (\./../../LAB_ADD.vhd\))
+	(_use (std(standard))(ieee(std_logic_1164))(ieee(NUMERIC_STD)))
+	(_parameters dbg)
+	(_code 9ac8c995cfcdca899f9e8bc0cf9c9e999e9c9b9c9e)
+	(_entity
+		(_time 1525953348789)
+		(_use (std(standard))(ieee(std_logic_1164))(ieee(NUMERIC_STD)))
+	)
+	(_object
+		(_type (_internal ~STD_LOGIC_VECTOR{2~downto~0}~12 0 7 (_array ~extieee.std_logic_1164.STD_LOGIC ((_downto (i 2)(i 0))))))
+		(_port (_internal A ~STD_LOGIC_VECTOR{2~downto~0}~12 0 7 (_entity (_in ))))
+		(_port (_internal B ~STD_LOGIC_VECTOR{2~downto~0}~12 0 7 (_entity (_in ))))
+		(_type (_internal ~STD_LOGIC_VECTOR{3~downto~0}~12 0 8 (_array ~extieee.std_logic_1164.STD_LOGIC ((_downto (i 3)(i 0))))))
+		(_port (_internal Z ~STD_LOGIC_VECTOR{3~downto~0}~12 0 8 (_entity (_out ))))
+		(_process
+			(adder(_architecture 0 0 14 (_process (_simple)(_target(2))(_sensitivity(0)(1)))))
+		)
+		(_subprogram
+			(_external resolved (ieee std_logic_1164 15))
+		)
+		(_type (_external ~extieee.std_logic_1164.STD_LOGIC (ieee std_logic_1164 STD_LOGIC)))
+		(_type (_external ~extieee.NUMERIC_STD.UNSIGNED (ieee NUMERIC_STD UNSIGNED)))
+		(_type (_external ~extieee.std_logic_1164.STD_LOGIC_VECTOR (ieee std_logic_1164 STD_LOGIC_VECTOR)))
+	)
+	(_model . task 1 -1
+	)
+)
+V 000049 55 2301          1525953349811 behavior
+(_unit VHDL (testbench 0 25 (behavior 0 28 ))
+	(_version vb4)
+	(_time 1525953349812 2018.05.10 13:55:49)
+	(_source (\./../../add4_tb.vhd\))
+	(_use (std(standard))(ieee(std_logic_1164))(ieee(NUMERIC_STD)))
+	(_parameters dbg)
+	(_code 91c2c39e95c7c686969f83cbc597c4979297999695)
+	(_entity
+		(_time 1525953349808)
+		(_use (std(standard))(ieee(std_logic_1164))(ieee(NUMERIC_STD)))
+	)
+	(_component
+		(add4
+			(_object
+				(_port (_internal A ~STD_LOGIC_VECTOR{2~downto~0}~13 0 32 (_entity (_in ))))
+				(_port (_internal B ~STD_LOGIC_VECTOR{2~downto~0}~132 0 33 (_entity (_in ))))
+				(_port (_internal Z ~STD_LOGIC_VECTOR{3~downto~0}~13 0 34 (_entity (_out ))))
+			)
+		)
+	)
+	(_instantiation uut 0 45 (_component add4 )
+		(_port
+			((A)(A))
+			((B)(B))
+			((Z)(Z))
+		)
+		(_use (_entity . add4)
+		)
+	)
+	(_object
+		(_type (_internal ~STD_LOGIC_VECTOR{2~downto~0}~13 0 32 (_array ~extieee.std_logic_1164.STD_LOGIC ((_downto (i 2)(i 0))))))
+		(_type (_internal ~STD_LOGIC_VECTOR{2~downto~0}~132 0 33 (_array ~extieee.std_logic_1164.STD_LOGIC ((_downto (i 2)(i 0))))))
+		(_type (_internal ~STD_LOGIC_VECTOR{3~downto~0}~13 0 34 (_array ~extieee.std_logic_1164.STD_LOGIC ((_downto (i 3)(i 0))))))
+		(_type (_internal ~STD_LOGIC_VECTOR{2~downto~0}~134 0 38 (_array ~extieee.std_logic_1164.STD_LOGIC ((_downto (i 2)(i 0))))))
+		(_signal (_internal A ~STD_LOGIC_VECTOR{2~downto~0}~134 0 38 (_architecture (_uni ))))
+		(_signal (_internal B ~STD_LOGIC_VECTOR{2~downto~0}~134 0 39 (_architecture (_uni ))))
+		(_type (_internal ~STD_LOGIC_VECTOR{3~downto~0}~136 0 40 (_array ~extieee.std_logic_1164.STD_LOGIC ((_downto (i 3)(i 0))))))
+		(_signal (_internal Z ~STD_LOGIC_VECTOR{3~downto~0}~136 0 40 (_architecture (_uni ))))
+		(_process
+			(tb(_architecture 0 0 53 (_process (_wait_for)(_target(0)(1)))))
+		)
+		(_subprogram
+			(_external resolved (ieee std_logic_1164 15))
+		)
+		(_type (_external ~extieee.std_logic_1164.STD_LOGIC (ieee std_logic_1164 STD_LOGIC)))
+		(_type (_external ~extieee.std_logic_1164.STD_ULOGIC (ieee std_logic_1164 STD_ULOGIC)))
+		(_type (_external ~extieee.std_logic_1164.STD_LOGIC_VECTOR (ieee std_logic_1164 STD_LOGIC_VECTOR)))
+	)
+	(_static
+		(197378 )
+		(197123 )
+		(197379 )
+		(131843 )
+		(197122 )
+	)
+	(_model . behavior 1 -1
+	)
+)

@@ -1,0 +1,1 @@
+D:/lscc/diamond/3.1_x64/bin/nt64/moduleparser.exe -PROJ Simulation -pf D:/lscc/diamond/3.1_x64/cae_library/synthesis/vhdl/machxo2.vhd -lib machxo2 -pkg D:/lscc/diamond/3.1_x64/cae_library/vhdl_packages/vdbs -lst H:/digitaltechnik_labor/Projects/LAB_ADD/Simulation/source_files.lst

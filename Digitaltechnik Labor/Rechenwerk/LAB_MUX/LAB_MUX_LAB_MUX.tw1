@@ -1,0 +1,128 @@
+
+Loading design for application trce from file lab_mux_lab_mux_map.ncd.
+Design name: mux4
+NCD version: 3.2
+Vendor:      LATTICE
+Device:      LCMXO2-256HC
+Package:     TQFP100
+Performance: 4
+Loading device for application trce from file 'xo2c256.nph' in environment: D:/lscc/diamond/3.1_x64/ispfpga.
+Package Status:                     Final          Version 1.37
+Performance Hardware Data Status:   Final)         Version 23.4
+Setup and Hold Report
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.1.0.96
+Fri May 11 02:24:08 2018
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2014 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 1 -gt -mapchkpnt 0 -sethld -o LAB_MUX_LAB_MUX.tw1 -gui LAB_MUX_LAB_MUX_map.ncd LAB_MUX_LAB_MUX.prf 
+Design file:     lab_mux_lab_mux_map.ncd
+Preference file: lab_mux_lab_mux.prf
+Device,speed:    LCMXO2-256HC,4
+Report level:    verbose report, limited to 1 item per preference
+--------------------------------------------------------------------------------
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+Preference: Default path enumeration
+            4096 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+Report:   24.994ns delay A[2] to Q[3]
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     1.132          1.PAD to        1.PADDI A[2]
+ROUTE        10   e 1.234        1.PADDI to    SLICE_36.A1 A_c_2
+CTOF_DEL    ---     0.495    SLICE_36.A1 to    SLICE_36.F1 SLICE_36
+ROUTE         1   e 1.234    SLICE_36.F1 to     SLICE_4.C1 mult_3s_3s_0_mult_0_0_n3
+C1TOFCO_DE  ---     0.889     SLICE_4.C1 to    SLICE_4.FCO SLICE_4
+ROUTE         1   e 0.001    SLICE_4.FCO to    SLICE_5.FCI mco
+FCITOF0_DE  ---     0.585    SLICE_5.FCI to     SLICE_5.F0 SLICE_5
+ROUTE         1   e 1.234     SLICE_5.F0 to     SLICE_2.A0 mult_3s_3s_0_pp_0_3
+C0TOFCO_DE  ---     1.023     SLICE_2.A0 to    SLICE_2.FCO SLICE_2
+ROUTE         1   e 0.001    SLICE_2.FCO to    SLICE_3.FCI co_t_mult_3s_3s_0_0_2
+FCITOF0_DE  ---     0.585    SLICE_3.FCI to     SLICE_3.F0 SLICE_3
+ROUTE         3   e 1.234     SLICE_3.F0 to    SLICE_15.B1 multer.R_5
+CTOF_DEL    ---     0.495    SLICE_15.B1 to    SLICE_15.F1 SLICE_15
+ROUTE         8   e 1.234    SLICE_15.F1 to    SLICE_17.B0 n1759
+CTOF_DEL    ---     0.495    SLICE_17.B0 to    SLICE_17.F0 SLICE_17
+ROUTE         2   e 1.234    SLICE_17.F0 to    SLICE_14.D1 n175
+CTOF_DEL    ---     0.495    SLICE_14.D1 to    SLICE_14.F1 SLICE_14
+ROUTE         1   e 0.480    SLICE_14.F1 to    SLICE_14.A0 n221
+CTOF_DEL    ---     0.495    SLICE_14.A0 to    SLICE_14.F0 SLICE_14
+ROUTE         3   e 1.234    SLICE_14.F0 to    SLICE_24.B1 n2
+CTOF_DEL    ---     0.495    SLICE_24.B1 to    SLICE_24.F1 SLICE_24
+ROUTE         3   e 0.480    SLICE_24.F1 to    SLICE_24.B0 n2009
+CTOF_DEL    ---     0.495    SLICE_24.B0 to    SLICE_24.F0 SLICE_24
+ROUTE         1   e 1.234    SLICE_24.F0 to    SLICE_27.A1 n6
+CTOF_DEL    ---     0.495    SLICE_27.A1 to    SLICE_27.F1 SLICE_27
+ROUTE         1   e 1.234    SLICE_27.F1 to *11/SLICE_6.A0 n130
+CTOOFX_DEL  ---     0.721 *11/SLICE_6.A0 to */SLICE_6.OFX0 i311/SLICE_6
+ROUTE         1   e 1.234 */SLICE_6.OFX0 to       16.PADDO n252
+DOPAD_DEL   ---     2.797       16.PADDO to         16.PAD Q[3]
+                  --------
+                   24.994   (46.8% logic, 53.2% route), 15 logic levels.
+
+Report:   24.994ns is the maximum delay for this preference.
+
+
+================================================================================
+Preference: Default net enumeration
+            74 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+Report:    1.234ns maximum delay on n16
+
+           Delays             Connection(s)
+         e 1.234ns i29/SLICE_13.OFX0 to SLICE_31.B1     
+         e 1.234ns i29/SLICE_13.OFX0 to SLICE_16.C1     
+         e 1.234ns i29/SLICE_13.OFX0 to i315/SLICE_8.D0 
+         e 1.234ns i29/SLICE_13.OFX0 to i313/SLICE_7.D0 
+
+Report:    1.234ns is the maximum delay for this preference.
+
+Report Summary
+--------------
+----------------------------------------------------------------------------
+Preference                              |   Constraint|       Actual|Levels
+----------------------------------------------------------------------------
+                                        |             |             |
+Default path enumeration                |     0.000 ns|    24.994 ns|   0  
+                                        |             |             |
+Default net enumeration                 |     0.000 ns|     1.234 ns|   0  
+                                        |             |             |
+----------------------------------------------------------------------------
+
+
+All preferences were met.
+
+
+Clock Domains Analysis
+------------------------
+
+Found 0 clocks:
+
+
+Timing summary (Setup):
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 4938 paths, 74 nets, and 244 connections (100.0% coverage)
+
+--------------------------------------------------------------------------------
+

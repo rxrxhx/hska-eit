@@ -1,0 +1,9 @@
+#Start recording tcl command: 11/14/2018 13:16:05
+#Project Location: C:/Users/rrhar/Desktop/DIGITALTECHNIK/DT/Stoppuhr; Project name: stp
+prj_project open "C:/Users/rrhar/Desktop/DIGITALTECHNIK/DT/Stoppuhr/stp.ldf"
+pgr_project open "C:/Users/rrhar/Desktop/DIGITALTECHNIK/DT/Stoppuhr/stp/stp.xcf"
+prj_run Export -impl stp -forceAll
+pgr_program run
+pgr_project save "C:/Users/rrhar/Desktop/DIGITALTECHNIK/DT/Stoppuhr/stp/stp.xcf"
+prj_project close
+#Stop recording: 11/14/2018 13:48:15

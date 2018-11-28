@@ -1,0 +1,418 @@
+<HTML>
+<HEAD><TITLE>Synthesis and Ngdbuild Report</TITLE>
+<STYLE TYPE="text/css">
+<!--
+ body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
+-->
+</STYLE>
+</HEAD>
+<PRE><A name="Syn"></A><B><U><big>Synthesis and Ngdbuild  Report</big></U></B>
+synthesis:  version Diamond (64-bit) 3.1.0.96
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2014 Lattice Semiconductor Corporation,  All rights reserved.
+Fri Jun 15 13:44:22 2018
+
+
+Command Line:  synthesis -f Ampelsteuerung_Ampelsteuerung_lattice.synproj -gui 
+
+-- all messages logged in file synthesis.log
+INFO:                                                           
+INFO: ##########################################################
+INFO: ### Lattice Family : MachXO2
+INFO: ### Device  : LCMXO2-256HC
+INFO: ### Package : TQFP100
+INFO: ### Speed   : 4
+INFO: ##########################################################
+INFO:                                                           
+INFO: fix_gated_clocks = 1
+-- Technology check ok...
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/pmi_def.v(24): INFO: compiling module pmi_distributed_dpram (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/pmi_def.v(48): INFO: compiling module pmi_distributed_rom (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/pmi_def.v(67): INFO: compiling module pmi_distributed_spram (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/pmi_def.v(88): INFO: compiling module pmi_distributed_shift_reg (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/pmi_def.v(111): INFO: compiling module pmi_constant_mult (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/pmi_def.v(128): INFO: compiling module pmi_mult (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/pmi_def.v(145): INFO: compiling module pmi_mac (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/pmi_def.v(163): INFO: compiling module pmi_multaddsub (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/pmi_def.v(183): INFO: compiling module pmi_multaddsubsum (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/pmi_def.v(208): INFO: compiling module pmi_complex_mult (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/pmi_def.v(229): INFO: compiling module pmi_add (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/pmi_def.v(246): INFO: compiling module pmi_sub (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/pmi_def.v(263): INFO: compiling module pmi_counter (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/pmi_def.v(278): INFO: compiling module pmi_addsub (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/pmi_def.v(295): INFO: compiling module pmi_ram_dp (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/pmi_def.v(324): INFO: compiling module pmi_ram_dp_be (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/pmi_def.v(355): INFO: compiling module pmi_ram_dp_true (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/pmi_def.v(391): INFO: compiling module pmi_ram_dp_true_be (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/pmi_def.v(430): INFO: compiling module pmi_ram_dq (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/pmi_def.v(454): INFO: compiling module pmi_ram_dq_be (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/pmi_def.v(480): INFO: compiling module pmi_rom (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/pmi_def.v(501): INFO: compiling module pmi_fifo_dc (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/pmi_def.v(532): INFO: compiling module pmi_fifo (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/pmi_def.v(557): INFO: compiling module pmi_dsp_mac (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/pmi_def.v(634): INFO: compiling module pmi_dsp_mult (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/pmi_def.v(691): INFO: compiling module pmi_dsp_multaddsub (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/pmi_def.v(774): INFO: compiling module pmi_dsp_casmultaddsub (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/pmi_def.v(857): INFO: compiling module pmi_dsp_multaddsubsum (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/pmi_def.v(973): INFO: compiling module pmi_dsp_preadd_slice (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/pmi_def.v(1077): INFO: compiling module pmi_pll (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/pmi_def.v(1101): INFO: compiling module pmi_pll_fp (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/pmi_def.v(1125): INFO: compiling module jtaghub16 (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/pmi_def.v(1162): INFO: compiling module jtagconn16 (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(25): INFO: compiling module AGEB2 (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(34): INFO: compiling module ALEB2 (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(49): INFO: compiling module AND3 (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(56): INFO: compiling module AND4 (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(64): INFO: compiling module AND5 (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(73): INFO: compiling module ANEB2 (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(82): INFO: compiling module BB (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(89): INFO: compiling module BBPD (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(96): INFO: compiling module BBPU (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(103): INFO: compiling module BBW (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(110): INFO: compiling module CB2 (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(120): INFO: compiling module CD2 (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(129): INFO: compiling module CU2 (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(138): INFO: compiling module FADD2B (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(144): INFO: compiling module FADSU2 (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(156): INFO: compiling module FD1P3AX (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(166): INFO: compiling module FD1P3AY (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(176): INFO: compiling module FD1P3BX (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(187): INFO: compiling module FD1P3DX (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(198): INFO: compiling module FD1P3IX (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(209): INFO: compiling module FD1P3JX (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(220): INFO: compiling module FD1S1A (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(229): INFO: compiling module FD1S1AY (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(238): INFO: compiling module FD1S1B (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(248): INFO: compiling module FD1S1D (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(258): INFO: compiling module FD1S1I (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(268): INFO: compiling module FD1S1J (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(278): INFO: compiling module FD1S3AX (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(287): INFO: compiling module FD1S3AY (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(296): INFO: compiling module FD1S3BX (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(306): INFO: compiling module FD1S3DX (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(316): INFO: compiling module FD1S3IX (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(326): INFO: compiling module FD1S3JX (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(336): INFO: compiling module FL1P3AY (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(348): INFO: compiling module FL1P3AZ (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(360): INFO: compiling module FL1P3BX (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(373): INFO: compiling module FL1P3DX (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(386): INFO: compiling module FL1P3IY (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(399): INFO: compiling module FL1P3JY (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(412): INFO: compiling module FL1S1A (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(421): INFO: compiling module FL1S1AY (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(430): INFO: compiling module FL1S1B (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(440): INFO: compiling module FL1S1D (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(450): INFO: compiling module FL1S1I (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(460): INFO: compiling module FL1S1J (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(470): INFO: compiling module FL1S3AX (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(479): INFO: compiling module FL1S3AY (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(488): INFO: compiling module FSUB2B (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(494): INFO: compiling module GSR (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(498): INFO: compiling module IB (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(503): INFO: compiling module IBPD (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(508): INFO: compiling module IBPU (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(513): INFO: compiling module IFS1P3BX (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(524): INFO: compiling module IFS1P3DX (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(535): INFO: compiling module IFS1P3IX (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(546): INFO: compiling module IFS1P3JX (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(557): INFO: compiling module ILVDS (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(568): INFO: compiling module L6MUX21 (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(576): INFO: compiling module LB2P3AX (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(582): INFO: compiling module LB2P3AY (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(588): INFO: compiling module LB2P3BX (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(594): INFO: compiling module LB2P3DX (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(600): INFO: compiling module LB2P3IX (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(606): INFO: compiling module LB2P3JX (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(612): INFO: compiling module LD2P3AX (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(618): INFO: compiling module LD2P3AY (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(624): INFO: compiling module LD2P3BX (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(630): INFO: compiling module LD2P3DX (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(636): INFO: compiling module LD2P3IX (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(642): INFO: compiling module LD2P3JX (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(648): INFO: compiling module LU2P3AX (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(654): INFO: compiling module LU2P3AY (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(660): INFO: compiling module LU2P3BX (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(666): INFO: compiling module LU2P3DX (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(672): INFO: compiling module LU2P3IX (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(678): INFO: compiling module LU2P3JX (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(684): INFO: compiling module MULT2 (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(699): INFO: compiling module MUX161 (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(723): INFO: compiling module MUX21 (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(731): INFO: compiling module MUX321 (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(772): INFO: compiling module MUX41 (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(782): INFO: compiling module MUX81 (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(797): INFO: compiling module ND2 (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(803): INFO: compiling module ND3 (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(810): INFO: compiling module ND4 (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(818): INFO: compiling module ND5 (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(827): INFO: compiling module NR2 (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(833): INFO: compiling module NR3 (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(840): INFO: compiling module NR4 (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(848): INFO: compiling module NR5 (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(857): INFO: compiling module OB (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(862): INFO: compiling module OBCO (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(868): INFO: compiling module OBZ (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(874): INFO: compiling module OBZPU (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(880): INFO: compiling module OFS1P3BX (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(891): INFO: compiling module OFS1P3DX (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(902): INFO: compiling module OFS1P3IX (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(913): INFO: compiling module OFS1P3JX (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(924): INFO: compiling module OLVDS (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(936): INFO: compiling module OR3 (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(943): INFO: compiling module OR4 (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(951): INFO: compiling module OR5 (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(960): INFO: compiling module LUT4 (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(971): INFO: compiling module LUT5 (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(983): INFO: compiling module LUT6 (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(996): INFO: compiling module LUT7 (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1010): INFO: compiling module LUT8 (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1025): INFO: compiling module PFUMX (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1032): INFO: compiling module PUR (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1037): INFO: compiling module ROM128X1A (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1051): INFO: compiling module ROM16X1A (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1062): INFO: compiling module ROM256X1A (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1077): INFO: compiling module ROM32X1A (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1089): INFO: compiling module ROM64X1A (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1102): INFO: compiling module CCU2D (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1128): INFO: compiling module XNOR2 (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1134): INFO: compiling module XNOR3 (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1141): INFO: compiling module XNOR4 (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1149): INFO: compiling module XNOR5 (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1158): INFO: compiling module XOR11 (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1173): INFO: compiling module XOR2 (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1179): INFO: compiling module XOR21 (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1204): INFO: compiling module XOR3 (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1211): INFO: compiling module XOR4 (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1219): INFO: compiling module XOR5 (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1228): INFO: compiling module IFS1S1B (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1238): INFO: compiling module IFS1S1D (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1248): INFO: compiling module IFS1S1I (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1258): INFO: compiling module IFS1S1J (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1268): INFO: compiling module DPR16X4C (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1278): INFO: compiling module SPR16X4C (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1287): INFO: compiling module SGSR (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1291): INFO: compiling module DP8KC (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1360): INFO: compiling module PDPW8KC (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1426): INFO: compiling module SP8KC (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1482): INFO: compiling module FIFO8KB (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1512): INFO: compiling module CLKDIVC (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1520): INFO: compiling module DCMA (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1525): INFO: compiling module ECLKSYNCA (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1530): INFO: compiling module ECLKBRIDGECS (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1535): INFO: compiling module DCCA (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1540): INFO: compiling module JTAGF (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1549): INFO: compiling module START (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1553): INFO: compiling module SEDFA (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1562): INFO: compiling module SEDFB (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1566): INFO: compiling module IDDRXE (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1573): INFO: compiling module IDDRX2E (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1580): INFO: compiling module IDDRX4B (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1587): INFO: compiling module IDDRDQSX1A (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1594): INFO: compiling module IDDRX71A (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1601): INFO: compiling module ODDRXE (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1608): INFO: compiling module ODDRX2E (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1615): INFO: compiling module ODDRX4B (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1622): INFO: compiling module ODDRDQSX1A (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1629): INFO: compiling module ODDRX71A (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1636): INFO: compiling module TDDRA (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1644): INFO: compiling module DQSBUFH (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1656): INFO: compiling module DQSDLLC (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1668): INFO: compiling module DELAYE (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1676): INFO: compiling module DELAYD (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1681): INFO: compiling module DLLDELC (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1689): INFO: compiling module CLKFBBUFA (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1694): INFO: compiling module PCNTR (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1705): INFO: compiling module BCINRD (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1711): INFO: compiling module BCLVDSO (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1715): INFO: compiling module INRDB (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1720): INFO: compiling module LVDSOB (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1725): INFO: compiling module PG (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1730): INFO: compiling module EHXPLLJ (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1788): INFO: compiling module PLLREFCS (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1874): INFO: compiling module TSALL (VERI-1018)
+c:/users/rrhar/desktop/dt/ampel/ampelsteuerung/ampelmealy.v(3): INFO: compiling module AMPELMEALY (VERI-1018)
+c:/users/rrhar/desktop/dt/ampel/ampelsteuerung/ampelmealy.v(3): INFO: compiling module AMPELMEALY (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(563): INFO: compiling module INV (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(930): INFO: compiling module OR2 (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(43): INFO: compiling module AND2 (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1793): INFO: compiling module OSCH(NOM_FREQ="2.08") (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1120): INFO: compiling module VHI (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1124): INFO: compiling module VLO (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1800): INFO: compiling module EFB_renamed_due_excessive_length_1 (VERI-1018)
+c:/users/rrhar/desktop/dt/ampel/ampelsteuerung/ampelmealy.v(26): WARNING: input port ClkModeLeft[1] is not connected on this instance (VDB-1013)
+
+
+INFO: Combinational loop found : 1
+INFO: 	Net KFZA_c 
+INFO: 	Instance \I10/mux_29_i1 
+INFO: 	Net \I10/n48 
+INFO: 	Instance \I10/mux_14_i1 
+INFO: 	Net \I10/n18 
+INFO: 	Instance \I10/mux_9_i1 
+INFO: 	Net \I10/n8 
+INFO: 	Instance \I10/mux_4_i1 
+INFO: Combinational loop found : 2
+INFO: 	Net n264 
+INFO: 	Instance \I10/mux_29_i2 
+INFO: 	Net \I10/n47 
+INFO: 	Instance \I10/mux_14_i2 
+INFO: 	Net \I10/n17 
+INFO: 	Instance \I10/mux_9_i2 
+INFO: 	Net \I10/n7 
+INFO: 	Instance \I10/mux_4_i2 
+INFO: Combinational loop found : 3
+INFO: 	Net n263 
+INFO: 	Instance \I10/mux_29_i3 
+INFO: 	Net \I10/n46 
+INFO: 	Instance \I10/mux_14_i3 
+INFO: 	Net \I10/n16 
+INFO: 	Instance \I10/mux_9_i3 
+INFO: 	Net \I10/n6 
+INFO: 	Instance \I10/mux_4_i3 
+INFO: Combinational loop found : 4
+INFO: 	Net FA_c 
+INFO: 	Instance \I10/mux_25_i1 
+INFO: 	Net \I10/n41 
+INFO: 	Instance \I10/mux_20_i1 
+INFO: 	Net \I10/n31 
+INFO: 	Instance \I10/mux_5_i1 
+INFO: Combinational loop found : 5
+INFO: 	Net n262 
+INFO: 	Instance \I10/mux_25_i2 
+INFO: 	Net \I10/n40 
+INFO: 	Instance \I10/mux_20_i2 
+INFO: 	Net \I10/n30 
+INFO: 	Instance \I10/mux_5_i2 
+INFO: Applying 200.000000 MHz constraint to all clocks (LSE-5000)
+
+################### Begin Area Report (AMPELMEALY)######################
+Number of register bits => 26 of 192 (13 % )
+AND2 => 2
+EFB => 1
+FD1S1D => 3
+FD1S1I => 1
+FD1S1J => 1
+FD1S3AX => 8
+FD1S3IX => 13
+GSR => 1
+IB => 4
+INV => 1
+LUT4 => 40
+OB => 5
+OR2 => 1
+OSCH => 1
+PFUMX => 1
+################### End Area Report ##################
+
+################### Begin Clock Report ######################
+Clock Nets
+Number of Clocks: 4
+  Net : Clk200Hz, loads : 16
+  Net : n807, loads : 5
+  Net : N_4, loads : 4
+  Net : N_3, loads : 1
+Clock Enable Nets
+Number of Clock Enables: 0
+Highest fanout non-clock nets
+Top 10 highest fanout non-clock nets:
+  Net : ZUST_1, loads : 12
+  Net : ZUST_2, loads : 11
+  Net : ZUST_0, loads : 10
+  Net : ZUST_3, loads : 10
+  Net : n453, loads : 8
+  Net : n452, loads : 7
+  Net : Counter.Counter3Hz_1, loads : 6
+  Net : n6_adj_1, loads : 6
+  Net : n7, loads : 5
+  Net : Counter.Counter3Hz_2, loads : 5
+################### End Clock Report ##################
+
+<A name="lse_trs"></A><B><U><big>Timing Report Summary</big></U></B>
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk3 [get_nets N_3]                     |            -|            -|     0  
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk2 [get_nets N_4]                     |  200.000 MHz|  266.525 MHz|     2  
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk1 [get_nets \I5/Clk200Hz]            |            -|            -|     0  
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk0 [get_nets n807]                    |            -|            -|     0  
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+All constraints were met.
+
+
+Peak Memory Usage: 134.797  MB
+
+--------------------------------------------------------------
+Elapsed CPU time for LSE flow : 6.484  secs
+--------------------------------------------------------------
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></FONT>
+</BODY>
+</HTML>

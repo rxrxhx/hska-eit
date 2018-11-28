@@ -1,0 +1,79 @@
+
+synthesis -f "LB_MULT_LB_MULT_lattice.synproj"
+synthesis:  version Diamond (64-bit) 3.1.0.96
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2014 Lattice Semiconductor Corporation,  All rights reserved.
+Thu May 10 16:41:42 2018
+
+
+Command Line:  synthesis -f LB_MULT_LB_MULT_lattice.synproj -gui 
+
+-- all messages logged in file synthesis.log
+
+Synthesis options:
+The -a option is MachXO2.
+The -s option is 4.
+The -t option is QFN32.
+The -d option is LCMXO2-256HC.
+Using package QFN32.
+Using performance grade 4.
+INFO:                                                           
+
+INFO: ##########################################################
+
+INFO: ### Lattice Family : MachXO2
+
+INFO: ### Device  : LCMXO2-256HC
+
+INFO: ### Package : QFN32
+
+INFO: ### Speed   : 4
+
+INFO: ##########################################################
+
+INFO:                                                           
+
+Optimization goal = Balanced
+Top-level module name = add4.
+Target frequency = 200.000000 MHz.
+Maximum fanout = 1000.
+Timing path count = 3
+BRAM utilization = 100.000000 %
+DSP usage = true (default)
+DSP utilization = 100 % (default)
+fsm_encoding_style = auto
+resolve_mixed_drivers = 0
+INFO: fix_gated_clocks = 1
+
+Mux style = Auto
+Use Carry Chain = true
+carry_chain_length = 0
+Use IO Insertion = TRUE
+Use IO Reg = TRUE
+Resource Sharing = TRUE
+Propagate Constants = TRUE
+Remove Duplicate Registers = TRUE
+force_gsr = auto
+ROM style = auto
+RAM style = auto
+The -comp option is FALSE.
+The -syn option is FALSE.
+-p D:/lscc/diamond/3.1_x64/ispfpga/xo2c00/data (searchpath added)
+-p H:/digitaltechnik_labor/Projects/LAB_ADD/LB_MULT (searchpath added)
+-p H:/digitaltechnik_labor/Projects/LAB_ADD (searchpath added)
+VHDL library = work
+VHDL design file = H:/digitaltechnik_labor/Projects/LAB_ADD/LAB_MULT.vhd
+NGD file = LB_MULT_LB_MULT.ngd
+-sdc option: SDC file input not used.
+-lpf option: Output file option is OFF.
+Hardtimer checking is enabled (default). The -dt option is not used.
+The -r option is OFF. [ Remove LOC Properties is OFF. ]
+-- Technology check ok...
+
+Compile design.
+Compile Design Begin
+    <postMsg mid="35921261" type="Error"   dynamic="2" navigation="2" arg0="h:/digitaltechnik_labor/projects/lab_add/lab_mult.vhd(17): " arg1="variable" arg2="h:/digitaltechnik_labor/projects/lab_add/lab_mult.vhd" arg3="17"  />

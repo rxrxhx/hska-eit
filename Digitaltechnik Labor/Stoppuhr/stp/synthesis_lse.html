@@ -1,0 +1,206 @@
+<HTML>
+<HEAD><TITLE>Synthesis and Ngdbuild Report</TITLE>
+<STYLE TYPE="text/css">
+<!--
+ body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
+-->
+</STYLE>
+</HEAD>
+<PRE><A name="Syn"></A><B><U><big>Synthesis and Ngdbuild  Report</big></U></B>
+synthesis:  version Diamond (64-bit) 3.1.0.96
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2014 Lattice Semiconductor Corporation,  All rights reserved.
+Wed Nov 14 13:16:38 2018
+
+
+Command Line:  synthesis -f stp_stp_lattice.synproj -gui 
+
+-- all messages logged in file synthesis.log
+INFO:                                                           
+INFO: ##########################################################
+INFO: ### Lattice Family : MachXO2
+INFO: ### Device  : LCMXO2-256HC
+INFO: ### Package : TQFP100
+INFO: ### Speed   : 4
+INFO: ##########################################################
+INFO:                                                           
+INFO: fix_gated_clocks = 1
+-- Technology check ok...
+c:/users/rrhar/desktop/digitaltechnik/dt/stoppuhr/stp/stoppuhr.v(3): INFO: compiling module Stoppuhr (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(930): INFO: compiling module OR2 (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(563): INFO: compiling module INV (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1793): INFO: compiling module OSCH(NOM_FREQ="2.08") (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1120): INFO: compiling module VHI (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1124): INFO: compiling module VLO (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1800): INFO: compiling module EFB_renamed_due_excessive_length_1 (VERI-1018)
+c:/users/rrhar/desktop/digitaltechnik/dt/stoppuhr/stp/stoppuhr.v(42): WARNING: input port ClkModeLeft[1] is not connected on this instance (VDB-1013)
+
+
+INFO: Combinational loop found : 1
+INFO: 	Net s[3] 
+INFO: 	Instance mux_111_i4 
+INFO: Combinational loop found : 2
+INFO: 	Net s[2] 
+INFO: 	Instance mux_111_i3 
+INFO: Combinational loop found : 3
+INFO: 	Net s[0] 
+INFO: 	Instance mux_111_i1 
+INFO: Combinational loop found : 4
+INFO: 	Net s[1] 
+INFO: 	Instance mux_111_i2 
+INFO: Combinational loop found : 5
+INFO: 	Net SEG_c 
+INFO: 	Instance mux_123_i1 
+INFO: Combinational loop found : 6
+INFO: 	Net n512 
+INFO: 	Instance mux_123_i2 
+INFO: Combinational loop found : 7
+INFO: 	Net n511 
+INFO: 	Instance mux_123_i3 
+INFO: Combinational loop found : 8
+INFO: 	Net n510 
+INFO: 	Instance mux_123_i4 
+INFO: Combinational loop found : 9
+INFO: 	Net y_c 
+INFO: 	Instance mux_136_i1 
+INFO: Applying 200.000000 MHz constraint to all clocks (LSE-5000)
+
+################### Begin Area Report (Stoppuhr)######################
+Number of register bits => 68 of 192 (35 % )
+CCU2D => 17
+EFB => 1
+FD1P3AX => 3
+FD1P3IX => 16
+FD1S3AX => 3
+FD1S3DX => 1
+FD1S3IX => 45
+GSR => 1
+IB => 6
+INV => 2
+LUT4 => 98
+OB => 13
+OR2 => 1
+OSCH => 1
+PFUMX => 5
+################### End Area Report ##################
+
+################### Begin Clock Report ######################
+Clock Nets
+Number of Clocks: 6
+  Net : N_2, loads : 48
+  Net : N_5, loads : 5
+  Net : N_4, loads : 5
+  Net : D15_c, loads : 5
+  Net : N_3, loads : 4
+  Net : N_11, loads : 1
+Clock Enable Nets
+Number of Clock Enables: 2
+Highest fanout non-clock nets
+Top 10 highest fanout non-clock nets:
+  Net : n1022, loads : 32
+  Net : N_8, loads : 20
+  Net : dec.cnt_1, loads : 12
+  Net : RES_c, loads : 11
+  Net : dec.cnt_0, loads : 9
+  Net : s_3, loads : 8
+  Net : s_1, loads : 8
+  Net : s_0, loads : 8
+  Net : s_2, loads : 8
+  Net : n1021, loads : 8
+################### End Clock Report ##################
+
+<A name="lse_trs"></A><B><U><big>Timing Report Summary</big></U></B>
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk5 [get_nets N_3]                     |  200.000 MHz|  185.667 MHz|     3 *
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk4 [get_nets D15_c]                   |  200.000 MHz|  179.019 MHz|     3 *
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk3 [get_nets N_5]                     |  200.000 MHz|  179.019 MHz|     3 *
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk2 [get_nets Start_c]                 |            -|            -|     0  
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk1 [get_nets N_4]                     |  200.000 MHz|  184.162 MHz|     3 *
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk0 [get_nets N_2]                     |            -|            -|     0  
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+4 constraints not met.
+
+
+Peak Memory Usage: 138.973  MB
+
+--------------------------------------------------------------
+Elapsed CPU time for LSE flow : 12.672  secs
+--------------------------------------------------------------
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></FONT>
+</BODY>
+</HTML>

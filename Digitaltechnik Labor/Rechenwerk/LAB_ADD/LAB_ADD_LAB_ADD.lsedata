@@ -1,0 +1,87 @@
+<top name = "add4"  library = "work"  arch = "task"  entry = "VHDL">
+
+<clocks>
+</clocks>
+
+<!--
+    //=============================================================
+    //  Number of Clocks processed: 0
+    //
+    //  If a clock cannot be found in the top level pins section,
+    //  that means it is an internal clock.
+    //
+    //=============================================================
+-->
+
+<library name = "work">
+
+<unit name = "add4">
+
+    <!--
+        Top Level Pins: 10
+    -->
+
+    <pins>
+        <pitem  name = "A[2]"  direction = "in"  />
+        <pitem  name = "A[1]"  direction = "in"  />
+        <pitem  name = "A[0]"  direction = "in"  />
+        <pitem  name = "B[2]"  direction = "in"  />
+        <pitem  name = "B[1]"  direction = "in"  />
+        <pitem  name = "B[0]"  direction = "in"  />
+        <pitem  name = "Z[3]"  direction = "out"  />
+        <pitem  name = "Z[2]"  direction = "out"  />
+        <pitem  name = "Z[1]"  direction = "out"  />
+        <pitem  name = "Z[0]"  direction = "out"  />
+    </pins>
+
+    <!--
+        Instances in netlist: 2
+    -->
+
+    <instance  name = "i1"  library = "work"  arch = "task"  type = "comb">
+        <pins>
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "n1"  />
+        </nets>
+    </instance>
+
+    <instance  name = "add_3"  library = "work"  arch = "task"  type = "comb">
+        <pins>
+        <pitem  name = "cin"  direction = "in"  />
+        <pitem  name = "a[3]"  direction = "in"  />
+        <pitem  name = "a[2]"  direction = "in"  />
+        <pitem  name = "a[1]"  direction = "in"  />
+        <pitem  name = "a[0]"  direction = "in"  />
+        <pitem  name = "b[3]"  direction = "in"  />
+        <pitem  name = "b[2]"  direction = "in"  />
+        <pitem  name = "b[1]"  direction = "in"  />
+        <pitem  name = "b[0]"  direction = "in"  />
+        <pitem  name = "o[3]"  direction = "out"  />
+        <pitem  name = "o[2]"  direction = "out"  />
+        <pitem  name = "o[1]"  direction = "out"  />
+        <pitem  name = "o[0]"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "n1"  />
+        <nitem  name = "A[2]"  />
+        <nitem  name = "A[1]"  />
+        <nitem  name = "A[0]"  />
+        <nitem  name = "B[2]"  />
+        <nitem  name = "B[1]"  />
+        <nitem  name = "B[0]"  />
+        <nitem  name = "Z[3]"  />
+        <nitem  name = "Z[2]"  />
+        <nitem  name = "Z[1]"  />
+        <nitem  name = "Z[0]"  />
+        </nets>
+    </instance>
+
+</unit>
+
+</library>
+
+</top>

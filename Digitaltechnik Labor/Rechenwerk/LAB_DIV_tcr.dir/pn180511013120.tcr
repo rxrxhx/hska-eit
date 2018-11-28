@@ -1,0 +1,8 @@
+#Start recording tcl command: 5/11/2018 01:11:53
+#Project Location: H:/digitaltechnik_labor/Projects/LAB_RW; Project name: LAB_DIV
+prj_project new -name "LAB_DIV" -impl "LAB_DIV" -dev LCMXO2-256HC-4TG100C -synthesis "lse"
+prj_project save
+prj_src add "H:/digitaltechnik_labor/Projects/LAB_RW/LAB_DIV.vhd"
+prj_project save
+prj_project close
+#Stop recording: 5/11/2018 01:31:20

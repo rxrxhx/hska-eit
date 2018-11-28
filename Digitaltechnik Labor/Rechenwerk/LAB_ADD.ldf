@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliProject version="3.0" title="LAB_ADD" device="LCMXO2-256HC-4TG100C" default_implementation="LAB_ADD">
+    <Options/>
+    <Implementation title="LAB_ADD" dir="LAB_ADD" description="LAB_ADD" synthesis="lse" default_strategy="Strategy1">
+        <Options def_top="add4"/>
+        <Source name="LAB_ADD.vhd" type="VHDL" type_short="VHDL">
+            <Options top_module="add4"/>
+        </Source>
+        <Source name="add4_tb.vhd" type="VHDL" type_short="VHDL" syn_sim="SimOnly">
+            <Options/>
+        </Source>
+        <Source name="LAB_ADD.lpf" type="Logic Preference" type_short="LPF">
+            <Options/>
+        </Source>
+        <Source name="LAB_ADD/LAB_ADD.xcf" type="Programming Project File" type_short="Programming">
+            <Options/>
+        </Source>
+        <Source name="Simulation/Simulation.spf" type="Simulation Project File" type_short="SPF">
+            <Options/>
+        </Source>
+    </Implementation>
+    <Strategy name="Strategy1" file="LAB_ADD1.sty"/>
+</BaliProject>

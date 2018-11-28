@@ -1,0 +1,66 @@
+synthesis:  version Diamond (64-bit) 3.1.0.96
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2014 Lattice Semiconductor Corporation,  All rights reserved.
+Fri May 11 01:07:40 2018
+
+
+Command Line:  synthesis -f TEST_TEST_lattice.synproj -gui 
+
+-- all messages logged in file synthesis.log
+INFO:                                                           
+INFO: ##########################################################
+INFO: ### Lattice Family : MachXO2
+INFO: ### Device  : LCMXO2-256HC
+INFO: ### Package : TQFP100
+INFO: ### Speed   : 4
+INFO: ##########################################################
+INFO:                                                           
+INFO: fix_gated_clocks = 1
+-- Technology check ok...
+
+
+-- Analyzing Verilog file mult_3s_3s.v (VERI-1482)
+mult_3s_3s.v(8): INFO: compiling module mult_3s_3s (VERI-1018)
+h:/digitaltechnik_labor/projects/lab_rw/test.vhd(33): WARNING: input port a[2] is not connected on this instance (VDB-1013)
+INFO: Applying 200.000000 MHz constraint to all clocks (LSE-5000)
+
+################### Begin Area Report (mult)######################
+Number of register bits => 0 of 192 (0 % )
+AND2 => 2
+FADD2B => 4
+GSR => 1
+IB => 6
+LUT4 => 6
+MULT2 => 2
+ND2 => 4
+OB => 4
+################### End Area Report ##################
+
+################### Begin Clock Report ######################
+Clock Nets
+Number of Clocks: 0
+Clock Enable Nets
+Number of Clock Enables: 0
+Highest fanout non-clock nets
+Top 10 highest fanout non-clock nets:
+  Net : B_c_1, loads : 4
+  Net : B_c_0, loads : 4
+  Net : R_5, loads : 4
+  Net : R_4, loads : 4
+  Net : R_3, loads : 4
+  Net : A_c_2, loads : 3
+  Net : A_c_1, loads : 3
+  Net : A_c_0, loads : 3
+  Net : B_c_2, loads : 3
+  Net : R_2, loads : 2
+################### End Clock Report ##################
+
+Peak Memory Usage: 118.063  MB
+
+--------------------------------------------------------------
+Elapsed CPU time for LSE flow : 1.203  secs
+--------------------------------------------------------------

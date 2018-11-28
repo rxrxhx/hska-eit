@@ -1,0 +1,18 @@
+Results of NGD DRC are available in Stoppuhr_drc.log.
+Loading NGL library 'C:/lscc/diamond/3.1_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.1_x64/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.1_x64/ispfpga/or5g00/data/orc5glib.ngl'...
+
+
+Running DRC...
+
+WARNING - synthesis: logical net 'I7/dec.cnt_201_add_4_33/CO' has no load
+WARNING - synthesis: logical net 'I7/dec.cnt_201_add_4_33/S1' has no load
+WARNING - synthesis: logical net 'I7/dec.cnt_201_add_4_1/S0' has no load
+WARNING - synthesis: DRC complete with 3 warnings
+
+Design Results:
+    216 blocks expanded
+completed the first expansion
+All blocks are expanded and NGD expansion is successful.
+Writing NGD file stp_stp.ngd.

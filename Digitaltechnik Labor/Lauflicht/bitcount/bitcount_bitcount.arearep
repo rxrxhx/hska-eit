@@ -1,0 +1,42 @@
+----------------------------------------------------------------------
+Report for cell lauflicht.behaviour
+Register bits:  30 of 192 (15.625%)
+I/O cells:      14
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D         5          100.0
+                                EFB         1          100.0
+                            FD1S3AX         8          100.0
+                            FD1S3IX        22          100.0
+                                GSR         1          100.0
+                                 IB         8          100.0
+                               LUT4        38          100.0
+                                 OB         6          100.0
+                               OSCH         1          100.0
+                              PFUMX         2          100.0
+SUB MODULES
+                                 CT         1
+                             ClkGen         1
+                              TOTAL        94
+----------------------------------------------------------------------
+Report for cell ClkGen.v1
+Instance Path : Clock
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D         5          100.0
+                                EFB         1          100.0
+                            FD1S3AX         4           50.0
+                            FD1S3IX        22          100.0
+                               LUT4        32           84.2
+                               OSCH         1          100.0
+                              PFUMX         2          100.0
+SUB MODULES
+                                 CT         1
+                              TOTAL        68
+----------------------------------------------------------------------
+Report for cell CT.v1
+Instance Path : Clock.CTInst0
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                                EFB         1          100.0
+                              TOTAL         1

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DiamondModule name="CT" module="CT" VendorName="Lattice Semiconductor Corporation" generator="IPexpress" date="2013 06 09 11:20:33.593" version="1.1" type="Module" synthesis="lse" source_format="VHDL">
+  <Package>
+		<File name="CT.lpc" type="lpc" modified="2013 06 09 11:20:23.578"/>
+		<File name="CT.vhd" type="top_level_vhdl" modified="2013 06 09 11:20:23.718"/>
+		<File name="CT_tmpl.vhd" type="template_vhdl" modified="2013 06 09 11:20:23.718"/>
+  </Package>
+</DiamondModule>

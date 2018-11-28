@@ -1,0 +1,34 @@
+----------------------------------------------------------------------
+Report for cell mux4.struct
+Register bits:  0 of 192 (0.000%)
+I/O cells:      12
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               AND2         2          100.0
+                             FADD2B         4          100.0
+                                GSR         1          100.0
+                                 IB         8          100.0
+                               LUT4        55          100.0
+                              MULT2         2          100.0
+                                ND2         4          100.0
+                                 OB         4          100.0
+                              PFUMX         8          100.0
+SUB MODULES
+                               div4         1
+                              mult4         1
+                              TOTAL        90
+----------------------------------------------------------------------
+Report for cell mult4.v1
+Instance Path : mul
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         5            9.1
+                              TOTAL         5
+----------------------------------------------------------------------
+Report for cell div4.v1
+Instance Path : div
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4        17           30.9
+                              PFUMX         1           12.5
+                              TOTAL        18

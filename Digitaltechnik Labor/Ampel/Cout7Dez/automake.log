@@ -1,0 +1,183 @@
+
+sch2vlog -FPGA -i E:/DT/Ampel/count7seg.sch -o E:/DT/Ampel/Cout7Dez/count7seg.v -gui -msgset E:/DT/Ampel/promote.xml
+
+synthesis -f "Cout7Dez_Cout7Dez_lattice.synproj"
+synthesis:  version Diamond (64-bit) 3.1.0.96
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2014 Lattice Semiconductor Corporation,  All rights reserved.
+Fri Jun 08 13:55:00 2018
+
+
+Command Line:  synthesis -f Cout7Dez_Cout7Dez_lattice.synproj -gui 
+
+-- all messages logged in file synthesis.log
+
+Synthesis options:
+The -a option is MachXO2.
+The -s option is 4.
+The -t option is TQFP100.
+The -d option is LCMXO2-256HC.
+Using package TQFP100.
+Using performance grade 4.
+INFO:                                                           
+
+INFO: ##########################################################
+
+INFO: ### Lattice Family : MachXO2
+
+INFO: ### Device  : LCMXO2-256HC
+
+INFO: ### Package : TQFP100
+
+INFO: ### Speed   : 4
+
+INFO: ##########################################################
+
+INFO:                                                           
+
+Optimization goal = Balanced
+Top-level module name = count7seg.
+Target frequency = 200.000000 MHz.
+Maximum fanout = 1000.
+Timing path count = 3
+BRAM utilization = 100.000000 %
+DSP usage = true (default)
+DSP utilization = 100 % (default)
+fsm_encoding_style = auto
+resolve_mixed_drivers = 0
+INFO: fix_gated_clocks = 1
+
+Mux style = Auto
+Use Carry Chain = true
+carry_chain_length = 0
+Use IO Insertion = TRUE
+Use IO Reg = TRUE
+Resource Sharing = TRUE
+Propagate Constants = TRUE
+Remove Duplicate Registers = TRUE
+force_gsr = auto
+ROM style = auto
+RAM style = auto
+The -comp option is FALSE.
+The -syn option is FALSE.
+-p E:/DT/Ampel (searchpath added)
+-p C:/lscc/diamond/3.1_x64/ispfpga/xo2c00/data (searchpath added)
+-p E:/DT/Ampel/Cout7Dez (searchpath added)
+-p E:/DT/Ampel (searchpath added)
+Mixed language design
+Verilog design file = E:/DT/Ampel/Cout7Dez/count7seg.v
+VHDL library = work
+VHDL design file = E:/DT/Ampel/clkgen.vhd
+VHDL design file = E:/DT/Ampel/bitcount4.vhd
+VHDL design file = E:/DT/Ampel/CT.vhd
+VHDL design file = E:/DT/Ampel/DEC7S.vhd
+NGD file = Cout7Dez_Cout7Dez.ngd
+-sdc option: SDC file input not used.
+-lpf option: Output file option is OFF.
+Hardtimer checking is enabled (default). The -dt option is not used.
+The -r option is OFF. [ Remove LOC Properties is OFF. ]
+-- Technology check ok...
+
+Compile design.
+Compile Design Begin
+Mixed language design
+Top module language type = Verilog.
+Top module name (Verilog, mixed language): count7seg
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="e:/dt/ampel/cout7dez/count7seg.v(3): " arg1="count7seg" arg2="e:/dt/ampel/cout7dez/count7seg.v" arg3="3"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1124): " arg1="VLO" arg2="C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v" arg3="1124"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1793): " arg1="OSCH(NOM_FREQ=&quot;2.08&quot;)" arg2="C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v" arg3="1793"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1120): " arg1="VHI" arg2="C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v" arg3="1120"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1800): " arg1="EFB_renamed_due_excessive_length_1" arg2="C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v" arg3="1800"  />
+Loading NGL library 'C:/lscc/diamond/3.1_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.1_x64/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.1_x64/ispfpga/or5g00/data/orc5glib.ngl'...
+Loading device for application map from file 'xo2c256.nph' in environment: C:/lscc/diamond/3.1_x64/ispfpga.
+Package Status:                     Final          Version 1.37
+Top-level module name = count7seg.
+
+
+
+GSR instance connected to net n137.
+    <postMsg mid="35001609" type="Warning" dynamic="0" navigation="0"  />
+INFO: Applying 200.000000 MHz constraint to all clocks
+
+Results of NGD DRC are available in count7seg_drc.log.
+Loading NGL library 'C:/lscc/diamond/3.1_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.1_x64/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.1_x64/ispfpga/or5g00/data/orc5glib.ngl'...
+
+
+Running DRC...
+
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="0" arg0="logical" arg1="I2/Clock/Counter.Counter03Hz_49_add_4_1/S0"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="0" arg0="logical" arg1="I2/Clock/Counter.Counter03Hz_49_add_4_9/CO"  />
+    <postMsg mid="1163101" type="Warning" dynamic="1" navigation="0" arg0="2"  />
+
+Design Results:
+    108 blocks expanded
+completed the first expansion
+All blocks are expanded and NGD expansion is successful.
+Writing NGD file Cout7Dez_Cout7Dez.ngd.
+
+################### Begin Area Report (count7seg)######################
+Number of register bits => 30 of 192 (15 % )
+CCU2D => 5
+EFB => 1
+FD1S3AX => 8
+FD1S3IX => 22
+GSR => 1
+IB => 8
+LUT4 => 45
+OB => 11
+OSCH => 1
+PFUMX => 2
+################### End Area Report ##################
+
+################### Begin Clock Report ######################
+Clock Nets
+Number of Clocks: 2
+  Net : Clk200Hz, loads : 26
+  Net : D14_c, loads : 4
+Clock Enable Nets
+Number of Clock Enables: 0
+Highest fanout non-clock nets
+Top 10 highest fanout non-clock nets:
+  Net : LEDBUS_0, loads : 11
+  Net : LEDBUS_1, loads : 10
+  Net : n139, loads : 10
+  Net : LEDBUS_2, loads : 9
+  Net : LEDBUS_3, loads : 8
+  Net : n140, loads : 8
+  Net : n138, loads : 7
+  Net : Counter.Counter3Hz_1, loads : 6
+  Net : n6_adj_1, loads : 6
+  Net : n7, loads : 5
+################### End Clock Report ##################
+
+Timing Report Summary
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk1 [get_nets D14_c]                   |  200.000 MHz|  193.761 MHz|     3 *
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk0 [get_nets \I2/Clock/Clk200Hz]      |            -|            -|     0  
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+1 constraints not met.
+
+
+Peak Memory Usage: 129.828  MB
+
+--------------------------------------------------------------
+Elapsed CPU time for LSE flow : 5.094  secs
+--------------------------------------------------------------

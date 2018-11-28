@@ -1,0 +1,111 @@
+
+Loading design for application trce from file test_test_map.ncd.
+Design name: mult
+NCD version: 3.2
+Vendor:      LATTICE
+Device:      LCMXO2-256HC
+Package:     TQFP100
+Performance: 4
+Loading device for application trce from file 'xo2c256.nph' in environment: D:/lscc/diamond/3.1_x64/ispfpga.
+Package Status:                     Final          Version 1.37
+Performance Hardware Data Status:   Final)         Version 23.4
+Setup and Hold Report
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.1.0.96
+Fri May 11 01:07:56 2018
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2014 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 1 -gt -mapchkpnt 0 -sethld -o TEST_TEST.tw1 -gui TEST_TEST_map.ncd TEST_TEST.prf 
+Design file:     test_test_map.ncd
+Preference file: test_test.prf
+Device,speed:    LCMXO2-256HC,4
+Report level:    verbose report, limited to 1 item per preference
+--------------------------------------------------------------------------------
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+Preference: Default path enumeration
+            408 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+Report:   16.073ns delay A[2] to Z[3]
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     1.372       A[2].PAD to     A[2].PADDI A[2]
+ROUTE         3   e 1.234     A[2].PADDI to    SLICE_10.A1 A_c_2
+CTOF_DEL    ---     0.495    SLICE_10.A1 to    SLICE_10.F1 SLICE_10
+ROUTE         1   e 1.234    SLICE_10.F1 to     SLICE_4.C1 mult_3s_3s_0_mult_0_0_n3
+C1TOFCO_DE  ---     0.889     SLICE_4.C1 to    SLICE_4.FCO SLICE_4
+ROUTE         1   e 0.001    SLICE_4.FCO to    SLICE_5.FCI mco
+FCITOF0_DE  ---     0.585    SLICE_5.FCI to     SLICE_5.F0 SLICE_5
+ROUTE         1   e 1.234     SLICE_5.F0 to     SLICE_1.A0 mult_3s_3s_0_pp_0_3
+CTOF1_DEL   ---     0.889     SLICE_1.A0 to     SLICE_1.F1 SLICE_1
+ROUTE         4   e 1.234     SLICE_1.F1 to    SLICE_11.B0 R_4
+CTOF_DEL    ---     0.495    SLICE_11.B0 to    SLICE_11.F0 SLICE_11
+ROUTE         1   e 1.234    SLICE_11.F0 to     SLICE_6.D1 n30
+CTOF_DEL    ---     0.495     SLICE_6.D1 to     SLICE_6.F1 SLICE_6
+ROUTE         1   e 1.234     SLICE_6.F1 to     Z[3].PADDO n144
+DOPAD_DEL   ---     3.448     Z[3].PADDO to       Z[3].PAD Z[3]
+                  --------
+                   16.073   (53.9% logic, 46.1% route), 8 logic levels.
+
+Report:   16.073ns is the maximum delay for this preference.
+
+
+================================================================================
+Preference: Default net enumeration
+            31 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+Report:    1.234ns maximum delay on n30
+
+           Delays             Connection(s)
+         e 1.234ns      SLICE_11.F0 to SLICE_6.D1      
+
+Report:    1.234ns is the maximum delay for this preference.
+
+Report Summary
+--------------
+----------------------------------------------------------------------------
+Preference                              |   Constraint|       Actual|Levels
+----------------------------------------------------------------------------
+                                        |             |             |
+Default path enumeration                |     0.000 ns|    16.073 ns|   0  
+                                        |             |             |
+Default net enumeration                 |     0.000 ns|     1.234 ns|   0  
+                                        |             |             |
+----------------------------------------------------------------------------
+
+
+All preferences were met.
+
+
+Clock Domains Analysis
+------------------------
+
+Found 0 clocks:
+
+
+Timing summary (Setup):
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 408 paths, 31 nets, and 60 connections (100.0% coverage)
+
+--------------------------------------------------------------------------------
+

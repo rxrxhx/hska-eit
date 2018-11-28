@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<BaliMessageLog>
+    <Milestone name="Synthesis">
+        <Task name="Lattice_Synthesis">
+            <Engine name="gen_lattice_prj"/>
+            <Engine name="synthesis">
+                <Message>
+                    <ID>35921261</ID>
+                    <Severity>Error</Severity>
+                    <Text>ERROR - h:/digitaltechnik_labor/projects/lab_add/lab_mult.vhd(17): syntax error near variable. VHDL-1261</Text>
+                    <Dynamic>h:/digitaltechnik_labor/projects/lab_add/lab_mult.vhd(17): </Dynamic>
+                    <Dynamic>variable</Dynamic>
+                    <Navigation>h:/digitaltechnik_labor/projects/lab_add/lab_mult.vhd</Navigation>
+                    <Navigation>17</Navigation>
+                </Message>
+            </Engine>
+        </Task>
+    </Milestone>
+</BaliMessageLog>

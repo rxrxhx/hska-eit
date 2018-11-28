@@ -1,0 +1,8 @@
+---------------------------------------------------
+Report for cell sub4
+   Instance path: sub4
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       3.00        100.0
+                                  LUT4	       5.00        100.0
+                                 IOBUF	         10        100.0

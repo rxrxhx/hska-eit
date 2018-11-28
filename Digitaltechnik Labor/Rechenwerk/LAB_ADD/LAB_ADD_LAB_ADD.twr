@@ -1,0 +1,269 @@
+
+Loading design for application trce from file lab_add_lab_add.ncd.
+Design name: add4
+NCD version: 3.2
+Vendor:      LATTICE
+Device:      LCMXO2-256HC
+Package:     TQFP100
+Performance: 4
+Loading device for application trce from file 'xo2c256.nph' in environment: D:/lscc/diamond/3.1_x64/ispfpga.
+Package Status:                     Final          Version 1.37
+Performance Hardware Data Status:   Final)         Version 23.4
+Setup and Hold Report
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.1.0.96
+Thu May 10 15:15:41 2018
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2014 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 10 -gt -sethld -sp 4 -sphld m -o LAB_ADD_LAB_ADD.twr -gui LAB_ADD_LAB_ADD.ncd LAB_ADD_LAB_ADD.prf 
+Design file:     lab_add_lab_add.ncd
+Preference file: lab_add_lab_add.prf
+Device,speed:    LCMXO2-256HC,4
+Report level:    verbose report, limited to 10 items per preference
+--------------------------------------------------------------------------------
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+Preference: Default path enumeration
+            18 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+Report:    9.378ns delay A[0] to Z[3]
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     1.132          3.PAD to        3.PADDI A[0]
+ROUTE         3     2.579        3.PADDI to       R5C2B.A1 A_c_0
+CTOF_DEL    ---     0.495       R5C2B.A1 to       R5C2B.F1 SLICE_0
+ROUTE         2     0.324       R5C2B.F1 to       R5C2A.D0 n25
+CTOF_DEL    ---     0.495       R5C2A.D0 to       R5C2A.F0 SLICE_2
+ROUTE         1     1.556       R5C2A.F0 to       16.PADDO n42
+DOPAD_DEL   ---     2.797       16.PADDO to         16.PAD Z[3]
+                  --------
+                    9.378   (52.5% logic, 47.5% route), 4 logic levels.
+
+Report:    9.072ns delay A[0] to Z[2]
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     1.132          3.PAD to        3.PADDI A[0]
+ROUTE         3     2.579        3.PADDI to       R5C2B.A1 A_c_0
+CTOF_DEL    ---     0.495       R5C2B.A1 to       R5C2B.F1 SLICE_0
+ROUTE         2     0.445       R5C2B.F1 to       R5C2B.C0 n25
+CTOF_DEL    ---     0.495       R5C2B.C0 to       R5C2B.F0 SLICE_0
+ROUTE         1     1.129       R5C2B.F0 to       17.PADDO n43
+DOPAD_DEL   ---     2.797       17.PADDO to         17.PAD Z[2]
+                  --------
+                    9.072   (54.2% logic, 45.8% route), 4 logic levels.
+
+Report:    8.825ns delay B[0] to Z[3]
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     1.132          8.PAD to        8.PADDI B[0]
+ROUTE         3     2.026        8.PADDI to       R5C2B.B1 B_c_0
+CTOF_DEL    ---     0.495       R5C2B.B1 to       R5C2B.F1 SLICE_0
+ROUTE         2     0.324       R5C2B.F1 to       R5C2A.D0 n25
+CTOF_DEL    ---     0.495       R5C2A.D0 to       R5C2A.F0 SLICE_2
+ROUTE         1     1.556       R5C2A.F0 to       16.PADDO n42
+DOPAD_DEL   ---     2.797       16.PADDO to         16.PAD Z[3]
+                  --------
+                    8.825   (55.7% logic, 44.3% route), 4 logic levels.
+
+Report:    8.761ns delay A[1] to Z[3]
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     1.132          2.PAD to        2.PADDI A[1]
+ROUTE         2     1.962        2.PADDI to       R5C2B.C1 A_c_1
+CTOF_DEL    ---     0.495       R5C2B.C1 to       R5C2B.F1 SLICE_0
+ROUTE         2     0.324       R5C2B.F1 to       R5C2A.D0 n25
+CTOF_DEL    ---     0.495       R5C2A.D0 to       R5C2A.F0 SLICE_2
+ROUTE         1     1.556       R5C2A.F0 to       16.PADDO n42
+DOPAD_DEL   ---     2.797       16.PADDO to         16.PAD Z[3]
+                  --------
+                    8.761   (56.1% logic, 43.9% route), 4 logic levels.
+
+Report:    8.519ns delay B[0] to Z[2]
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     1.132          8.PAD to        8.PADDI B[0]
+ROUTE         3     2.026        8.PADDI to       R5C2B.B1 B_c_0
+CTOF_DEL    ---     0.495       R5C2B.B1 to       R5C2B.F1 SLICE_0
+ROUTE         2     0.445       R5C2B.F1 to       R5C2B.C0 n25
+CTOF_DEL    ---     0.495       R5C2B.C0 to       R5C2B.F0 SLICE_0
+ROUTE         1     1.129       R5C2B.F0 to       17.PADDO n43
+DOPAD_DEL   ---     2.797       17.PADDO to         17.PAD Z[2]
+                  --------
+                    8.519   (57.7% logic, 42.3% route), 4 logic levels.
+
+Report:    8.455ns delay A[1] to Z[2]
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     1.132          2.PAD to        2.PADDI A[1]
+ROUTE         2     1.962        2.PADDI to       R5C2B.C1 A_c_1
+CTOF_DEL    ---     0.495       R5C2B.C1 to       R5C2B.F1 SLICE_0
+ROUTE         2     0.445       R5C2B.F1 to       R5C2B.C0 n25
+CTOF_DEL    ---     0.495       R5C2B.C0 to       R5C2B.F0 SLICE_0
+ROUTE         1     1.129       R5C2B.F0 to       17.PADDO n43
+DOPAD_DEL   ---     2.797       17.PADDO to         17.PAD Z[2]
+                  --------
+                    8.455   (58.2% logic, 41.8% route), 4 logic levels.
+
+Report:    8.441ns delay B[1] to Z[3]
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     1.132          7.PAD to        7.PADDI B[1]
+ROUTE         2     1.642        7.PADDI to       R5C2B.D1 B_c_1
+CTOF_DEL    ---     0.495       R5C2B.D1 to       R5C2B.F1 SLICE_0
+ROUTE         2     0.324       R5C2B.F1 to       R5C2A.D0 n25
+CTOF_DEL    ---     0.495       R5C2A.D0 to       R5C2A.F0 SLICE_2
+ROUTE         1     1.556       R5C2A.F0 to       16.PADDO n42
+DOPAD_DEL   ---     2.797       16.PADDO to         16.PAD Z[3]
+                  --------
+                    8.441   (58.3% logic, 41.7% route), 4 logic levels.
+
+Report:    8.390ns delay B[2] to Z[3]
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     1.132          4.PAD to        4.PADDI B[2]
+ROUTE         2     2.410        4.PADDI to       R5C2A.A0 B_c_2
+CTOF_DEL    ---     0.495       R5C2A.A0 to       R5C2A.F0 SLICE_2
+ROUTE         1     1.556       R5C2A.F0 to       16.PADDO n42
+DOPAD_DEL   ---     2.797       16.PADDO to         16.PAD Z[3]
+                  --------
+                    8.390   (52.7% logic, 47.3% route), 3 logic levels.
+
+Report:    8.199ns delay A[2] to Z[3]
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     1.132          1.PAD to        1.PADDI A[2]
+ROUTE         2     2.219        1.PADDI to       R5C2A.B0 A_c_2
+CTOF_DEL    ---     0.495       R5C2A.B0 to       R5C2A.F0 SLICE_2
+ROUTE         1     1.556       R5C2A.F0 to       16.PADDO n42
+DOPAD_DEL   ---     2.797       16.PADDO to         16.PAD Z[3]
+                  --------
+                    8.199   (54.0% logic, 46.0% route), 3 logic levels.
+
+Report:    8.135ns delay B[1] to Z[2]
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     1.132          7.PAD to        7.PADDI B[1]
+ROUTE         2     1.642        7.PADDI to       R5C2B.D1 B_c_1
+CTOF_DEL    ---     0.495       R5C2B.D1 to       R5C2B.F1 SLICE_0
+ROUTE         2     0.445       R5C2B.F1 to       R5C2B.C0 n25
+CTOF_DEL    ---     0.495       R5C2B.C0 to       R5C2B.F0 SLICE_0
+ROUTE         1     1.129       R5C2B.F0 to       17.PADDO n43
+DOPAD_DEL   ---     2.797       17.PADDO to         17.PAD Z[2]
+                  --------
+                    8.135   (60.5% logic, 39.5% route), 4 logic levels.
+
+Report:    9.378ns is the maximum delay for this preference.
+
+
+================================================================================
+Preference: Default net enumeration
+            11 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+Report:    2.616ns maximum delay on A_c_1
+
+           Delays             Connection(s)
+           2.616ns          2.PADDI to R5C2C.B0        
+           1.962ns          2.PADDI to R5C2B.C1        
+
+Report:    2.579ns maximum delay on A_c_0
+
+           Delays             Connection(s)
+           2.253ns          3.PADDI to R5C2C.D1        
+           2.253ns          3.PADDI to R5C2C.D0        
+           2.579ns          3.PADDI to R5C2B.A1        
+
+Report:    2.410ns maximum delay on B_c_2
+
+           Delays             Connection(s)
+           2.410ns          4.PADDI to R5C2A.A0        
+           2.069ns          4.PADDI to R5C2B.D0        
+
+Report:    2.219ns maximum delay on A_c_2
+
+           Delays             Connection(s)
+           2.219ns          1.PADDI to R5C2A.B0        
+           2.219ns          1.PADDI to R5C2B.B0        
+
+Report:    2.026ns maximum delay on B_c_0
+
+           Delays             Connection(s)
+           1.989ns          8.PADDI to R5C2C.A1        
+           1.989ns          8.PADDI to R5C2C.A0        
+           2.026ns          8.PADDI to R5C2B.B1        
+
+Report:    1.763ns maximum delay on B_c_1
+
+           Delays             Connection(s)
+           1.763ns          7.PADDI to R5C2C.C0        
+           1.642ns          7.PADDI to R5C2B.D1        
+
+Report:    1.556ns maximum delay on n42
+
+           Delays             Connection(s)
+           1.556ns         R5C2A.F0 to 16.PADDO        
+
+Report:    1.243ns maximum delay on Z_c
+
+           Delays             Connection(s)
+           1.243ns         R5C2C.F1 to 24.PADDO        
+
+Report:    1.129ns maximum delay on n43
+
+           Delays             Connection(s)
+           1.129ns         R5C2B.F0 to 17.PADDO        
+
+Report:    0.816ns maximum delay on n44
+
+           Delays             Connection(s)
+           0.816ns         R5C2C.F0 to 21.PADDO        
+
+Report:    2.616ns is the maximum delay for this preference.
+
+Report Summary
+--------------
+----------------------------------------------------------------------------
+Preference                              |   Constraint|       Actual|Levels
+----------------------------------------------------------------------------
+                                        |             |             |
+Default path enumeration                |     0.000 ns|     9.378 ns|   0  
+                                        |             |             |
+Default net enumeration                 |     0.000 ns|     2.616 ns|   0  
+                                        |             |             |
+----------------------------------------------------------------------------
+
+
+All preferences were met.
+
+
+Clock Domains Analysis
+------------------------
+
+Found 0 clocks:
+
+
+Timing summary (Setup):
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 18 paths, 11 nets, and 20 connections (100.0% coverage)
+
+--------------------------------------------------------------------------------
+

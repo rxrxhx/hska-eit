@@ -1,0 +1,37 @@
+timestamp=1525953350013
+
+[add4]
+A/task=21|./../../LAB_ADD.vhd|12|1*0
+BinI32/task=3*0
+I=0*504
+I/task=0*965
+M=11|0|vb4|1525953348788|./../../LAB_ADD.vhd|0*181*0x5862c153674541740e12948a652af1c913cc2c2a|0*429*0x5eebbfaf24833dd780412b1f91e05209
+M/task=21|0|vb4|1525953348792|./../../LAB_ADD.vhd|0*664*0xf03e0df37f6a0580b022ad8cb9909a8d5251651c|0*882*0x820f857dfdcf0f34b1d2764c9304877e
+R=./../../LAB_ADD.vhd|5
+Version=9.3.2744.4995  (Windows)|00000004789cd34d494a0700030f015b
+Version/task=9.3.2744.4995  (Windows)|00000004789cd34d494a0700030f015b
+
+[testbench]
+A/behavior=21|./../../add4_tb.vhd|28|1*1408
+BinI32/behavior=3*354
+I=0*1468
+I/behavior=0*2333
+M=11|0|vb4|1525953349807|./../../add4_tb.vhd|0*1203*0xbfc1ec6fa867a86455a5ad973345036bec5d216d|0*1388*0x5eebbfaf24833dd780412b1f91e05209
+M/behavior=21|0|vb4|1525953349810|./../../add4_tb.vhd|0*1633*0x3d5c0025e269a30d4e2c6b394fac691d965bf427|0*2241*0x820f857dfdcf0f34b1d2764c9304877e
+R=./../../add4_tb.vhd|25
+Version=9.3.2744.4995  (Windows)|00000004789cd34d494a0700030f015b
+Version/behavior=9.3.2744.4995  (Windows)|00000004789cd34d494a0700030f015b
+
+[~A]
+ModifyID=11
+Version=73
+
+[~MFT]
+0=13|0work.mgf|2333|0
+1=1|1work.mgf|1408|0
+3=1|3work.mgf|354|0
+
+[~U]
+add4=11|0*0|
+testbench=11|0*1130|
+

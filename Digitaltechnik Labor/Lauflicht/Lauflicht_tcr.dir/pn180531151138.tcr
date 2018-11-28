@@ -1,0 +1,5 @@
+#Start recording tcl command: 5/31/2018 14:52:35
+#Project Location: L:/DT; Project name: Lauflicht
+prj_project new -name "Lauflicht" -impl "Lauflicht" -dev LCMXO2-256HC-4TG100C -synthesis "lse"
+prj_project save
+#Stop recording: 5/31/2018 15:11:38

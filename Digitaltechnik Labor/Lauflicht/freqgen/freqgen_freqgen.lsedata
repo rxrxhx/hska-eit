@@ -1,0 +1,46 @@
+<top name = "freqgen"  library = "work"  arch = ""  entry = "Verilog">
+
+<clocks>
+</clocks>
+
+<!--
+    //=============================================================
+    //  Number of Clocks processed: 0
+    //
+    //  If a clock cannot be found in the top level pins section,
+    //  that means it is an internal clock.
+    //
+    //=============================================================
+-->
+
+<library name = "work">
+
+<unit name = "freqgen">
+
+    <!--
+        Top Level Pins: 1
+    -->
+
+    <pins>
+        <pitem  name = "o"  direction = "out"  />
+    </pins>
+
+    <!--
+        Instances in netlist: 1
+    -->
+
+    <instance  name = "I1"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "OSC"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "o"  />
+        </nets>
+    </instance>
+
+</unit>
+
+</library>
+
+</top>

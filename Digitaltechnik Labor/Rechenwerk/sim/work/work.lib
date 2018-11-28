@@ -1,0 +1,37 @@
+timestamp=1525993736665
+
+[mult]
+A/behaviour=21|./../../TEST.vhd|14|1*0
+BinI32/behaviour=3*0
+I=0*521
+I/behaviour=0*1238
+M=11|0|vb4|1525993736271|./../../TEST.vhd|0*181*0x535b115dd36d4f3def10adc487d99bc469e09ffd|0*449*0x5eebbfaf24833dd780412b1f91e05209
+M/behaviour=21|0|vb4|1525993736279|./../../TEST.vhd|0*681*0x7d4f2d03f7772ac5ccbbc80423bd1a3de1b82877|0*1153*0x820f857dfdcf0f34b1d2764c9304877e
+R=./../../TEST.vhd|6
+Version=9.3.2744.4995  (Windows)|00000004789cd34d494a0700030f015b
+Version/behaviour=9.3.2744.4995  (Windows)|00000004789cd34d494a0700030f015b
+
+[testbench]
+A/behavior=21|./../../mult_tb.vhd|28|1*2089
+BinI32/behavior=3*947
+I=0*1746
+I/behavior=0*2611
+M=11|0|vb4|1525993736541|./../../mult_tb.vhd|0*1481*0xbfc1ec6fa867a86455a5ad973345036bec5d216d|0*1666*0x5eebbfaf24833dd780412b1f91e05209
+M/behavior=21|0|vb4|1525993736547|./../../mult_tb.vhd|0*1911*0x8f55c97fbcc85238b8ff3d16fbd53ee1cc4badff|0*2519*0x820f857dfdcf0f34b1d2764c9304877e
+R=./../../mult_tb.vhd|25
+Version=9.3.2744.4995  (Windows)|00000004789cd34d494a0700030f015b
+Version/behavior=9.3.2744.4995  (Windows)|00000004789cd34d494a0700030f015b
+
+[~A]
+ModifyID=11
+Version=73
+
+[~MFT]
+0=13|0work.mgf|2611|0
+1=1|1work.mgf|2089|0
+3=1|3work.mgf|947|0
+
+[~U]
+mult=11|0*0|
+testbench=11|0*1408|
+

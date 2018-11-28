@@ -1,0 +1,87 @@
+synthesis:  version Diamond (64-bit) 3.1.0.96
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2014 Lattice Semiconductor Corporation,  All rights reserved.
+Tue Jun 19 22:58:21 2018
+
+
+Command Line:  synthesis -f Lauflicht_Lauflicht_lattice.synproj -gui 
+
+-- all messages logged in file synthesis.log
+INFO:                                                           
+INFO: ##########################################################
+INFO: ### Lattice Family : MachXO2
+INFO: ### Device  : LCMXO2-256HC
+INFO: ### Package : TQFP100
+INFO: ### Speed   : 4
+INFO: ##########################################################
+INFO:                                                           
+INFO: fix_gated_clocks = 1
+-- Technology check ok...
+-- Technology check ok...
+
+
+INFO: Applying 200.000000 MHz constraint to all clocks (LSE-5000)
+
+################### Begin Area Report (lauflicht)######################
+Number of register bits => 34 of 192 (17 % )
+CCU2D => 5
+EFB => 1
+FD1S3AX => 11
+FD1S3AY => 1
+FD1S3IX => 22
+GSR => 1
+IB => 8
+LUT4 => 49
+OB => 10
+OSCH => 1
+PFUMX => 2
+################### End Area Report ##################
+
+################### Begin Clock Report ######################
+Clock Nets
+Number of Clocks: 2
+  Net : Clk200Hz, loads : 26
+  Net : D14_c, loads : 9
+Clock Enable Nets
+Number of Clock Enables: 0
+Highest fanout non-clock nets
+Top 10 highest fanout non-clock nets:
+  Net : n130, loads : 10
+  Net : DIR_c, loads : 8
+  Net : INV_c, loads : 8
+  Net : n132, loads : 8
+  Net : n131, loads : 7
+  Net : Counter.Counter1Hz_2, loads : 6
+  Net : n7, loads : 6
+  Net : Counter.Counter3Hz_1, loads : 6
+  Net : n6_adj_1, loads : 6
+  Net : Counter.Counter1Hz_3, loads : 5
+################### End Clock Report ##################
+
+Timing Report Summary
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk1 [get_nets D14_c]                   |  200.000 MHz|  298.240 MHz|     2  
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk0 [get_nets \Clock/Clk200Hz]         |            -|            -|     0  
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+All constraints were met.
+
+
+Peak Memory Usage: 121.180  MB
+
+--------------------------------------------------------------
+Elapsed CPU time for LSE flow : 4.422  secs
+--------------------------------------------------------------

@@ -1,0 +1,1 @@
+-o C:/Users/rrhar/Desktop/DT/Timer/fff/compile -lc C:/Users/rrhar/Desktop/DT/Timer/fff/library.cfg -fl C:/Users/rrhar/Desktop/DT/Timer/fff/projlib.cfg -pli "C:/lscc/diamond/3.10_x64/active-hdl/bin/systf.dll" -epr C:/Users/rrhar/Desktop/DT/Timer/fff/compile/fff.epr -dbg -work work C:/Users/rrhar/Desktop/DT/Timer/impl1/test.v 

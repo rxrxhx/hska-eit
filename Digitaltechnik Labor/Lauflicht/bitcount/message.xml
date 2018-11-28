@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='utf-8'?>
+<BaliMessageLog>
+    <Milestone name="Export">
+        <Task name="Jedecgen">
+            <Engine name="bitgen"/>
+        </Task>
+    </Milestone>
+    <Milestone name="Synthesis">
+        <Task name="Lattice_Synthesis">
+            <Engine name="gen_lattice_prj"/>
+            <Engine name="synthesis">
+                <Message>
+                    <ID>35001609</ID>
+                    <Severity>Warning</Severity>
+                    <Text>WARNING - No .lpf file will be written because the -lpf option is not used or is set to zero.</Text>
+                </Message>
+                <Message>
+                    <ID>1166052</ID>
+                    <Severity>Warning</Severity>
+                    <Text>WARNING - logical net 'Clock/Counter.Counter03Hz_42_add_4_1/S0' has no load</Text>
+                    <Dynamic>logical</Dynamic>
+                    <Dynamic>Clock/Counter.Counter03Hz_42_add_4_1/S0</Dynamic>
+                </Message>
+                <Message>
+                    <ID>1166052</ID>
+                    <Severity>Warning</Severity>
+                    <Text>WARNING - logical net 'Clock/Counter.Counter03Hz_42_add_4_9/CO' has no load</Text>
+                    <Dynamic>logical</Dynamic>
+                    <Dynamic>Clock/Counter.Counter03Hz_42_add_4_9/CO</Dynamic>
+                </Message>
+                <Message>
+                    <ID>1163101</ID>
+                    <Severity>Warning</Severity>
+                    <Text>WARNING - DRC complete with 2 warnings</Text>
+                    <Dynamic>2</Dynamic>
+                </Message>
+            </Engine>
+        </Task>
+    </Milestone>
+    <Milestone name="Map">
+        <Task name="Map">
+            <Engine name="map"/>
+        </Task>
+        <Task name="MapTrace">
+            <Engine name="trce"/>
+        </Task>
+        <Task name="MapVHDLSimFile">
+            <Engine name="ldbanno">
+                <Message>
+                    <ID>35400250</ID>
+                    <Severity>Info</Severity>
+                    <Text>INFO - ldbanno finished with 0 posted error messages.</Text>
+                    <Dynamic>0</Dynamic>
+                </Message>
+            </Engine>
+        </Task>
+    </Milestone>
+    <Milestone name="PAR">
+        <Task name="PAR">
+            <Engine name="mpartrce">
+                <Message>
+                    <ID>66011008</ID>
+                    <Severity>Warning</Severity>
+                    <Text>WARNING - The following clock signals will be routed by using generic routing resource and may suffer from excessive delay and/or skew.</Text>
+                </Message>
+            </Engine>
+        </Task>
+        <Task name="PARTrace">
+            <Engine name="trce"/>
+        </Task>
+        <Task name="IOTiming">
+            <Engine name="iotiming"/>
+        </Task>
+    </Milestone>
+</BaliMessageLog>

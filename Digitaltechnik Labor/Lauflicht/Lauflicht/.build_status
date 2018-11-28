@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BuildStatus>
+    <Strategy name="Strategy1">
+        <Milestone name="Export" build_result="0" build_time="0">
+            <Task name="IBIS" build_result="0" update_result="3" update_time="0"/>
+            <Task name="TimingSimFileVlg" build_result="0" update_result="3" update_time="0"/>
+            <Task name="TimingSimFileVHD" build_result="0" update_result="3" update_time="0"/>
+            <Task name="Jedecgen" build_result="2" update_result="0" update_time="1529441969"/>
+            <Task name="Bitgen" build_result="0" update_result="3" update_time="0"/>
+        </Milestone>
+        <Milestone name="Map" build_result="2" build_time="1529441910">
+            <Task name="Map" build_result="2" update_result="0" update_time="1529441910"/>
+            <Task name="MapTrace" build_result="2" update_result="0" update_time="1529441913"/>
+            <Task name="MapVerilogSimFile" build_result="0" update_result="3" update_time="0"/>
+            <Task name="MapVHDLSimFile" build_result="2" update_result="0" update_time="1529441918"/>
+        </Milestone>
+        <Milestone name="PAR" build_result="2" build_time="1529441929">
+            <Task name="PAR" build_result="2" update_result="0" update_time="1529441929"/>
+            <Task name="PARTrace" build_result="2" update_result="0" update_time="1529441932"/>
+            <Task name="IOTiming" build_result="2" update_result="0" update_time="1529441941"/>
+        </Milestone>
+        <Milestone name="Synthesis" build_result="2" build_time="1529441908">
+            <Task name="Lattice_Synthesis" build_result="2" update_result="0" update_time="1529441908"/>
+            <Task name="LSE_Compile" build_result="2" update_result="0" update_time="1529441969"/>
+        </Milestone>
+        <Milestone name="TOOL_Report" build_result="0" build_time="0">
+            <Task name="HDLE" build_result="2" update_result="0" update_time="1527850392"/>
+            <Task name="BKM" build_result="0" update_result="2" update_time="0"/>
+            <Task name="SSO" build_result="0" update_result="2" update_time="0"/>
+            <Task name="PIODRC" build_result="0" update_result="2" update_time="0"/>
+        </Milestone>
+        <Report name="Lauflicht_Lauflicht.bgn" last_build_time="1529441969" last_build_size="3646"/>
+        <Report name="Lauflicht_Lauflicht.ior" last_build_time="1529441940" last_build_size="3614"/>
+        <Report name="Lauflicht_Lauflicht.jed" last_build_time="1529441969" last_build_size="75886"/>
+        <Report name="Lauflicht_Lauflicht.lsedata" last_build_time="1529441903" last_build_size="48035"/>
+        <Report name="Lauflicht_Lauflicht.ncd" last_build_time="1529441929" last_build_size="74395"/>
+        <Report name="Lauflicht_Lauflicht.ngd" last_build_time="1529441907" last_build_size="62005"/>
+        <Report name="Lauflicht_Lauflicht.tw1" last_build_time="1529441913" last_build_size="6268"/>
+        <Report name="Lauflicht_Lauflicht.twr" last_build_time="1529441932" last_build_size="6258"/>
+        <Report name="Lauflicht_Lauflicht_map.ncd" last_build_time="1529441910" last_build_size="55953"/>
+        <Report name="Lauflicht_Lauflicht_mapvho.sdf" last_build_time="1529441917" last_build_size="43771"/>
+        <Report name="Lauflicht_Lauflicht_mapvho.vho" last_build_time="1529441917" last_build_size="429659"/>
+    </Strategy>
+</BuildStatus>

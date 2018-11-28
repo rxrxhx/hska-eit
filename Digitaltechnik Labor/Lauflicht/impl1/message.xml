@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliMessageLog>
+    <Task name="Lattice_Synthesis">
+        <Message>
+            <ID>35002000</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>35001781</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>35001200</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>test</Dynamic>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/rrhar/desktop/dt/timer/impl1/test.v(3): </Dynamic>
+            <Dynamic>test</Dynamic>
+            <Navigation>c:/users/rrhar/desktop/dt/timer/impl1/test.v</Navigation>
+            <Navigation>3</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo3l.v(1759): </Dynamic>
+            <Dynamic>OSCH</Dynamic>
+            <Navigation>C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo3l.v</Navigation>
+            <Navigation>1759</Navigation>
+        </Message>
+        <Message>
+            <ID>35931013</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/rrhar/desktop/dt/timer/impl1/test.v(9): </Dynamic>
+            <Dynamic>STDBY</Dynamic>
+            <Navigation>c:/users/rrhar/desktop/dt/timer/impl1/test.v</Navigation>
+            <Navigation>9</Navigation>
+        </Message>
+        <Message>
+            <ID>35001611</ID>
+            <Severity>Warning</Severity>
+        </Message>
+    </Task>
+</BaliMessageLog>

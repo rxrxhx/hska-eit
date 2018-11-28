@@ -1,0 +1,43 @@
+----------------------------------------------------------------------
+Report for cell lauflicht.behaviour
+Register bits:  34 of 192 (17.708%)
+I/O cells:      18
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D         5          100.0
+                                EFB         1          100.0
+                            FD1S3AX        11          100.0
+                            FD1S3AY         1          100.0
+                            FD1S3IX        22          100.0
+                                GSR         1          100.0
+                                 IB         8          100.0
+                               LUT4        49          100.0
+                                 OB        10          100.0
+                               OSCH         1          100.0
+                              PFUMX         2          100.0
+SUB MODULES
+                                 CT         1
+                             ClkGen         1
+                              TOTAL       113
+----------------------------------------------------------------------
+Report for cell ClkGen.v1
+Instance Path : Clock
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D         5          100.0
+                                EFB         1          100.0
+                            FD1S3AX         4           36.4
+                            FD1S3IX        22          100.0
+                               LUT4        33           67.3
+                               OSCH         1          100.0
+                              PFUMX         2          100.0
+SUB MODULES
+                                 CT         1
+                              TOTAL        69
+----------------------------------------------------------------------
+Report for cell CT.v1
+Instance Path : Clock.CTInst0
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                                EFB         1          100.0
+                              TOTAL         1

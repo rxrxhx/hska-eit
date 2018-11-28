@@ -1,0 +1,10 @@
+#Start recording tcl command: 6/1/2018 14:15:05
+#Project Location: D:/DT; Project name: bitcount
+prj_project new -name "bitcount" -impl "bitcount" -dev LCMXO2-256HC-4TG100C -synthesis "lse"
+prj_project save
+prj_src add "D:/DT/clkgen.vhd" "D:/DT/CT.vhd"
+prj_src add "D:/DT/bitcount4.vhd"
+prj_run Synthesis -impl bitcount
+prj_run Map -impl bitcount
+prj_run Export -impl bitcount
+#Stop recording: 6/1/2018 14:47:55

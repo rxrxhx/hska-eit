@@ -1,0 +1,63 @@
+----------------------------------------------------------------------
+Report for cell AMPELMEALY.<NoName>
+Register bits:  26 of 192 (13.542%)
+I/O cells:      9
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               AND2         2          100.0
+                                EFB         1          100.0
+                             FD1S1D         3          100.0
+                             FD1S1I         1          100.0
+                             FD1S1J         1          100.0
+                            FD1S3AX         8          100.0
+                            FD1S3IX        13          100.0
+                                GSR         1          100.0
+                                 IB         4          100.0
+                                INV         1          100.0
+                               LUT4        40          100.0
+                                 OB         5          100.0
+                                OR2         1          100.0
+                               OSCH         1          100.0
+                              PFUMX         1          100.0
+SUB MODULES
+                      Ampel_default         1
+                         CT_default         1
+                     ClkGen_default         1
+                       SRFF_default         1
+                              TOTAL        87
+----------------------------------------------------------------------
+Report for cell ClkGen_default.v1
+Instance Path : I5
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                                EFB         1          100.0
+                            FD1S3AX         3           37.5
+                            FD1S3IX        13          100.0
+                               LUT4        26           65.0
+                               OSCH         1          100.0
+                              PFUMX         1          100.0
+SUB MODULES
+                         CT_default         1
+                              TOTAL        46
+----------------------------------------------------------------------
+Report for cell CT_default.v1
+Instance Path : I5.CTInst0
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                                EFB         1          100.0
+                              TOTAL         1
+----------------------------------------------------------------------
+Report for cell Ampel_default.v1
+Instance Path : I10
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1S3AX         4           50.0
+                               LUT4        13           32.5
+                              TOTAL        17
+----------------------------------------------------------------------
+Report for cell SRFF_default.v1
+Instance Path : I3
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1S3AX         1           12.5
+                              TOTAL         1

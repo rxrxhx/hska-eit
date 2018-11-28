@@ -1,0 +1,53 @@
+synthesis:  version Diamond (64-bit) 3.1.0.96
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2014 Lattice Semiconductor Corporation,  All rights reserved.
+Thu Sep 20 00:21:35 2018
+
+
+Command Line:  synthesis -f freqgen_freqgen_lattice.synproj -gui 
+
+-- all messages logged in file synthesis.log
+INFO:                                                           
+INFO: ##########################################################
+INFO: ### Lattice Family : MachXO3L
+INFO: ### Device  : LCMXO3L-6900C
+INFO: ### Package : CABGA256
+INFO: ### Speed   : 6
+INFO: ##########################################################
+INFO:                                                           
+INFO: fix_gated_clocks = 1
+INFO: The default vhdl library search path is now "C:/lscc/diamond/3.1_x64/cae_library/vhdl_packages/vdbs" (VHDL-1504)
+c:/users/rrhar/desktop/dt/timer/freqgen/freqgen.v(3): INFO: compiling module freqgen (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1793): INFO: compiling module OSCH (VERI-1018)
+c:/users/rrhar/desktop/dt/timer/freqgen/freqgen.v(8): WARNING: input port STDBY is not connected on this instance (VDB-1013)
+
+
+INFO: Applying 200.000000 MHz constraint to all clocks (LSE-5000)
+
+################### Begin Area Report (freqgen)######################
+Number of register bits => 0 of 5148 (0 % )
+GSR => 1
+OB => 1
+OSCH => 1
+################### End Area Report ##################
+
+################### Begin Clock Report ######################
+Clock Nets
+Number of Clocks: 0
+Clock Enable Nets
+Number of Clock Enables: 0
+Highest fanout non-clock nets
+Top 10 highest fanout non-clock nets:
+  Net : o_c, loads : 1
+  Net : o, loads : 0
+################### End Clock Report ##################
+
+Peak Memory Usage: 99.203  MB
+
+--------------------------------------------------------------
+Elapsed CPU time for LSE flow : 2.375  secs
+--------------------------------------------------------------

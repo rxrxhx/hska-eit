@@ -1,0 +1,14 @@
+[Version]
+Version=9.3
+[Designs]
+Simu=Simu.adf
+[Settings]
+Active=Simu
+[Expand]
+simu=1
+[Browser]
+sort=order
+mode=none
+[Order]
+order=1
+macro=

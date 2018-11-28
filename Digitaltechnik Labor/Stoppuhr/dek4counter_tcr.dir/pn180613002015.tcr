@@ -1,0 +1,14 @@
+#Start recording tcl command: 6/12/2018 23:25:47
+#Project Location: D:/DT/Stoppuhr; Project name: dek4counter
+prj_project new -name "dek4counter" -impl "dek4counter" -dev LCMXO2-256HC-4TG100C -synthesis "lse"
+prj_project save
+prj_src add "D:/DT/Stoppuhr/Dec1counter.vhd"
+prj_src add "D:/DT/Stoppuhr/CT.vhd" "D:/DT/Stoppuhr/DEC7S.vhd" "D:/DT/Stoppuhr/clkgen.vhd"
+prj_run Synthesis -impl dek4counter
+source "D:/DT/Stoppuhr/hdle_generate_Symbol.tcl"
+source "D:/DT/Stoppuhr/hdle_generate_Symbol.tcl"
+source "D:/DT/Stoppuhr/hdle_generate_Symbol.tcl"
+prj_src add "D:/DT/Stoppuhr/Dec4Cnt.sch"
+prj_run Synthesis -impl dek4counter
+prj_run Synthesis -impl dek4counter
+#Stop recording: 6/13/2018 00:20:15

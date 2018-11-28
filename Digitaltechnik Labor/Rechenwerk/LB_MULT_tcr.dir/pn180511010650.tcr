@@ -1,0 +1,9 @@
+#Start recording tcl command: 5/11/2018 00:12:06
+#Project Location: H:/digitaltechnik_labor/Projects/LAB_RW; Project name: LB_MULT
+prj_project open "H:/digitaltechnik_labor/Projects/LAB_RW/LB_MULT.ldf"
+source "H:/digitaltechnik_labor/Projects/LAB_RW/hdle_generate_tbtemplate.tcl"
+prj_src add -simulate_only "mult4_tb.vhd"
+prj_src add "H:/digitaltechnik_labor/Projects/LAB_RW/Simu/Simu.spf"
+prj_project save
+prj_project close
+#Stop recording: 5/11/2018 01:06:50

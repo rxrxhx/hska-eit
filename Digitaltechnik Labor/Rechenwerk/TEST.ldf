@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliProject version="3.0" title="TEST" device="LCMXO2-256HC-4TG100C" default_implementation="TEST">
+    <Options/>
+    <Implementation title="TEST" dir="TEST" description="TEST" synthesis="lse" default_strategy="Strategy1">
+        <Options def_top="mult"/>
+        <Source name="TEST.vhd" type="VHDL" type_short="VHDL">
+            <Options top_module="mult"/>
+        </Source>
+        <Source name="mult_tb.vhd" type="VHDL" type_short="VHDL" syn_sim="SimOnly">
+            <Options/>
+        </Source>
+        <Source name="sim/sim.spf" type="Simulation Project File" type_short="SPF">
+            <Options/>
+        </Source>
+        <Source name="TEST.lpf" type="Logic Preference" type_short="LPF">
+            <Options/>
+        </Source>
+    </Implementation>
+    <Strategy name="Strategy1" file="TEST1.sty"/>
+</BaliProject>

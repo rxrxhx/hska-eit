@@ -1,0 +1,25 @@
+#Start recording tcl command: 5/10/2018 13:00:45
+#Project Location: H:/digitaltechnik_labor/Projects/LAB_ADD; Project name: LAB_ADD
+prj_project open "H:/digitaltechnik_labor/Projects/LAB_ADD/LAB_ADD.ldf"
+prj_run Synthesis -impl LAB_ADD
+prj_run Synthesis -impl LAB_ADD
+prj_run Synthesis -impl LAB_ADD
+source "H:/digitaltechnik_labor/Projects/LAB_ADD/hdle_generate_tbtemplate.tcl"
+prj_src add -simulate_only "add4_tb.vhd"
+prj_src add "H:/digitaltechnik_labor/Projects/LAB_ADD/Simulation/Simulation.spf"
+prj_src add "H:/digitaltechnik_labor/Projects/LAB_ADD/Simulation/Simulation.spf"
+prj_src remove "H:/digitaltechnik_labor/Projects/LAB_ADD/add4_tb.vhd"
+source "H:/digitaltechnik_labor/Projects/LAB_ADD/hdle_generate_tbtemplate.tcl"
+prj_src add -simulate_only "add4_tb.vhd"
+prj_src add "H:/digitaltechnik_labor/Projects/LAB_ADD/Simulation/Simulation.spf"
+prj_src remove "H:/digitaltechnik_labor/Projects/LAB_ADD/add4_tb.vhd"
+prj_run Synthesis -impl LAB_ADD
+prj_run Synthesis -impl LAB_ADD
+prj_run Synthesis -impl LAB_ADD
+prj_run Synthesis -impl LAB_ADD
+source "H:/digitaltechnik_labor/Projects/LAB_ADD/hdle_generate_tbtemplate.tcl"
+prj_src add -simulate_only "add4_tb.vhd"
+prj_run Synthesis -impl LAB_ADD
+prj_run Synthesis -impl LAB_ADD
+prj_run Synthesis -impl LAB_ADD
+#Stop recording: 5/10/2018 14:14:47

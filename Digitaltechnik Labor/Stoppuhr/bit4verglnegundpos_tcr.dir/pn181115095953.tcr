@@ -1,0 +1,7 @@
+#Start recording tcl command: 11/14/2018 13:48:16
+#Project Location: C:/Users/rrhar/Desktop/DIGITALTECHNIK/DT/Stoppuhr; Project name: bit4verglnegundpos
+prj_project new -name "bit4verglnegundpos" -impl "bit4verglnegundpos" -dev LCMXO2-256HC-4TG100C -synthesis "lse"
+prj_project save
+pgr_project close
+prj_src add "C:/Users/rrhar/Desktop/DIGITALTECHNIK/DT/Stoppuhr/verglposuneg.vhd"
+#Stop recording: 11/15/2018 09:59:53

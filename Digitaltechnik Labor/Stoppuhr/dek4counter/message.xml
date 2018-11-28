@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<BaliMessageLog>
+    <Milestone name="Synthesis">
+        <Task name="Lattice_Synthesis">
+            <Engine name="gen_lattice_prj"/>
+            <Engine name="synthesis">
+                <Message>
+                    <ID>35921261</ID>
+                    <Severity>Error</Severity>
+                    <Text>ERROR - d:/dt/stoppuhr/dec1counter.vhd(34): syntax error near else. VHDL-1261</Text>
+                    <Dynamic>d:/dt/stoppuhr/dec1counter.vhd(34): </Dynamic>
+                    <Dynamic>else</Dynamic>
+                    <Navigation>d:/dt/stoppuhr/dec1counter.vhd</Navigation>
+                    <Navigation>34</Navigation>
+                </Message>
+            </Engine>
+        </Task>
+    </Milestone>
+</BaliMessageLog>

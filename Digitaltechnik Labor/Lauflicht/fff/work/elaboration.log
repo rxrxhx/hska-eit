@@ -1,0 +1,25 @@
+Active-HDL 10.3.3558.6081  2018-09-20 00:32:39
+
+Elaboration top modules:
+Verilog Module                test
+
+
+-------------------------------------------------------------------------------------------------
+Verilog Module          | Library      | Info | Compiler Version          | Compilation Options
+-------------------------------------------------------------------------------------------------
+test                    | work         |      | 10.3.3558.6081  (Windows) | -dbg
+OSCH                    | ovi_machxo3l |      | 10.3.3558.6081  (Windows) | -vendor lattice -v2k
+-------------------------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------------------------
+Library                 | Comment
+-------------------------------------------------------------------------------------------------
+ovi_machxo3l            | LATTICE Diamond 3.10, MACHXO3L VERILOG LIBRARY
+work                    | None
+-------------------------------------------------------------------------------------------------
+
+
+Simulation Options: vsim +access +r test -PL pmi_work -L ovi_machxo3l
+
+
+The performance of simulation is reduced. Version Lattice Edition

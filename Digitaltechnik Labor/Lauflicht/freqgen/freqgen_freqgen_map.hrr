@@ -1,0 +1,6 @@
+---------------------------------------------------
+Report for cell freqgen
+   Instance path: freqgen
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                 IOBUF	          1        100.0

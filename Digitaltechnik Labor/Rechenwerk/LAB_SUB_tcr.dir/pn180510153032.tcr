@@ -1,0 +1,27 @@
+#Start recording tcl command: 5/10/2018 15:18:26
+#Project Location: H:/digitaltechnik_labor/Projects/LAB_ADD; Project name: LAB_SUB
+prj_project new -name "LAB_SUB" -impl "LAB_SUB" -dev LCMXO2-256HC-4TG100C -synthesis "lse"
+prj_project save
+prj_src add "H:/digitaltechnik_labor/Projects/LAB_ADD/LAB_SUB.vhd"
+pgr_project save "H:/digitaltechnik_labor/Projects/LAB_ADD/LAB_SUB/LAB_SUB.xcf"
+prj_src add -exclude "H:/digitaltechnik_labor/Projects/LAB_ADD/LAB_SUB/LAB_SUB.xcf"
+prj_src enable "H:/digitaltechnik_labor/Projects/LAB_ADD/LAB_SUB/LAB_SUB.xcf"
+prj_run Synthesis -impl LAB_SUB
+prj_run Map -impl LAB_SUB
+prj_run PAR -impl LAB_SUB
+prj_run Export -impl LAB_SUB
+prj_run Synthesis -impl LAB_SUB
+prj_run Map -impl LAB_SUB
+prj_run Synthesis -impl LAB_SUB
+prj_run Synthesis -impl LAB_SUB
+prj_run Synthesis -impl LAB_SUB
+pgr_project close
+pgr_project open "H:/digitaltechnik_labor/Projects/LAB_ADD/LAB_SUB/LAB_SUB.xcf"
+prj_run Map -impl LAB_SUB
+prj_run PAR -impl LAB_SUB
+prj_run Export -impl LAB_SUB
+pgr_program run
+pgr_project save "H:/digitaltechnik_labor/Projects/LAB_ADD/LAB_SUB/LAB_SUB.xcf"
+prj_project save
+prj_project close
+#Stop recording: 5/10/2018 15:30:32

@@ -1,0 +1,10 @@
+#Start recording tcl command: 5/10/2018 15:30:32
+#Project Location: H:/digitaltechnik_labor/Projects/LAB_ADD; Project name: LB_MULT
+prj_project new -name "LB_MULT" -impl "LB_MULT" -dev LCMXO2-256HC-4SG32C -synthesis "lse"
+prj_project save
+pgr_project close
+prj_src add "H:/digitaltechnik_labor/Projects/LAB_ADD/LAB_MULT.vhd"
+prj_run Synthesis -impl LB_MULT
+prj_run Synthesis -impl LB_MULT
+prj_run Synthesis -impl LB_MULT
+#Stop recording: 5/10/2018 16:41:47

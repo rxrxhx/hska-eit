@@ -1,0 +1,40 @@
+-a "MachXO2"
+-d LCMXO2-256HC
+-t TQFP100
+-s 4
+-frequency 200
+-optimization_goal Balanced
+-bram_utilization 100
+-ramstyle Auto
+-romstyle auto
+-use_carry_chain 1
+-carry_chain_length 0
+-force_gsr Auto
+-resource_sharing 1
+-propagate_constants 1
+-remove_duplicate_regs 1
+-mux_style Auto
+-max_fanout 1000
+-fsm_encoding_style Auto
+-twr_paths 3
+-use_io_insertion 1
+-resolve_mixed_drivers 0
+-use_io_reg 1
+
+
+-lpf 0
+-p "C:/Users/rrhar/Desktop/DIGITALTECHNIK/DT/Stoppuhr"
+-lib "work" -vhd "C:/Users/rrhar/Desktop/DIGITALTECHNIK/DT/Stoppuhr/Dec1counter.vhd"
+"C:/Users/rrhar/Desktop/DIGITALTECHNIK/DT/Stoppuhr/DEC7S.vhd"
+"C:/Users/rrhar/Desktop/DIGITALTECHNIK/DT/Stoppuhr/CT.vhd"
+"C:/Users/rrhar/Desktop/DIGITALTECHNIK/DT/Stoppuhr/clkgen.vhd"
+"C:/Users/rrhar/Desktop/DIGITALTECHNIK/DT/Stoppuhr/sg7mux.vhd"
+"C:/Users/rrhar/Desktop/DIGITALTECHNIK/DT/Stoppuhr/SRFF.vhd"
+-ver "C:/Users/rrhar/Desktop/DIGITALTECHNIK/DT/Stoppuhr/stp/Stoppuhr.v"
+-top Stoppuhr
+
+
+-p "C:/lscc/diamond/3.1_x64/ispfpga/xo2c00/data" "C:/Users/rrhar/Desktop/DIGITALTECHNIK/DT/Stoppuhr/stp" "C:/Users/rrhar/Desktop/DIGITALTECHNIK/DT/Stoppuhr"
+
+-ngd "stp_stp.ngd"
+

@@ -1,0 +1,82 @@
+
+synthesis -f "dek4counter_dek4counter_lattice.synproj"
+synthesis:  version Diamond (64-bit) 3.1.0.96
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2014 Lattice Semiconductor Corporation,  All rights reserved.
+Wed Jun 13 00:21:32 2018
+
+
+Command Line:  synthesis -f dek4counter_dek4counter_lattice.synproj -gui 
+
+-- all messages logged in file synthesis.log
+
+Synthesis options:
+The -a option is MachXO2.
+The -s option is 4.
+The -t option is TQFP100.
+The -d option is LCMXO2-256HC.
+Using package TQFP100.
+Using performance grade 4.
+INFO:                                                           
+
+INFO: ##########################################################
+
+INFO: ### Lattice Family : MachXO2
+
+INFO: ### Device  : LCMXO2-256HC
+
+INFO: ### Package : TQFP100
+
+INFO: ### Speed   : 4
+
+INFO: ##########################################################
+
+INFO:                                                           
+
+Optimization goal = Balanced
+Top-level module name = ClkGen.
+Target frequency = 200.000000 MHz.
+Maximum fanout = 1000.
+Timing path count = 3
+BRAM utilization = 100.000000 %
+DSP usage = true (default)
+DSP utilization = 100 % (default)
+fsm_encoding_style = auto
+resolve_mixed_drivers = 0
+INFO: fix_gated_clocks = 1
+
+Mux style = Auto
+Use Carry Chain = true
+carry_chain_length = 0
+Use IO Insertion = TRUE
+Use IO Reg = TRUE
+Resource Sharing = TRUE
+Propagate Constants = TRUE
+Remove Duplicate Registers = TRUE
+force_gsr = auto
+ROM style = auto
+RAM style = auto
+The -comp option is FALSE.
+The -syn option is FALSE.
+-p D:/lscc/diamond/3.1_x64/ispfpga/xo2c00/data (searchpath added)
+-p D:/DT/Stoppuhr/dek4counter (searchpath added)
+-p D:/DT/Stoppuhr (searchpath added)
+VHDL library = work
+VHDL design file = D:/DT/Stoppuhr/Dec1counter.vhd
+VHDL design file = D:/DT/Stoppuhr/CT.vhd
+VHDL design file = D:/DT/Stoppuhr/DEC7S.vhd
+VHDL design file = D:/DT/Stoppuhr/clkgen.vhd
+NGD file = dek4counter_dek4counter.ngd
+-sdc option: SDC file input not used.
+-lpf option: Output file option is OFF.
+Hardtimer checking is enabled (default). The -dt option is not used.
+The -r option is OFF. [ Remove LOC Properties is OFF. ]
+-- Technology check ok...
+
+Compile design.
+Compile Design Begin
+    <postMsg mid="35921261" type="Error"   dynamic="2" navigation="2" arg0="d:/dt/stoppuhr/dec1counter.vhd(34): " arg1="else" arg2="d:/dt/stoppuhr/dec1counter.vhd" arg3="34"  />

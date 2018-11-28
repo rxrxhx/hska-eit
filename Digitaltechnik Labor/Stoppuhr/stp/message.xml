@@ -1,0 +1,177 @@
+<?xml version='1.0' encoding='utf-8'?>
+<BaliMessageLog>
+    <Milestone name="Export">
+        <Task name="Jedecgen">
+            <Engine name="bitgen"/>
+        </Task>
+    </Milestone>
+    <Milestone name="Synthesis">
+        <Task name="Lattice_Synthesis">
+            <Engine name="gen_lattice_prj"/>
+            <Engine name="synthesis">
+                <Message>
+                    <ID>35901018</ID>
+                    <Severity>Info</Severity>
+                    <Text>INFO - c:/users/rrhar/desktop/digitaltechnik/dt/stoppuhr/stp/stoppuhr.v(3): compiling module Stoppuhr. VERI-1018</Text>
+                    <Dynamic>c:/users/rrhar/desktop/digitaltechnik/dt/stoppuhr/stp/stoppuhr.v(3): </Dynamic>
+                    <Dynamic>Stoppuhr</Dynamic>
+                    <Navigation>c:/users/rrhar/desktop/digitaltechnik/dt/stoppuhr/stp/stoppuhr.v</Navigation>
+                    <Navigation>3</Navigation>
+                </Message>
+                <Message>
+                    <ID>35901018</ID>
+                    <Severity>Info</Severity>
+                    <Text>INFO - C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(930): compiling module OR2. VERI-1018</Text>
+                    <Dynamic>C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(930): </Dynamic>
+                    <Dynamic>OR2</Dynamic>
+                    <Navigation>C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+                    <Navigation>930</Navigation>
+                </Message>
+                <Message>
+                    <ID>35901018</ID>
+                    <Severity>Info</Severity>
+                    <Text>INFO - C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(563): compiling module INV. VERI-1018</Text>
+                    <Dynamic>C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(563): </Dynamic>
+                    <Dynamic>INV</Dynamic>
+                    <Navigation>C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+                    <Navigation>563</Navigation>
+                </Message>
+                <Message>
+                    <ID>35901018</ID>
+                    <Severity>Info</Severity>
+                    <Text>INFO - C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1793): compiling module OSCH(NOM_FREQ="2.08"). VERI-1018</Text>
+                    <Dynamic>C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1793): </Dynamic>
+                    <Dynamic>OSCH(NOM_FREQ="2.08")</Dynamic>
+                    <Navigation>C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+                    <Navigation>1793</Navigation>
+                </Message>
+                <Message>
+                    <ID>35901018</ID>
+                    <Severity>Info</Severity>
+                    <Text>INFO - C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1120): compiling module VHI. VERI-1018</Text>
+                    <Dynamic>C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1120): </Dynamic>
+                    <Dynamic>VHI</Dynamic>
+                    <Navigation>C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+                    <Navigation>1120</Navigation>
+                </Message>
+                <Message>
+                    <ID>35901018</ID>
+                    <Severity>Info</Severity>
+                    <Text>INFO - C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1124): compiling module VLO. VERI-1018</Text>
+                    <Dynamic>C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1124): </Dynamic>
+                    <Dynamic>VLO</Dynamic>
+                    <Navigation>C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+                    <Navigation>1124</Navigation>
+                </Message>
+                <Message>
+                    <ID>35901018</ID>
+                    <Severity>Info</Severity>
+                    <Text>INFO - C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1800): compiling module EFB_renamed_due_excessive_length_1. VERI-1018</Text>
+                    <Dynamic>C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1800): </Dynamic>
+                    <Dynamic>EFB_renamed_due_excessive_length_1</Dynamic>
+                    <Navigation>C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+                    <Navigation>1800</Navigation>
+                </Message>
+                <Message>
+                    <ID>35931013</ID>
+                    <Severity>Warning</Severity>
+                    <Text>WARNING - c:/users/rrhar/desktop/digitaltechnik/dt/stoppuhr/stp/stoppuhr.v(42): input port ClkModeLeft[1] is not connected on this instance. VDB-1013</Text>
+                    <Dynamic>c:/users/rrhar/desktop/digitaltechnik/dt/stoppuhr/stp/stoppuhr.v(42): </Dynamic>
+                    <Dynamic>ClkModeLeft[1]</Dynamic>
+                    <Navigation>c:/users/rrhar/desktop/digitaltechnik/dt/stoppuhr/stp/stoppuhr.v</Navigation>
+                    <Navigation>42</Navigation>
+                </Message>
+                <Message>
+                    <ID>35001609</ID>
+                    <Severity>Warning</Severity>
+                    <Text>WARNING - No .lpf file will be written because the -lpf option is not used or is set to zero.</Text>
+                </Message>
+                <Message>
+                    <ID>1166052</ID>
+                    <Severity>Warning</Severity>
+                    <Text>WARNING - logical net 'I7/dec.cnt_201_add_4_33/CO' has no load</Text>
+                    <Dynamic>logical</Dynamic>
+                    <Dynamic>I7/dec.cnt_201_add_4_33/CO</Dynamic>
+                </Message>
+                <Message>
+                    <ID>1166052</ID>
+                    <Severity>Warning</Severity>
+                    <Text>WARNING - logical net 'I7/dec.cnt_201_add_4_33/S1' has no load</Text>
+                    <Dynamic>logical</Dynamic>
+                    <Dynamic>I7/dec.cnt_201_add_4_33/S1</Dynamic>
+                </Message>
+                <Message>
+                    <ID>1166052</ID>
+                    <Severity>Warning</Severity>
+                    <Text>WARNING - logical net 'I7/dec.cnt_201_add_4_1/S0' has no load</Text>
+                    <Dynamic>logical</Dynamic>
+                    <Dynamic>I7/dec.cnt_201_add_4_1/S0</Dynamic>
+                </Message>
+                <Message>
+                    <ID>1163101</ID>
+                    <Severity>Warning</Severity>
+                    <Text>WARNING - DRC complete with 3 warnings</Text>
+                    <Dynamic>3</Dynamic>
+                </Message>
+            </Engine>
+        </Task>
+    </Milestone>
+    <Milestone name="Map">
+        <Task name="Map">
+            <Engine name="map">
+                <Message>
+                    <ID>1100679</ID>
+                    <Severity>Warning</Severity>
+                    <Text>WARNING - C:/Users/rrhar/Desktop/DIGITALTECHNIK/DT/Stoppuhr/stp.lpf(17): Semantic error in "LOCATE COMP "EN" SITE "1" ;": COMP "EN" not found in design. Disable this preference.</Text>
+                    <Dynamic>C:/Users/rrhar/Desktop/DIGITALTECHNIK/DT/Stoppuhr/stp.lpf(17): Semantic error in "LOCATE COMP "EN" SITE "1" ;": </Dynamic>
+                    <Dynamic>EN</Dynamic>
+                    <Navigation>C:/Users/rrhar/Desktop/DIGITALTECHNIK/DT/Stoppuhr/stp.lpf</Navigation>
+                    <Navigation>17</Navigation>
+                </Message>
+                <Message>
+                    <ID>1104062</ID>
+                    <Severity>Warning</Severity>
+                    <Text>WARNING - Preference parsing results:  1 semantic error detected</Text>
+                    <Dynamic></Dynamic>
+                    <Dynamic>1 semantic error</Dynamic>
+                </Message>
+                <Message>
+                    <ID>51001230</ID>
+                    <Severity>Warning</Severity>
+                    <Text>WARNING - There are semantic errors in the preference file C:/Users/rrhar/Desktop/DIGITALTECHNIK/DT/Stoppuhr/stp.lpf.</Text>
+                    <Dynamic>C:/Users/rrhar/Desktop/DIGITALTECHNIK/DT/Stoppuhr/stp.lpf</Dynamic>
+                </Message>
+            </Engine>
+        </Task>
+        <Task name="MapTrace">
+            <Engine name="trce"/>
+        </Task>
+        <Task name="MapVHDLSimFile">
+            <Engine name="ldbanno">
+                <Message>
+                    <ID>35400250</ID>
+                    <Severity>Info</Severity>
+                    <Text>INFO - ldbanno finished with 0 posted error messages.</Text>
+                    <Dynamic>0</Dynamic>
+                </Message>
+            </Engine>
+        </Task>
+    </Milestone>
+    <Milestone name="PAR">
+        <Task name="PAR">
+            <Engine name="mpartrce">
+                <Message>
+                    <ID>66011008</ID>
+                    <Severity>Warning</Severity>
+                    <Text>WARNING - The following clock signals will be routed by using generic routing resource and may suffer from excessive delay and/or skew.</Text>
+                </Message>
+            </Engine>
+        </Task>
+        <Task name="PARTrace">
+            <Engine name="trce"/>
+        </Task>
+        <Task name="IOTiming">
+            <Engine name="iotiming"/>
+        </Task>
+    </Milestone>
+</BaliMessageLog>

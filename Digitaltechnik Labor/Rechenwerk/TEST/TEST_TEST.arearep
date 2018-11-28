@@ -1,0 +1,15 @@
+----------------------------------------------------------------------
+Report for cell mult.behaviour
+Register bits:  0 of 192 (0.000%)
+I/O cells:      10
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               AND2         2          100.0
+                             FADD2B         4          100.0
+                                GSR         1          100.0
+                                 IB         6          100.0
+                               LUT4         6          100.0
+                              MULT2         2          100.0
+                                ND2         4          100.0
+                                 OB         4          100.0
+                              TOTAL        29

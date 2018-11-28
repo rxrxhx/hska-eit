@@ -1,0 +1,138 @@
+           Lattice Mapping Report File for Design Module 'freqgen'
+
+Design Information
+------------------
+
+Command line:   map -a MachXO3L -p LCMXO3L-6900C -t CABGA256 -s 6 -oc Commercial
+     freqgen_freqgen.ngd -o freqgen_freqgen_map.ncd -pr freqgen_freqgen.prf -mp
+     freqgen_freqgen.mrp C:/Users/rrhar/Desktop/DT/Timer/freqgen.lpf -c 0 -gui
+Target Vendor:  LATTICE
+Target Device:  LCMXO3L-6900CCABGA256
+Target Performance:   6
+Mapper:  xo3c00a,  version:  Diamond (64-bit) 3.1.0.96
+Mapped on:  09/20/18  00:21:55
+
+Design Summary
+--------------
+
+   Number of registers:      0 out of  7485 (0%)
+      PFU registers:            0 out of  6864 (0%)
+      PIO registers:            0 out of   621 (0%)
+   Number of SLICEs:         0 out of  3432 (0%)
+      SLICEs as Logic/ROM:      0 out of  3432 (0%)
+      SLICEs as RAM:            0 out of  2574 (0%)
+      SLICEs as Carry:          0 out of  3432 (0%)
+   Number of LUT4s:          0 out of  6864 (0%)
+      Number of logic LUTs:        0
+      Number of distributed RAM:   0 (0 LUT4s)
+      Number of ripple logic:      0 (0 LUT4s)
+      Number of shift registers:   0
+   Number of PIO sites used: 1 + 4(JTAG) out of 207 (2%)
+   Number of block RAMs:  0 out of 26 (0%)
+   Number of GSRs:  0 out of 1 (0%)
+   EFB used :       No
+   JTAG used :      No
+   Readback used :  No
+   Oscillator used :  Yes
+   Startup used :   No
+   POR :            On
+   Bandgap :        On
+   Number of Power Controller:  0 out of 1 (0%)
+   Number of Dynamic Bank Controller (BCINRD):  0 out of 6 (0%)
+   Number of Dynamic Bank Controller (BCLVDSO):  0 out of 1 (0%)
+   Number of DCCA:  0 out of 8 (0%)
+   Number of DCMA:  0 out of 2 (0%)
+   Number of PLLs:  0 out of 2 (0%)
+   Number of DQSDLLs:  0 out of 2 (0%)
+   Number of CLKDIVC:  0 out of 4 (0%)
+   Number of ECLKSYNCA:  0 out of 4 (0%)
+   Number of ECLKBRIDGECS:  0 out of 2 (0%)
+   Notes:-
+      1. Total number of LUT4s = (Number of logic LUT4s) + 2*(Number of
+     distributed RAMs) + 2*(Number of ripple logic)
+      2. Number of logic LUT4s does not include count of distributed RAM and
+     ripple logic.
+   Number of clocks:  0
+   Number of Clock Enables:  0
+   Number of LSRs:  0
+   Number of nets driven by tri-state buffers:  0
+   Top 10 highest fanout non-clock nets:
+     Net o_c: 1 loads
+
+                                    Page 1
+
+
+
+
+Design:  freqgen                                       Date:  09/20/18  00:21:55
+
+
+
+
+
+   Number of warnings:  0
+   Number of errors:    0
+
+Design Errors/Warnings
+----------------------
+
+   No errors or warnings present.
+
+IO (PIO) Attributes
+-------------------
+
++---------------------+-----------+-----------+------------+
+| IO Name             | Direction | Levelmode | IO         |
+|                     |           |  IO_TYPE  | Register   |
++---------------------+-----------+-----------+------------+
+| o                   | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+
+Removed logic
+-------------
+
+Block i11 undriven or does not drive anything - clipped.
+Block GSR_INST undriven or does not drive anything - clipped.
+Signal GND_net undriven or does not drive anything - clipped.
+Signal VCC_net undriven or does not drive anything - clipped.
+Block i4 was optimized away.
+
+Memory Usage
+------------
+
+
+OSC Summary
+-----------
+
+OSC 1:                                     Pin/Node Value
+  OSC Instance Name:                                I1
+  OSC Type:                                         OSCH
+  STDBY Input:                                      NONE
+  OSC Output:                              PIN      o_c
+  OSC Nominal Frequency (MHz):                      2.08
+
+ASIC Components
+---------------
+
+Instance Name: I1
+         Type: OSCH
+
+Run Time and Memory Usage
+-------------------------
+
+   Total CPU Time: 0 secs
+   Total REAL Time: 0 secs
+   Peak Memory Usage: 66 MB
+
+                                    Page 2
+
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995
+     AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent
+     Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems
+     All rights reserved.
+Copyright (c) 2002-2014 Lattice Semiconductor
+     Corporation,  All rights reserved.

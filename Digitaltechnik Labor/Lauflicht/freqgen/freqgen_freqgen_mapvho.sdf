@@ -1,0 +1,31 @@
+(DELAYFILE
+  (SDFVERSION "3.0")
+  (DESIGN "freqgen")
+  (DATE "Thu Sep 20 00:22:03 2018")
+  (VENDOR "Lattice")
+  (PROGRAM "ldbanno")
+  (VERSION "Diamond (64-bit) 3.1.0.96")
+  (DIVIDER /)
+  (VOLTAGE 1.26:1.20:1.14)
+  (PROCESS "default")
+  (TEMPERATURE -40:25:85)
+  (TIMESCALE 1ps)
+  (CELL
+    (CELLTYPE "oB0")
+    (INSTANCE oI)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH PADDO oS (3220:3334:3448)(3220:3334:3448))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "freqgen")
+    (INSTANCE )
+    (DELAY
+      (ABSOLUTE
+        (INTERCONNECT I1I/OSC oI/PADDO (0:0:0)(0:0:0))
+      )
+    )
+  )
+)

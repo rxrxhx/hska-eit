@@ -1,0 +1,1061 @@
+<top name = "lauflicht"  library = "work"  arch = "behaviour"  entry = "VHDL">
+
+<clocks>
+    <clockitem name = "\Clock/ClkOsc"  type = "port" />
+    <clockitem name = "\Clock/Clk200Hz"  type = "port" />
+    <clockitem name = "D14"  type = "port" />
+</clocks>
+
+<!--
+    //=============================================================
+    //  Number of Clocks processed: 3
+    //
+    //  If a clock cannot be found in the top level pins section,
+    //  that means it is an internal clock.
+    //
+    //=============================================================
+-->
+
+<library name = "work">
+
+<unit name = "lauflicht">
+
+    <!--
+        Top Level Pins: 14
+    -->
+
+    <pins>
+        <pitem  name = "LED[3]"  direction = "out"  />
+        <pitem  name = "LED[2]"  direction = "out"  />
+        <pitem  name = "LED[1]"  direction = "out"  />
+        <pitem  name = "LED[0]"  direction = "out"  />
+        <pitem  name = "MLEFT[1]"  direction = "in"  />
+        <pitem  name = "MLEFT[0]"  direction = "in"  />
+        <pitem  name = "MRIGHT[1]"  direction = "in"  />
+        <pitem  name = "MRIGHT[0]"  direction = "in"  />
+        <pitem  name = "TLEFT"  direction = "in"  />
+        <pitem  name = "TRIGHT"  direction = "in"  />
+        <pitem  name = "RES"  direction = "in"  />
+        <pitem  name = "DIR"  direction = "in"  />
+        <pitem  name = "D14"  direction = "out"  />
+        <pitem  name = "D15"  direction = "out"  />
+    </pins>
+
+    <!--
+        Instances in netlist: 35
+    -->
+
+    <instance  name = "i1"  library = "work"  arch = "behaviour"  type = "comb">
+        <pins>
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "n1"  />
+        </nets>
+    </instance>
+
+    <instance  name = "i2"  library = "work"  arch = "behaviour"  type = "comb">
+        <pins>
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "n2"  />
+        </nets>
+    </instance>
+
+    <instance  name = "\Clock/add_4"  library = "work"  arch = "behaviour"  type = "comb">
+        <pins>
+        <pitem  name = "cin"  direction = "in"  />
+        <pitem  name = "b[5]"  direction = "in"  />
+        <pitem  name = "b[4]"  direction = "in"  />
+        <pitem  name = "b[3]"  direction = "in"  />
+        <pitem  name = "b[2]"  direction = "in"  />
+        <pitem  name = "b[1]"  direction = "in"  />
+        <pitem  name = "b[0]"  direction = "in"  />
+        <pitem  name = "a[5]"  direction = "in"  />
+        <pitem  name = "a[4]"  direction = "in"  />
+        <pitem  name = "a[3]"  direction = "in"  />
+        <pitem  name = "a[2]"  direction = "in"  />
+        <pitem  name = "a[1]"  direction = "in"  />
+        <pitem  name = "a[0]"  direction = "in"  />
+        <pitem  name = "o[5]"  direction = "out"  />
+        <pitem  name = "o[4]"  direction = "out"  />
+        <pitem  name = "o[3]"  direction = "out"  />
+        <pitem  name = "o[2]"  direction = "out"  />
+        <pitem  name = "o[1]"  direction = "out"  />
+        <pitem  name = "o[0]"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "\Clock/n1"  />
+        <nitem  name = "\Clock/n2"  />
+        <nitem  name = "\Clock/Counter.Counter3Hz[5]"  />
+        <nitem  name = "\Clock/Counter.Counter3Hz[4]"  />
+        <nitem  name = "\Clock/Counter.Counter3Hz[3]"  />
+        <nitem  name = "\Clock/Counter.Counter3Hz[2]"  />
+        <nitem  name = "\Clock/Counter.Counter3Hz[1]"  />
+        <nitem  name = "\Clock/Counter.Counter3Hz[0]"  />
+        <nitem  name = "\Clock/n12"  />
+        <nitem  name = "\Clock/n13"  />
+        <nitem  name = "\Clock/n14"  />
+        <nitem  name = "\Clock/n15"  />
+        <nitem  name = "\Clock/n16"  />
+        <nitem  name = "\Clock/n17"  />
+        </nets>
+    </instance>
+
+    <instance  name = "\Clock/LessThan_3"  library = "work"  arch = "behaviour"  type = "comb">
+        <pins>
+        <pitem  name = "cin"  direction = "in"  />
+        <pitem  name = "b[4]"  direction = "in"  />
+        <pitem  name = "b[3]"  direction = "in"  />
+        <pitem  name = "b[2]"  direction = "in"  />
+        <pitem  name = "b[0]"  direction = "in"  />
+        <pitem  name = "b[5]"  direction = "in"  />
+        <pitem  name = "b[1]"  direction = "in"  />
+        <pitem  name = "a[5]"  direction = "in"  />
+        <pitem  name = "a[4]"  direction = "in"  />
+        <pitem  name = "a[3]"  direction = "in"  />
+        <pitem  name = "a[2]"  direction = "in"  />
+        <pitem  name = "a[1]"  direction = "in"  />
+        <pitem  name = "a[0]"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "\Clock/n1"  />
+        <nitem  name = "\Clock/n2"  />
+        <nitem  name = "\Clock/Counter.Counter3Hz[5]"  />
+        <nitem  name = "\Clock/Counter.Counter3Hz[4]"  />
+        <nitem  name = "\Clock/Counter.Counter3Hz[3]"  />
+        <nitem  name = "\Clock/Counter.Counter3Hz[2]"  />
+        <nitem  name = "\Clock/Counter.Counter3Hz[1]"  />
+        <nitem  name = "\Clock/Counter.Counter3Hz[0]"  />
+        <nitem  name = "\Clock/n9"  />
+        </nets>
+    </instance>
+
+    <instance  name = "\Clock/CTInst0/scuba_vhi_inst"  library = "work"  arch = "behaviour"  type = "comb">
+        <pins>
+        <pitem  name = "Z"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "\Clock/CTInst0/scuba_vhi"  />
+        </nets>
+    </instance>
+
+    <instance  name = "\Clock/i1"  library = "work"  arch = "behaviour"  type = "comb">
+        <pins>
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "\Clock/n1"  />
+        </nets>
+    </instance>
+
+    <instance  name = "\Clock/i38"  library = "work"  arch = "behaviour"  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "\Clock/Counter.Clk3Hz"  />
+        <nitem  name = "\Clock/n9"  />
+        <nitem  name = "\Clock/n26"  />
+        </nets>
+    </instance>
+
+    <instance  name = "\Clock/i2"  library = "work"  arch = "behaviour"  type = "comb">
+        <pins>
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "\Clock/n2"  />
+        </nets>
+    </instance>
+
+    <instance  name = "i7"  library = "work"  arch = "behaviour"  type = "comb">
+        <pins>
+        <pitem  name = "i"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "DIR"  />
+        <nitem  name = "n19"  />
+        </nets>
+    </instance>
+
+    <instance  name = "add_7"  library = "work"  arch = "behaviour"  type = "comb">
+        <pins>
+        <pitem  name = "cin"  direction = "in"  />
+        <pitem  name = "a[3]"  direction = "in"  />
+        <pitem  name = "a[2]"  direction = "in"  />
+        <pitem  name = "a[1]"  direction = "in"  />
+        <pitem  name = "a[0]"  direction = "in"  />
+        <pitem  name = "b[3]"  direction = "in"  />
+        <pitem  name = "b[2]"  direction = "in"  />
+        <pitem  name = "b[1]"  direction = "in"  />
+        <pitem  name = "b[0]"  direction = "in"  />
+        <pitem  name = "o[3]"  direction = "out"  />
+        <pitem  name = "o[2]"  direction = "out"  />
+        <pitem  name = "o[1]"  direction = "out"  />
+        <pitem  name = "o[0]"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "n1"  />
+        <nitem  name = "LED[3]"  />
+        <nitem  name = "LED[2]"  />
+        <nitem  name = "LED[1]"  />
+        <nitem  name = "LED[0]"  />
+        <nitem  name = "n2"  />
+        <nitem  name = "n22"  />
+        <nitem  name = "n23"  />
+        <nitem  name = "n24"  />
+        <nitem  name = "n25"  />
+        </nets>
+    </instance>
+
+    <instance  name = "add_9"  library = "work"  arch = "behaviour"  type = "comb">
+        <pins>
+        <pitem  name = "cin"  direction = "in"  />
+        <pitem  name = "a[3]"  direction = "in"  />
+        <pitem  name = "a[2]"  direction = "in"  />
+        <pitem  name = "a[1]"  direction = "in"  />
+        <pitem  name = "a[0]"  direction = "in"  />
+        <pitem  name = "b[3]"  direction = "in"  />
+        <pitem  name = "b[2]"  direction = "in"  />
+        <pitem  name = "b[1]"  direction = "in"  />
+        <pitem  name = "b[0]"  direction = "in"  />
+        <pitem  name = "o[3]"  direction = "out"  />
+        <pitem  name = "o[2]"  direction = "out"  />
+        <pitem  name = "o[1]"  direction = "out"  />
+        <pitem  name = "o[0]"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "n2"  />
+        <nitem  name = "LED[3]"  />
+        <nitem  name = "LED[2]"  />
+        <nitem  name = "LED[1]"  />
+        <nitem  name = "LED[0]"  />
+        <nitem  name = "n1"  />
+        <nitem  name = "n29"  />
+        <nitem  name = "n30"  />
+        <nitem  name = "n31"  />
+        <nitem  name = "n32"  />
+        </nets>
+    </instance>
+
+    <instance  name = "\Clock/OscInst0"  library = "work"  arch = "behaviour"  type = "comb">
+        <pins>
+        <pitem  name = "STDBY"  direction = "in"  />
+        <pitem  name = "OSC"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "\Clock/n1"  />
+        <nitem  name = "\Clock/ClkOsc"  />
+        </nets>
+    </instance>
+
+    <instance  name = "mux_11"  library = "work"  arch = "behaviour"  type = "comb">
+        <pins>
+        <pitem  name = "d0[3]"  direction = "in"  />
+        <pitem  name = "d0[2]"  direction = "in"  />
+        <pitem  name = "d0[1]"  direction = "in"  />
+        <pitem  name = "d0[0]"  direction = "in"  />
+        <pitem  name = "d1[3]"  direction = "in"  />
+        <pitem  name = "d1[2]"  direction = "in"  />
+        <pitem  name = "d1[1]"  direction = "in"  />
+        <pitem  name = "d1[0]"  direction = "in"  />
+        <pitem  name = "cond"  direction = "in"  />
+        <pitem  name = "o[3]"  direction = "out"  />
+        <pitem  name = "o[2]"  direction = "out"  />
+        <pitem  name = "o[1]"  direction = "out"  />
+        <pitem  name = "o[0]"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "n29"  />
+        <nitem  name = "n30"  />
+        <nitem  name = "n31"  />
+        <nitem  name = "n32"  />
+        <nitem  name = "n22"  />
+        <nitem  name = "n23"  />
+        <nitem  name = "n24"  />
+        <nitem  name = "n25"  />
+        <nitem  name = "n19"  />
+        <nitem  name = "n35"  />
+        <nitem  name = "n36"  />
+        <nitem  name = "n37"  />
+        <nitem  name = "n38"  />
+        </nets>
+    </instance>
+
+    <instance  name = "\Clock/mux_6"  library = "work"  arch = "behaviour"  type = "comb">
+        <pins>
+        <pitem  name = "d0[5]"  direction = "in"  />
+        <pitem  name = "d0[4]"  direction = "in"  />
+        <pitem  name = "d0[3]"  direction = "in"  />
+        <pitem  name = "d0[2]"  direction = "in"  />
+        <pitem  name = "d0[1]"  direction = "in"  />
+        <pitem  name = "d0[0]"  direction = "in"  />
+        <pitem  name = "cond"  direction = "in"  />
+        <pitem  name = "d1[5]"  direction = "in"  />
+        <pitem  name = "d1[4]"  direction = "in"  />
+        <pitem  name = "d1[3]"  direction = "in"  />
+        <pitem  name = "d1[2]"  direction = "in"  />
+        <pitem  name = "d1[1]"  direction = "in"  />
+        <pitem  name = "d1[0]"  direction = "in"  />
+        <pitem  name = "o[5]"  direction = "out"  />
+        <pitem  name = "o[4]"  direction = "out"  />
+        <pitem  name = "o[3]"  direction = "out"  />
+        <pitem  name = "o[2]"  direction = "out"  />
+        <pitem  name = "o[1]"  direction = "out"  />
+        <pitem  name = "o[0]"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "\Clock/n1"  />
+        <nitem  name = "\Clock/n9"  />
+        <nitem  name = "\Clock/n12"  />
+        <nitem  name = "\Clock/n13"  />
+        <nitem  name = "\Clock/n14"  />
+        <nitem  name = "\Clock/n15"  />
+        <nitem  name = "\Clock/n16"  />
+        <nitem  name = "\Clock/n17"  />
+        <nitem  name = "\Clock/n20"  />
+        <nitem  name = "\Clock/n21"  />
+        <nitem  name = "\Clock/n22"  />
+        <nitem  name = "\Clock/n23"  />
+        <nitem  name = "\Clock/n24"  />
+        <nitem  name = "\Clock/n25"  />
+        </nets>
+    </instance>
+
+    <instance  name = "count4bit"  library = "work"  arch = "behaviour"  type = "reg">
+        <pins>
+        <pitem  name = "d[3]"  direction = "in"  />
+        <pitem  name = "d[2]"  direction = "in"  />
+        <pitem  name = "d[1]"  direction = "in"  />
+        <pitem  name = "d[0]"  direction = "in"  />
+        <pitem  name = "set[3]"  direction = "in"  />
+        <pitem  name = "set[2]"  direction = "in"  />
+        <pitem  name = "set[1]"  direction = "in"  />
+        <pitem  name = "set[0]"  direction = "in"  />
+        <pitem  name = "reset[3]"  direction = "in"  />
+        <pitem  name = "reset[2]"  direction = "in"  />
+        <pitem  name = "reset[1]"  direction = "in"  />
+        <pitem  name = "reset[0]"  direction = "in"  />
+        <pitem  name = "clock"  direction = "in"  />
+        <pitem  name = "q[3]"  direction = "out"  />
+        <pitem  name = "q[2]"  direction = "out"  />
+        <pitem  name = "q[1]"  direction = "out"  />
+        <pitem  name = "q[0]"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "n35"  />
+        <nitem  name = "n36"  />
+        <nitem  name = "n37"  />
+        <nitem  name = "n38"  />
+        <nitem  name = "n1"  />
+        <nitem  name = "RES"  />
+        <nitem  name = "D14"  />
+        <nitem  name = "LED[3]"  />
+        <nitem  name = "LED[2]"  />
+        <nitem  name = "LED[1]"  />
+        <nitem  name = "LED[0]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "\Clock/i39"  library = "work"  arch = "behaviour"  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "\Clock/Counter.Clk1Hz"  />
+        <nitem  name = "\Clock/n27"  />
+        <nitem  name = "\Clock/n46"  />
+        </nets>
+    </instance>
+
+    <instance  name = "\Clock/LessThan_8"  library = "work"  arch = "behaviour"  type = "comb">
+        <pins>
+        <pitem  name = "cin"  direction = "in"  />
+        <pitem  name = "b[4]"  direction = "in"  />
+        <pitem  name = "b[3]"  direction = "in"  />
+        <pitem  name = "b[1]"  direction = "in"  />
+        <pitem  name = "b[0]"  direction = "in"  />
+        <pitem  name = "b[6]"  direction = "in"  />
+        <pitem  name = "b[5]"  direction = "in"  />
+        <pitem  name = "b[2]"  direction = "in"  />
+        <pitem  name = "a[6]"  direction = "in"  />
+        <pitem  name = "a[5]"  direction = "in"  />
+        <pitem  name = "a[4]"  direction = "in"  />
+        <pitem  name = "a[3]"  direction = "in"  />
+        <pitem  name = "a[2]"  direction = "in"  />
+        <pitem  name = "a[1]"  direction = "in"  />
+        <pitem  name = "a[0]"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "\Clock/n1"  />
+        <nitem  name = "\Clock/n2"  />
+        <nitem  name = "\Clock/Counter.Counter1Hz[6]"  />
+        <nitem  name = "\Clock/Counter.Counter1Hz[5]"  />
+        <nitem  name = "\Clock/Counter.Counter1Hz[4]"  />
+        <nitem  name = "\Clock/Counter.Counter1Hz[3]"  />
+        <nitem  name = "\Clock/Counter.Counter1Hz[2]"  />
+        <nitem  name = "\Clock/Counter.Counter1Hz[1]"  />
+        <nitem  name = "\Clock/Counter.Counter1Hz[0]"  />
+        <nitem  name = "\Clock/n27"  />
+        </nets>
+    </instance>
+
+    <instance  name = "\Clock/add_9"  library = "work"  arch = "behaviour"  type = "comb">
+        <pins>
+        <pitem  name = "cin"  direction = "in"  />
+        <pitem  name = "b[6]"  direction = "in"  />
+        <pitem  name = "b[5]"  direction = "in"  />
+        <pitem  name = "b[4]"  direction = "in"  />
+        <pitem  name = "b[3]"  direction = "in"  />
+        <pitem  name = "b[2]"  direction = "in"  />
+        <pitem  name = "b[1]"  direction = "in"  />
+        <pitem  name = "b[0]"  direction = "in"  />
+        <pitem  name = "a[6]"  direction = "in"  />
+        <pitem  name = "a[5]"  direction = "in"  />
+        <pitem  name = "a[4]"  direction = "in"  />
+        <pitem  name = "a[3]"  direction = "in"  />
+        <pitem  name = "a[2]"  direction = "in"  />
+        <pitem  name = "a[1]"  direction = "in"  />
+        <pitem  name = "a[0]"  direction = "in"  />
+        <pitem  name = "o[6]"  direction = "out"  />
+        <pitem  name = "o[5]"  direction = "out"  />
+        <pitem  name = "o[4]"  direction = "out"  />
+        <pitem  name = "o[3]"  direction = "out"  />
+        <pitem  name = "o[2]"  direction = "out"  />
+        <pitem  name = "o[1]"  direction = "out"  />
+        <pitem  name = "o[0]"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "\Clock/n1"  />
+        <nitem  name = "\Clock/n2"  />
+        <nitem  name = "\Clock/Counter.Counter1Hz[6]"  />
+        <nitem  name = "\Clock/Counter.Counter1Hz[5]"  />
+        <nitem  name = "\Clock/Counter.Counter1Hz[4]"  />
+        <nitem  name = "\Clock/Counter.Counter1Hz[3]"  />
+        <nitem  name = "\Clock/Counter.Counter1Hz[2]"  />
+        <nitem  name = "\Clock/Counter.Counter1Hz[1]"  />
+        <nitem  name = "\Clock/Counter.Counter1Hz[0]"  />
+        <nitem  name = "\Clock/n30"  />
+        <nitem  name = "\Clock/n31"  />
+        <nitem  name = "\Clock/n32"  />
+        <nitem  name = "\Clock/n33"  />
+        <nitem  name = "\Clock/n34"  />
+        <nitem  name = "\Clock/n35"  />
+        <nitem  name = "\Clock/n36"  />
+        </nets>
+    </instance>
+
+    <instance  name = "\Clock/mux_11"  library = "work"  arch = "behaviour"  type = "comb">
+        <pins>
+        <pitem  name = "d0[6]"  direction = "in"  />
+        <pitem  name = "d0[5]"  direction = "in"  />
+        <pitem  name = "d0[4]"  direction = "in"  />
+        <pitem  name = "d0[3]"  direction = "in"  />
+        <pitem  name = "d0[2]"  direction = "in"  />
+        <pitem  name = "d0[1]"  direction = "in"  />
+        <pitem  name = "d0[0]"  direction = "in"  />
+        <pitem  name = "cond"  direction = "in"  />
+        <pitem  name = "d1[6]"  direction = "in"  />
+        <pitem  name = "d1[5]"  direction = "in"  />
+        <pitem  name = "d1[4]"  direction = "in"  />
+        <pitem  name = "d1[3]"  direction = "in"  />
+        <pitem  name = "d1[2]"  direction = "in"  />
+        <pitem  name = "d1[1]"  direction = "in"  />
+        <pitem  name = "d1[0]"  direction = "in"  />
+        <pitem  name = "o[6]"  direction = "out"  />
+        <pitem  name = "o[5]"  direction = "out"  />
+        <pitem  name = "o[4]"  direction = "out"  />
+        <pitem  name = "o[3]"  direction = "out"  />
+        <pitem  name = "o[2]"  direction = "out"  />
+        <pitem  name = "o[1]"  direction = "out"  />
+        <pitem  name = "o[0]"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "\Clock/n1"  />
+        <nitem  name = "\Clock/n27"  />
+        <nitem  name = "\Clock/n30"  />
+        <nitem  name = "\Clock/n31"  />
+        <nitem  name = "\Clock/n32"  />
+        <nitem  name = "\Clock/n33"  />
+        <nitem  name = "\Clock/n34"  />
+        <nitem  name = "\Clock/n35"  />
+        <nitem  name = "\Clock/n36"  />
+        <nitem  name = "\Clock/n39"  />
+        <nitem  name = "\Clock/n40"  />
+        <nitem  name = "\Clock/n41"  />
+        <nitem  name = "\Clock/n42"  />
+        <nitem  name = "\Clock/n43"  />
+        <nitem  name = "\Clock/n44"  />
+        <nitem  name = "\Clock/n45"  />
+        </nets>
+    </instance>
+
+    <instance  name = "\Clock/i40"  library = "work"  arch = "behaviour"  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "\Clock/Counter.Clk03Hz"  />
+        <nitem  name = "\Clock/n47"  />
+        <nitem  name = "\Clock/n70"  />
+        </nets>
+    </instance>
+
+    <instance  name = "\Clock/LessThan_13"  library = "work"  arch = "behaviour"  type = "comb">
+        <pins>
+        <pitem  name = "cin"  direction = "in"  />
+        <pitem  name = "b[7]"  direction = "in"  />
+        <pitem  name = "b[5]"  direction = "in"  />
+        <pitem  name = "b[4]"  direction = "in"  />
+        <pitem  name = "b[0]"  direction = "in"  />
+        <pitem  name = "b[8]"  direction = "in"  />
+        <pitem  name = "b[6]"  direction = "in"  />
+        <pitem  name = "b[3]"  direction = "in"  />
+        <pitem  name = "b[2]"  direction = "in"  />
+        <pitem  name = "b[1]"  direction = "in"  />
+        <pitem  name = "a[8]"  direction = "in"  />
+        <pitem  name = "a[7]"  direction = "in"  />
+        <pitem  name = "a[6]"  direction = "in"  />
+        <pitem  name = "a[5]"  direction = "in"  />
+        <pitem  name = "a[4]"  direction = "in"  />
+        <pitem  name = "a[3]"  direction = "in"  />
+        <pitem  name = "a[2]"  direction = "in"  />
+        <pitem  name = "a[1]"  direction = "in"  />
+        <pitem  name = "a[0]"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "\Clock/n1"  />
+        <nitem  name = "\Clock/n2"  />
+        <nitem  name = "\Clock/Counter.Counter03Hz[8]"  />
+        <nitem  name = "\Clock/Counter.Counter03Hz[7]"  />
+        <nitem  name = "\Clock/Counter.Counter03Hz[6]"  />
+        <nitem  name = "\Clock/Counter.Counter03Hz[5]"  />
+        <nitem  name = "\Clock/Counter.Counter03Hz[4]"  />
+        <nitem  name = "\Clock/Counter.Counter03Hz[3]"  />
+        <nitem  name = "\Clock/Counter.Counter03Hz[2]"  />
+        <nitem  name = "\Clock/Counter.Counter03Hz[1]"  />
+        <nitem  name = "\Clock/Counter.Counter03Hz[0]"  />
+        <nitem  name = "\Clock/n47"  />
+        </nets>
+    </instance>
+
+    <instance  name = "\Clock/add_14"  library = "work"  arch = "behaviour"  type = "comb">
+        <pins>
+        <pitem  name = "cin"  direction = "in"  />
+        <pitem  name = "b[8]"  direction = "in"  />
+        <pitem  name = "b[7]"  direction = "in"  />
+        <pitem  name = "b[6]"  direction = "in"  />
+        <pitem  name = "b[5]"  direction = "in"  />
+        <pitem  name = "b[4]"  direction = "in"  />
+        <pitem  name = "b[3]"  direction = "in"  />
+        <pitem  name = "b[2]"  direction = "in"  />
+        <pitem  name = "b[1]"  direction = "in"  />
+        <pitem  name = "b[0]"  direction = "in"  />
+        <pitem  name = "a[8]"  direction = "in"  />
+        <pitem  name = "a[7]"  direction = "in"  />
+        <pitem  name = "a[6]"  direction = "in"  />
+        <pitem  name = "a[5]"  direction = "in"  />
+        <pitem  name = "a[4]"  direction = "in"  />
+        <pitem  name = "a[3]"  direction = "in"  />
+        <pitem  name = "a[2]"  direction = "in"  />
+        <pitem  name = "a[1]"  direction = "in"  />
+        <pitem  name = "a[0]"  direction = "in"  />
+        <pitem  name = "o[8]"  direction = "out"  />
+        <pitem  name = "o[7]"  direction = "out"  />
+        <pitem  name = "o[6]"  direction = "out"  />
+        <pitem  name = "o[5]"  direction = "out"  />
+        <pitem  name = "o[4]"  direction = "out"  />
+        <pitem  name = "o[3]"  direction = "out"  />
+        <pitem  name = "o[2]"  direction = "out"  />
+        <pitem  name = "o[1]"  direction = "out"  />
+        <pitem  name = "o[0]"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "\Clock/n1"  />
+        <nitem  name = "\Clock/n2"  />
+        <nitem  name = "\Clock/Counter.Counter03Hz[8]"  />
+        <nitem  name = "\Clock/Counter.Counter03Hz[7]"  />
+        <nitem  name = "\Clock/Counter.Counter03Hz[6]"  />
+        <nitem  name = "\Clock/Counter.Counter03Hz[5]"  />
+        <nitem  name = "\Clock/Counter.Counter03Hz[4]"  />
+        <nitem  name = "\Clock/Counter.Counter03Hz[3]"  />
+        <nitem  name = "\Clock/Counter.Counter03Hz[2]"  />
+        <nitem  name = "\Clock/Counter.Counter03Hz[1]"  />
+        <nitem  name = "\Clock/Counter.Counter03Hz[0]"  />
+        <nitem  name = "\Clock/n50"  />
+        <nitem  name = "\Clock/n51"  />
+        <nitem  name = "\Clock/n52"  />
+        <nitem  name = "\Clock/n53"  />
+        <nitem  name = "\Clock/n54"  />
+        <nitem  name = "\Clock/n55"  />
+        <nitem  name = "\Clock/n56"  />
+        <nitem  name = "\Clock/n57"  />
+        <nitem  name = "\Clock/n58"  />
+        </nets>
+    </instance>
+
+    <instance  name = "\Clock/mux_16"  library = "work"  arch = "behaviour"  type = "comb">
+        <pins>
+        <pitem  name = "d0[8]"  direction = "in"  />
+        <pitem  name = "d0[7]"  direction = "in"  />
+        <pitem  name = "d0[6]"  direction = "in"  />
+        <pitem  name = "d0[5]"  direction = "in"  />
+        <pitem  name = "d0[4]"  direction = "in"  />
+        <pitem  name = "d0[3]"  direction = "in"  />
+        <pitem  name = "d0[2]"  direction = "in"  />
+        <pitem  name = "d0[1]"  direction = "in"  />
+        <pitem  name = "d0[0]"  direction = "in"  />
+        <pitem  name = "cond"  direction = "in"  />
+        <pitem  name = "d1[8]"  direction = "in"  />
+        <pitem  name = "d1[7]"  direction = "in"  />
+        <pitem  name = "d1[6]"  direction = "in"  />
+        <pitem  name = "d1[5]"  direction = "in"  />
+        <pitem  name = "d1[4]"  direction = "in"  />
+        <pitem  name = "d1[3]"  direction = "in"  />
+        <pitem  name = "d1[2]"  direction = "in"  />
+        <pitem  name = "d1[1]"  direction = "in"  />
+        <pitem  name = "d1[0]"  direction = "in"  />
+        <pitem  name = "o[8]"  direction = "out"  />
+        <pitem  name = "o[7]"  direction = "out"  />
+        <pitem  name = "o[6]"  direction = "out"  />
+        <pitem  name = "o[5]"  direction = "out"  />
+        <pitem  name = "o[4]"  direction = "out"  />
+        <pitem  name = "o[3]"  direction = "out"  />
+        <pitem  name = "o[2]"  direction = "out"  />
+        <pitem  name = "o[1]"  direction = "out"  />
+        <pitem  name = "o[0]"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "\Clock/n1"  />
+        <nitem  name = "\Clock/n47"  />
+        <nitem  name = "\Clock/n50"  />
+        <nitem  name = "\Clock/n51"  />
+        <nitem  name = "\Clock/n52"  />
+        <nitem  name = "\Clock/n53"  />
+        <nitem  name = "\Clock/n54"  />
+        <nitem  name = "\Clock/n55"  />
+        <nitem  name = "\Clock/n56"  />
+        <nitem  name = "\Clock/n57"  />
+        <nitem  name = "\Clock/n58"  />
+        <nitem  name = "\Clock/n61"  />
+        <nitem  name = "\Clock/n62"  />
+        <nitem  name = "\Clock/n63"  />
+        <nitem  name = "\Clock/n64"  />
+        <nitem  name = "\Clock/n65"  />
+        <nitem  name = "\Clock/n66"  />
+        <nitem  name = "\Clock/n67"  />
+        <nitem  name = "\Clock/n68"  />
+        <nitem  name = "\Clock/n69"  />
+        </nets>
+    </instance>
+
+    <instance  name = "\Clock/i19"  library = "work"  arch = "behaviour"  type = "comb">
+        <pins>
+        <pitem  name = "i"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "\Clock/Clk100Hz"  />
+        <nitem  name = "\Clock/n71"  />
+        </nets>
+    </instance>
+
+    <instance  name = "\Clock/Counter.Clk3Hz_32"  library = "work"  arch = "behaviour"  type = "reg">
+        <pins>
+        <pitem  name = "r"  direction = "in"  />
+        <pitem  name = "s"  direction = "in"  />
+        <pitem  name = "clk"  direction = "in"  />
+        <pitem  name = "q"  direction = "out"  />
+        <pitem  name = "d"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "\Clock/n1"  />
+        <nitem  name = "\Clock/Clk200Hz"  />
+        <nitem  name = "\Clock/Counter.Clk3Hz"  />
+        <nitem  name = "\Clock/n26"  />
+        </nets>
+    </instance>
+
+    <instance  name = "\Clock/Counter.Counter1Hz"  library = "work"  arch = "behaviour"  type = "reg">
+        <pins>
+        <pitem  name = "set[2]"  direction = "in"  />
+        <pitem  name = "set[3]"  direction = "in"  />
+        <pitem  name = "set[4]"  direction = "in"  />
+        <pitem  name = "set[5]"  direction = "in"  />
+        <pitem  name = "set[6]"  direction = "in"  />
+        <pitem  name = "set[1]"  direction = "in"  />
+        <pitem  name = "set[0]"  direction = "in"  />
+        <pitem  name = "reset[6]"  direction = "in"  />
+        <pitem  name = "reset[5]"  direction = "in"  />
+        <pitem  name = "reset[4]"  direction = "in"  />
+        <pitem  name = "reset[3]"  direction = "in"  />
+        <pitem  name = "reset[2]"  direction = "in"  />
+        <pitem  name = "reset[1]"  direction = "in"  />
+        <pitem  name = "reset[0]"  direction = "in"  />
+        <pitem  name = "clock"  direction = "in"  />
+        <pitem  name = "q[6]"  direction = "out"  />
+        <pitem  name = "q[5]"  direction = "out"  />
+        <pitem  name = "q[4]"  direction = "out"  />
+        <pitem  name = "q[3]"  direction = "out"  />
+        <pitem  name = "q[2]"  direction = "out"  />
+        <pitem  name = "q[1]"  direction = "out"  />
+        <pitem  name = "q[0]"  direction = "out"  />
+        <pitem  name = "d[6]"  direction = "in"  />
+        <pitem  name = "d[5]"  direction = "in"  />
+        <pitem  name = "d[4]"  direction = "in"  />
+        <pitem  name = "d[3]"  direction = "in"  />
+        <pitem  name = "d[2]"  direction = "in"  />
+        <pitem  name = "d[1]"  direction = "in"  />
+        <pitem  name = "d[0]"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "\Clock/n1"  />
+        <nitem  name = "\Clock/Clk200Hz"  />
+        <nitem  name = "\Clock/Counter.Counter1Hz[6]"  />
+        <nitem  name = "\Clock/Counter.Counter1Hz[5]"  />
+        <nitem  name = "\Clock/Counter.Counter1Hz[4]"  />
+        <nitem  name = "\Clock/Counter.Counter1Hz[3]"  />
+        <nitem  name = "\Clock/Counter.Counter1Hz[2]"  />
+        <nitem  name = "\Clock/Counter.Counter1Hz[1]"  />
+        <nitem  name = "\Clock/Counter.Counter1Hz[0]"  />
+        <nitem  name = "\Clock/n39"  />
+        <nitem  name = "\Clock/n40"  />
+        <nitem  name = "\Clock/n41"  />
+        <nitem  name = "\Clock/n42"  />
+        <nitem  name = "\Clock/n43"  />
+        <nitem  name = "\Clock/n44"  />
+        <nitem  name = "\Clock/n45"  />
+        </nets>
+    </instance>
+
+    <instance  name = "\Clock/Counter.Clk1Hz_34"  library = "work"  arch = "behaviour"  type = "reg">
+        <pins>
+        <pitem  name = "r"  direction = "in"  />
+        <pitem  name = "s"  direction = "in"  />
+        <pitem  name = "clk"  direction = "in"  />
+        <pitem  name = "q"  direction = "out"  />
+        <pitem  name = "d"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "\Clock/n1"  />
+        <nitem  name = "\Clock/Clk200Hz"  />
+        <nitem  name = "\Clock/Counter.Clk1Hz"  />
+        <nitem  name = "\Clock/n46"  />
+        </nets>
+    </instance>
+
+    <instance  name = "\Clock/Counter.Counter03Hz"  library = "work"  arch = "behaviour"  type = "reg">
+        <pins>
+        <pitem  name = "set[3]"  direction = "in"  />
+        <pitem  name = "set[4]"  direction = "in"  />
+        <pitem  name = "set[5]"  direction = "in"  />
+        <pitem  name = "set[6]"  direction = "in"  />
+        <pitem  name = "set[7]"  direction = "in"  />
+        <pitem  name = "set[8]"  direction = "in"  />
+        <pitem  name = "set[2]"  direction = "in"  />
+        <pitem  name = "set[1]"  direction = "in"  />
+        <pitem  name = "set[0]"  direction = "in"  />
+        <pitem  name = "reset[8]"  direction = "in"  />
+        <pitem  name = "reset[7]"  direction = "in"  />
+        <pitem  name = "reset[6]"  direction = "in"  />
+        <pitem  name = "reset[5]"  direction = "in"  />
+        <pitem  name = "reset[4]"  direction = "in"  />
+        <pitem  name = "reset[3]"  direction = "in"  />
+        <pitem  name = "reset[2]"  direction = "in"  />
+        <pitem  name = "reset[1]"  direction = "in"  />
+        <pitem  name = "reset[0]"  direction = "in"  />
+        <pitem  name = "clock"  direction = "in"  />
+        <pitem  name = "q[8]"  direction = "out"  />
+        <pitem  name = "q[7]"  direction = "out"  />
+        <pitem  name = "q[6]"  direction = "out"  />
+        <pitem  name = "q[5]"  direction = "out"  />
+        <pitem  name = "q[4]"  direction = "out"  />
+        <pitem  name = "q[3]"  direction = "out"  />
+        <pitem  name = "q[2]"  direction = "out"  />
+        <pitem  name = "q[1]"  direction = "out"  />
+        <pitem  name = "q[0]"  direction = "out"  />
+        <pitem  name = "d[8]"  direction = "in"  />
+        <pitem  name = "d[7]"  direction = "in"  />
+        <pitem  name = "d[6]"  direction = "in"  />
+        <pitem  name = "d[5]"  direction = "in"  />
+        <pitem  name = "d[4]"  direction = "in"  />
+        <pitem  name = "d[3]"  direction = "in"  />
+        <pitem  name = "d[2]"  direction = "in"  />
+        <pitem  name = "d[1]"  direction = "in"  />
+        <pitem  name = "d[0]"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "\Clock/n1"  />
+        <nitem  name = "\Clock/Clk200Hz"  />
+        <nitem  name = "\Clock/Counter.Counter03Hz[8]"  />
+        <nitem  name = "\Clock/Counter.Counter03Hz[7]"  />
+        <nitem  name = "\Clock/Counter.Counter03Hz[6]"  />
+        <nitem  name = "\Clock/Counter.Counter03Hz[5]"  />
+        <nitem  name = "\Clock/Counter.Counter03Hz[4]"  />
+        <nitem  name = "\Clock/Counter.Counter03Hz[3]"  />
+        <nitem  name = "\Clock/Counter.Counter03Hz[2]"  />
+        <nitem  name = "\Clock/Counter.Counter03Hz[1]"  />
+        <nitem  name = "\Clock/Counter.Counter03Hz[0]"  />
+        <nitem  name = "\Clock/n61"  />
+        <nitem  name = "\Clock/n62"  />
+        <nitem  name = "\Clock/n63"  />
+        <nitem  name = "\Clock/n64"  />
+        <nitem  name = "\Clock/n65"  />
+        <nitem  name = "\Clock/n66"  />
+        <nitem  name = "\Clock/n67"  />
+        <nitem  name = "\Clock/n68"  />
+        <nitem  name = "\Clock/n69"  />
+        </nets>
+    </instance>
+
+    <instance  name = "\Clock/Counter.Clk03Hz_36"  library = "work"  arch = "behaviour"  type = "reg">
+        <pins>
+        <pitem  name = "r"  direction = "in"  />
+        <pitem  name = "s"  direction = "in"  />
+        <pitem  name = "clk"  direction = "in"  />
+        <pitem  name = "q"  direction = "out"  />
+        <pitem  name = "d"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "\Clock/n1"  />
+        <nitem  name = "\Clock/Clk200Hz"  />
+        <nitem  name = "\Clock/Counter.Clk03Hz"  />
+        <nitem  name = "\Clock/n70"  />
+        </nets>
+    </instance>
+
+    <instance  name = "\Clock/SigClk100Hz_37"  library = "work"  arch = "behaviour"  type = "reg">
+        <pins>
+        <pitem  name = "r"  direction = "in"  />
+        <pitem  name = "s"  direction = "in"  />
+        <pitem  name = "q"  direction = "out"  />
+        <pitem  name = "clk"  direction = "in"  />
+        <pitem  name = "d"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "\Clock/n1"  />
+        <nitem  name = "\Clock/Clk100Hz"  />
+        <nitem  name = "\Clock/Clk200Hz"  />
+        <nitem  name = "\Clock/n71"  />
+        </nets>
+    </instance>
+
+    <instance  name = "\Clock/Mux_26"  library = "work"  arch = "behaviour"  type = "comb">
+        <pins>
+        <pitem  name = "sel[1]"  direction = "in"  />
+        <pitem  name = "sel[0]"  direction = "in"  />
+        <pitem  name = "data[0]"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        <pitem  name = "data[3]"  direction = "in"  />
+        <pitem  name = "data[2]"  direction = "in"  />
+        <pitem  name = "data[1]"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "MLEFT[1]"  />
+        <nitem  name = "MLEFT[0]"  />
+        <nitem  name = "TLEFT"  />
+        <nitem  name = "D14"  />
+        <nitem  name = "\Clock/Counter.Clk3Hz"  />
+        <nitem  name = "\Clock/Counter.Clk1Hz"  />
+        <nitem  name = "\Clock/Counter.Clk03Hz"  />
+        </nets>
+    </instance>
+
+    <instance  name = "\Clock/Mux_28"  library = "work"  arch = "behaviour"  type = "comb">
+        <pins>
+        <pitem  name = "sel[1]"  direction = "in"  />
+        <pitem  name = "sel[0]"  direction = "in"  />
+        <pitem  name = "data[0]"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        <pitem  name = "data[3]"  direction = "in"  />
+        <pitem  name = "data[2]"  direction = "in"  />
+        <pitem  name = "data[1]"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "MRIGHT[1]"  />
+        <nitem  name = "MRIGHT[0]"  />
+        <nitem  name = "TRIGHT"  />
+        <nitem  name = "D15"  />
+        <nitem  name = "\Clock/Clk100Hz"  />
+        <nitem  name = "\Clock/Counter.Clk3Hz"  />
+        <nitem  name = "\Clock/Counter.Clk1Hz"  />
+        </nets>
+    </instance>
+
+    <instance  name = "\Clock/Counter.Counter3Hz"  library = "work"  arch = "behaviour"  type = "reg">
+        <pins>
+        <pitem  name = "set[5]"  direction = "in"  />
+        <pitem  name = "set[4]"  direction = "in"  />
+        <pitem  name = "set[3]"  direction = "in"  />
+        <pitem  name = "set[2]"  direction = "in"  />
+        <pitem  name = "set[1]"  direction = "in"  />
+        <pitem  name = "set[0]"  direction = "in"  />
+        <pitem  name = "reset[5]"  direction = "in"  />
+        <pitem  name = "reset[4]"  direction = "in"  />
+        <pitem  name = "reset[3]"  direction = "in"  />
+        <pitem  name = "reset[2]"  direction = "in"  />
+        <pitem  name = "reset[1]"  direction = "in"  />
+        <pitem  name = "reset[0]"  direction = "in"  />
+        <pitem  name = "clock"  direction = "in"  />
+        <pitem  name = "q[5]"  direction = "out"  />
+        <pitem  name = "q[4]"  direction = "out"  />
+        <pitem  name = "q[3]"  direction = "out"  />
+        <pitem  name = "q[2]"  direction = "out"  />
+        <pitem  name = "q[1]"  direction = "out"  />
+        <pitem  name = "q[0]"  direction = "out"  />
+        <pitem  name = "d[5]"  direction = "in"  />
+        <pitem  name = "d[4]"  direction = "in"  />
+        <pitem  name = "d[3]"  direction = "in"  />
+        <pitem  name = "d[2]"  direction = "in"  />
+        <pitem  name = "d[1]"  direction = "in"  />
+        <pitem  name = "d[0]"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "\Clock/n1"  />
+        <nitem  name = "\Clock/Clk200Hz"  />
+        <nitem  name = "\Clock/Counter.Counter3Hz[5]"  />
+        <nitem  name = "\Clock/Counter.Counter3Hz[4]"  />
+        <nitem  name = "\Clock/Counter.Counter3Hz[3]"  />
+        <nitem  name = "\Clock/Counter.Counter3Hz[2]"  />
+        <nitem  name = "\Clock/Counter.Counter3Hz[1]"  />
+        <nitem  name = "\Clock/Counter.Counter3Hz[0]"  />
+        <nitem  name = "\Clock/n20"  />
+        <nitem  name = "\Clock/n21"  />
+        <nitem  name = "\Clock/n22"  />
+        <nitem  name = "\Clock/n23"  />
+        <nitem  name = "\Clock/n24"  />
+        <nitem  name = "\Clock/n25"  />
+        </nets>
+    </instance>
+
+    <instance  name = "\Clock/CTInst0/scuba_vlo_inst"  library = "work"  arch = "behaviour"  type = "comb">
+        <pins>
+        <pitem  name = "Z"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "\Clock/CTInst0/scuba_vlo"  />
+        </nets>
+    </instance>
+
+    <instance  name = "\Clock/CTInst0/EFBInst_0"  library = "work"  arch = "behaviour"  type = "comb">
+        <pins>
+        <pitem  name = "TCCLKI"  direction = "in"  />
+        <pitem  name = "TCRSTN"  direction = "in"  />
+        <pitem  name = "TCINT"  direction = "out"  />
+        <pitem  name = "TCOC"  direction = "out"  />
+        <pitem  name = "UFMSN"  direction = "in"  />
+        <pitem  name = "TCIC"  direction = "in"  />
+        <pitem  name = "SPISCSN"  direction = "in"  />
+        <pitem  name = "SPIMOSII"  direction = "in"  />
+        <pitem  name = "SPIMISOI"  direction = "in"  />
+        <pitem  name = "SPISCKI"  direction = "in"  />
+        <pitem  name = "I2C2SDAI"  direction = "in"  />
+        <pitem  name = "I2C2SCLI"  direction = "in"  />
+        <pitem  name = "I2C1SDAI"  direction = "in"  />
+        <pitem  name = "I2C1SCLI"  direction = "in"  />
+        <pitem  name = "PLL1ACKI"  direction = "in"  />
+        <pitem  name = "PLL1DATI0"  direction = "in"  />
+        <pitem  name = "PLL1DATI1"  direction = "in"  />
+        <pitem  name = "PLL1DATI2"  direction = "in"  />
+        <pitem  name = "PLL1DATI3"  direction = "in"  />
+        <pitem  name = "PLL1DATI4"  direction = "in"  />
+        <pitem  name = "PLL1DATI5"  direction = "in"  />
+        <pitem  name = "PLL1DATI6"  direction = "in"  />
+        <pitem  name = "PLL1DATI7"  direction = "in"  />
+        <pitem  name = "PLL0ACKI"  direction = "in"  />
+        <pitem  name = "PLL0DATI0"  direction = "in"  />
+        <pitem  name = "PLL0DATI1"  direction = "in"  />
+        <pitem  name = "PLL0DATI2"  direction = "in"  />
+        <pitem  name = "PLL0DATI3"  direction = "in"  />
+        <pitem  name = "PLL0DATI4"  direction = "in"  />
+        <pitem  name = "PLL0DATI5"  direction = "in"  />
+        <pitem  name = "PLL0DATI6"  direction = "in"  />
+        <pitem  name = "PLL0DATI7"  direction = "in"  />
+        <pitem  name = "WBDATI0"  direction = "in"  />
+        <pitem  name = "WBDATI1"  direction = "in"  />
+        <pitem  name = "WBDATI2"  direction = "in"  />
+        <pitem  name = "WBDATI3"  direction = "in"  />
+        <pitem  name = "WBDATI4"  direction = "in"  />
+        <pitem  name = "WBDATI5"  direction = "in"  />
+        <pitem  name = "WBDATI6"  direction = "in"  />
+        <pitem  name = "WBDATI7"  direction = "in"  />
+        <pitem  name = "WBADRI0"  direction = "in"  />
+        <pitem  name = "WBADRI1"  direction = "in"  />
+        <pitem  name = "WBADRI2"  direction = "in"  />
+        <pitem  name = "WBADRI3"  direction = "in"  />
+        <pitem  name = "WBADRI4"  direction = "in"  />
+        <pitem  name = "WBADRI5"  direction = "in"  />
+        <pitem  name = "WBADRI6"  direction = "in"  />
+        <pitem  name = "WBADRI7"  direction = "in"  />
+        <pitem  name = "WBWEI"  direction = "in"  />
+        <pitem  name = "WBSTBI"  direction = "in"  />
+        <pitem  name = "WBCYCI"  direction = "in"  />
+        <pitem  name = "WBRSTI"  direction = "in"  />
+        <pitem  name = "WBCLKI"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "\Clock/ClkOsc"  />
+        <nitem  name = "\Clock/n2"  />
+        <nitem  name = "\Clock/CTInst0/tc_int"  />
+        <nitem  name = "\Clock/Clk200Hz"  />
+        <nitem  name = "\Clock/CTInst0/scuba_vhi"  />
+        <nitem  name = "\Clock/CTInst0/scuba_vlo"  />
+        </nets>
+    </instance>
+
+</unit>
+
+</library>
+
+<library name = "machxo2">
+
+</library>
+
+</top>

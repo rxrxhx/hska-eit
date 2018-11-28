@@ -1,0 +1,4 @@
+MESSAGE "File: H:\digitaltechnik_labor\Projects\LAB_RW\mult4_tb.vhd" 
+MESSAGE "Compile Entity "testbench"" 
+MESSAGE "Compile Architecture "behavior" of Entity "testbench"" 
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  94.0 [ms]" 

@@ -1,0 +1,135 @@
+synthesis:  version Diamond (64-bit) 3.10.0.111.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+Thu Sep 20 00:31:41 2018
+
+
+Command Line:  synthesis -f test_impl1_lattice.synproj -gui 
+
+Synthesis options:
+The -a option is MachXO3L.
+The -s option is 6.
+The -t option is CABGA256.
+The -d option is LCMXO3L-6900C.
+Using package CABGA256.
+Using performance grade 6.
+                                                          
+
+##########################################################
+
+### Lattice Family : MachXO3L
+
+### Device  : LCMXO3L-6900C
+
+### Package : CABGA256
+
+### Speed   : 6
+
+##########################################################
+
+                                                          
+
+INFO - synthesis: User-Selected Strategy Settings
+Optimization goal = Balanced
+The -top option is not used.
+Target frequency = 200.000000 MHz.
+Maximum fanout = 1000.
+Timing path count = 3
+BRAM utilization = 100.000000 %
+DSP usage = true
+DSP utilization = 100.000000 %
+fsm_encoding_style = auto
+resolve_mixed_drivers = 0
+fix_gated_clocks = 1
+
+Mux style = Auto
+Use Carry Chain = true
+carry_chain_length = 0
+Loop Limit = 1950.
+Use IO Insertion = TRUE
+Use IO Reg = AUTO
+
+Resource Sharing = TRUE
+Propagate Constants = TRUE
+Remove Duplicate Registers = TRUE
+force_gsr = auto
+ROM style = auto
+RAM style = auto
+The -comp option is FALSE.
+The -syn option is FALSE.
+-p C:/Users/rrhar/Desktop/DT/Timer (searchpath added)
+-p C:/lscc/diamond/3.10_x64/ispfpga/xo3c00a/data (searchpath added)
+-p C:/Users/rrhar/Desktop/DT/Timer/impl1 (searchpath added)
+-p C:/Users/rrhar/Desktop/DT/Timer (searchpath added)
+Verilog design file = C:/Users/rrhar/Desktop/DT/Timer/impl1/test.v
+NGD file = test_impl1.ngd
+-sdc option: SDC file input not used.
+-lpf option: Output file option is ON.
+Hardtimer checking is enabled (default). The -dt option is not used.
+The -r option is OFF. [ Remove LOC Properties is OFF. ]
+WARNING - synthesis: Setting test as the top-level module. To specify the top-level module explicitly, use the -top option.
+Technology check ok...
+
+Analyzing Verilog file C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo3l.v. VERI-1482
+Compile design.
+Compile Design Begin
+Analyzing Verilog file c:/users/rrhar/desktop/dt/timer/impl1/test.v. VERI-1482
+Analyzing Verilog file C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo3l.v. VERI-1482
+Top module name (Verilog): test
+INFO - synthesis: c:/users/rrhar/desktop/dt/timer/impl1/test.v(3): compiling module test. VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo3l.v(1759): compiling module OSCH. VERI-1018
+WARNING - synthesis: c:/users/rrhar/desktop/dt/timer/impl1/test.v(9): input port STDBY is not connected on this instance. VDB-1013
+Loading NGL library 'C:/lscc/diamond/3.10_x64/ispfpga/xo2c00a/data/xo2alib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.10_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.10_x64/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.10_x64/ispfpga/or5g00/data/orc5glib.ngl'...
+Loading device for application map from file 'xo3c6900.nph' in environment: C:/lscc/diamond/3.10_x64/ispfpga.
+Package Status:                     Final          Version 1.16.
+Top-level module name = test.
+
+
+
+GSR will not be inferred because no asynchronous signal was found in the netlist.
+Applying 200.000000 MHz constraint to all clocks
+
+WARNING - synthesis: No user .sdc file.
+Results of NGD DRC are available in test_drc.log.
+Loading NGL library 'C:/lscc/diamond/3.10_x64/ispfpga/xo2c00a/data/xo2alib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.10_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.10_x64/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.10_x64/ispfpga/or5g00/data/orc5glib.ngl'...
+All blocks are expanded and NGD expansion is successful.
+Writing NGD file test_impl1.ngd.
+
+################### Begin Area Report (test)######################
+Number of register bits => 0 of 7485 (0 % )
+GSR => 1
+OB => 1
+OSCH => 1
+################### End Area Report ##################
+
+################### Begin BlackBox Report ######################
+TSALL => 1
+################### End BlackBox Report ##################
+
+################### Begin Clock Report ######################
+Clock Nets
+Number of Clocks: 0
+Clock Enable Nets
+Number of Clock Enables: 0
+Top 0 highest fanout Clock Enables:
+Highest fanout non-clock nets
+Top 10 highest fanout non-clock nets:
+  Net : O_c, loads : 1
+  Net : O, loads : 0
+################### End Clock Report ##################
+
+Peak Memory Usage: 55.141  MB
+
+--------------------------------------------------------------
+Elapsed CPU time for LSE flow : 0.625  secs
+--------------------------------------------------------------

@@ -1,0 +1,13 @@
+ClkModeLeft[1]  i
+ClkModeLeft[0]  i
+ClkModeRight[1]  i
+ClkModeRight[0]  i
+PulseLeft  i
+PulseRight  i
+ClkLeft  o
+ClkRight  o
+SignalLeft  o
+SignalRight  o
+Clk100Hz  o
+Clk200Hz  o
+ClkOsc  o

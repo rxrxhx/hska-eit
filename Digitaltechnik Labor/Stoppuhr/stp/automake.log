@@ -1,0 +1,2 @@
+
+sch2vlog -FPGA -i C:/Users/rrhar/Desktop/DIGITALTECHNIK/DT/Stoppuhr/Stoppuhr.sch -o C:/Users/rrhar/Desktop/DIGITALTECHNIK/DT/Stoppuhr/stp/Stoppuhr.v -gui -msgset C:/Users/rrhar/Desktop/DIGITALTECHNIK/DT/Stoppuhr/promote.xml

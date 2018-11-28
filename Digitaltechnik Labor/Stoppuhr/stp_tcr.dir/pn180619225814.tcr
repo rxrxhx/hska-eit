@@ -1,0 +1,7 @@
+#Start recording tcl command: 6/19/2018 22:41:34
+#Project Location: C:/Users/rrhar/Desktop/DT/Stoppuhr; Project name: stp
+prj_project open "C:/Users/rrhar/Desktop/DT/Stoppuhr/stp.ldf"
+pgr_project open "C:/Users/rrhar/Desktop/DT/Stoppuhr/stp/stp.xcf"
+pgr_program run
+prj_project close
+#Stop recording: 6/19/2018 22:58:14

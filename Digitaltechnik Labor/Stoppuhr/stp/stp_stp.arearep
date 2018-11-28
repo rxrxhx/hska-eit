@@ -1,0 +1,106 @@
+----------------------------------------------------------------------
+Report for cell Stoppuhr.<NoName>
+Register bits:  68 of 192 (35.417%)
+I/O cells:      19
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        17          100.0
+                                EFB         1          100.0
+                            FD1P3AX         3          100.0
+                            FD1P3IX        16          100.0
+                            FD1S3AX         3          100.0
+                            FD1S3DX         1          100.0
+                            FD1S3IX        45          100.0
+                                GSR         1          100.0
+                                 IB         6          100.0
+                                INV         2          100.0
+                               LUT4        98          100.0
+                                 OB        13          100.0
+                                OR2         1          100.0
+                               OSCH         1          100.0
+                              PFUMX         5          100.0
+SUB MODULES
+                                 CT         1
+                             ClkGen         1
+                              Dek1Z         1
+                           Dek1Z_U0         1
+                           Dek1Z_U1         1
+                           Dek1Z_U2         1
+                               SRFF         1
+                               mux4         1
+                              TOTAL       221
+----------------------------------------------------------------------
+Report for cell SRFF.v1
+Instance Path : I8
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1S3DX         1          100.0
+                               LUT4         1            1.0
+                              TOTAL         2
+----------------------------------------------------------------------
+Report for cell Dek1Z_U1.v1
+Instance Path : I2
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3AX         1           33.3
+                            FD1P3IX         4           25.0
+                               LUT4        14           14.3
+                              PFUMX         3           60.0
+                              TOTAL        22
+----------------------------------------------------------------------
+Report for cell mux4.v1
+Instance Path : I7
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        17          100.0
+                            FD1S3IX        32           71.1
+                               LUT4        38           38.8
+                              PFUMX         1           20.0
+                              TOTAL        88
+----------------------------------------------------------------------
+Report for cell Dek1Z_U0.v1
+Instance Path : I3
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3AX         1           33.3
+                            FD1P3IX         4           25.0
+                               LUT4         6            6.1
+                              TOTAL        11
+----------------------------------------------------------------------
+Report for cell Dek1Z.v1
+Instance Path : I4
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3AX         1           33.3
+                            FD1P3IX         4           25.0
+                               LUT4         6            6.1
+                              TOTAL        11
+----------------------------------------------------------------------
+Report for cell Dek1Z_U2.v1
+Instance Path : I1
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3IX         4           25.0
+                               LUT4         5            5.1
+                              TOTAL         9
+----------------------------------------------------------------------
+Report for cell ClkGen.v1
+Instance Path : I6
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                                EFB         1          100.0
+                            FD1S3AX         3          100.0
+                            FD1S3IX        13           28.9
+                               LUT4        27           27.6
+                               OSCH         1          100.0
+                              PFUMX         1           20.0
+SUB MODULES
+                                 CT         1
+                              TOTAL        47
+----------------------------------------------------------------------
+Report for cell CT.v1
+Instance Path : I6.CTInst0
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                                EFB         1          100.0
+                              TOTAL         1

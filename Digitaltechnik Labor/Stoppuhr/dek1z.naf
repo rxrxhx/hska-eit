@@ -1,0 +1,9 @@
+Clk  i
+Cin  i
+EN  i
+RES  i
+Q[3]  o
+Q[2]  o
+Q[1]  o
+Q[0]  o
+Cout  o

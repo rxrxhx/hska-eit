@@ -1,0 +1,17 @@
+[COMPILESTATUS|.\..\TEST.vhd]
+FileTimeLow=30664883
+Status=Compiled
+
+[COMPILESTATUS|.\..\mult_tb.vhd]
+FileTimeLow=30664883
+Status=Compiled
+
+[General]
+CurrentVersion=103
+
+[CACHEDOC|Aldec.Project.Generic.7|.\sim.adf|]
+Path=/testbench
+
+[Gui config]
+RunFor=100 ns
+

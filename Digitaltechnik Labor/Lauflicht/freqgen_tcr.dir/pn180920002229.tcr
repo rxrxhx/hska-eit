@@ -1,0 +1,9 @@
+#Start recording tcl command: 9/20/2018 00:17:41
+#Project Location: C:/Users/rrhar/Desktop/DT/Timer; Project name: freqgen
+prj_project new -name "freqgen" -impl "freqgen" -dev LCMXO3L-6900C-6BG256C -synthesis "lse"
+prj_project save
+prj_src add "C:/Users/rrhar/Desktop/DT/Timer/freqgen.sch"
+prj_run Synthesis -impl freqgen
+prj_run Synthesis -impl freqgen
+prj_run Map -impl freqgen
+#Stop recording: 9/20/2018 00:22:29

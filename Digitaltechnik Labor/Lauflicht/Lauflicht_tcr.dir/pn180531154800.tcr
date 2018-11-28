@@ -1,0 +1,10 @@
+#Start recording tcl command: 5/31/2018 15:07:25
+#Project Location: L:/DT; Project name: Lauflicht
+prj_project open "L:/DT/Lauflicht.ldf"
+prj_src add "L:/DT/clkgen.vhd"
+prj_run Synthesis -impl Lauflicht
+prj_run Map -impl Lauflicht
+prj_run Synthesis -impl Lauflicht
+prj_run Synthesis -impl Lauflicht -forceOne
+prj_run Map -impl Lauflicht
+#Stop recording: 5/31/2018 15:48:00

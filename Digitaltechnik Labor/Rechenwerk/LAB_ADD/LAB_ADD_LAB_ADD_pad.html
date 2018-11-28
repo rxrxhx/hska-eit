@@ -1,0 +1,202 @@
+<HTML>
+<HEAD><TITLE>PAD Specification File</TITLE>
+<STYLE TYPE="text/css">
+<!--
+ body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
+-->
+</STYLE>
+</HEAD>
+<PRE><A name="Pad"></A>PAD Specification File
+***************************
+
+PART TYPE:        LCMXO2-256HC
+Performance Grade:      4
+PACKAGE:          TQFP100
+Package Status:                     Final          Version 1.37
+
+Thu May 10 15:15:40 2018
+
+Pinout by Port Name:
++-----------+----------+--------------+------+-----------+-----------+--------------------------------------+
+| Port Name | Pin/Bank | Buffer Type  | Site | PG Enable | BC Enable | Properties                           |
++-----------+----------+--------------+------+-----------+-----------+--------------------------------------+
+| A[0]      | 3/3      | LVCMOS33_IN  | PL2C |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL  |
+| A[1]      | 2/3      | LVCMOS33_IN  | PL2B |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL  |
+| A[2]      | 1/3      | LVCMOS33_IN  | PL2A |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL  |
+| B[0]      | 8/3      | LVCMOS33_IN  | PL3B |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL  |
+| B[1]      | 7/3      | LVCMOS33_IN  | PL3A |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL  |
+| B[2]      | 4/3      | LVCMOS33_IN  | PL2D |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL  |
+| Z[0]      | 24/3     | LVCMOS33_OUT | PL6A |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
+| Z[1]      | 21/3     | LVCMOS33_OUT | PL5D |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
+| Z[2]      | 17/3     | LVCMOS33_OUT | PL5B |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
+| Z[3]      | 16/3     | LVCMOS33_OUT | PL5A |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
++-----------+----------+--------------+------+-----------+-----------+--------------------------------------+
+
+Vccio by Bank:
++------+-------+
+| Bank | Vccio |
++------+-------+
+| 3    | 3.3V  |
++------+-------+
+
+
+<A name="pad_vref"></A><B><U><big>Vref by Bank:</big></U></B>
++------+-----+-----------------+---------+
+| Vref | Pin | Bank # / Vref # | Load(s) |
++------+-----+-----------------+---------+
++------+-----+-----------------+---------+
+
+<A name="pad_pin"></A><B><U><big>Pinout by Pin Number:</big></U></B>
++----------+-----------------------+------------+--------------+--------------+---------------+-----------+-----------+
+| Pin/Bank | Pin Info              | Preference | Buffer Type  | Site         | Dual Function | PG Enable | BC Enable |
++----------+-----------------------+------------+--------------+--------------+---------------+-----------+-----------+
+| 1/3      | A[2]                  | LOCATED    | LVCMOS33_IN  | PL2A         |               |           |           |
+| 2/3      | A[1]                  | LOCATED    | LVCMOS33_IN  | PL2B         |               |           |           |
+| 3/3      | A[0]                  | LOCATED    | LVCMOS33_IN  | PL2C         | PCLKT3_2      |           |           |
+| 4/3      | B[2]                  | LOCATED    | LVCMOS33_IN  | PL2D         | PCLKC3_2      |           |           |
+| 7/3      | B[1]                  | LOCATED    | LVCMOS33_IN  | PL3A         |               |           |           |
+| 8/3      | B[0]                  | LOCATED    | LVCMOS33_IN  | PL3B         |               |           |           |
+| 12/3     |     unused, PULL:DOWN |            |              | PL3C         | PCLKT3_1      |           |           |
+| 13/3     |     unused, PULL:DOWN |            |              | PL3D         | PCLKC3_1      |           |           |
+| 16/3     | Z[3]                  | LOCATED    | LVCMOS33_OUT | PL5A         |               |           |           |
+| 17/3     | Z[2]                  | LOCATED    | LVCMOS33_OUT | PL5B         |               |           |           |
+| 20/3     |     unused, PULL:DOWN |            |              | PL5C         | PCLKT3_0      |           |           |
+| 21/3     | Z[1]                  | LOCATED    | LVCMOS33_OUT | PL5D         | PCLKC3_0      |           |           |
+| 24/3     | Z[0]                  | LOCATED    | LVCMOS33_OUT | PL6A         |               |           |           |
+| 25/3     |     unused, PULL:DOWN |            |              | PL6B         |               |           |           |
+| 27/2     |     unused, PULL:DOWN |            |              | PB2A         | CSSPIN        |           |           |
+| 28/2     |     unused, PULL:DOWN |            |              | PB2B         |               |           |           |
+| 31/2     |     unused, PULL:DOWN |            |              | PB2C         | MCLK/CCLK     |           |           |
+| 32/2     |     unused, PULL:DOWN |            |              | PB2D         | SO/SPISO      |           |           |
+| 34/2     |     unused, PULL:DOWN |            |              | PB4A         | PCLKT2_0      |           |           |
+| 35/2     |     unused, PULL:DOWN |            |              | PB4B         | PCLKC2_0      |           |           |
+| 38/2     |     unused, PULL:DOWN |            |              | PB4C         | PCLKT2_1      |           |           |
+| 39/2     |     unused, PULL:DOWN |            |              | PB4D         | PCLKC2_1      |           |           |
+| 40/2     |     unused, PULL:DOWN |            |              | PB7A         |               |           |           |
+| 41/2     |     unused, PULL:DOWN |            |              | PB7B         |               |           |           |
+| 42/2     |     unused, PULL:DOWN |            |              | PB7C         |               |           |           |
+| 43/2     |     unused, PULL:DOWN |            |              | PB7D         |               |           |           |
+| 48/2     |     unused, PULL:DOWN |            |              | PB9A         | SN            |           |           |
+| 49/2     |     unused, PULL:DOWN |            |              | PB9B         | SI/SISPI      |           |           |
+| 51/1     |     unused, PULL:DOWN |            |              | PR6D         |               |           |           |
+| 52/1     |     unused, PULL:DOWN |            |              | PR6C         |               |           |           |
+| 53/1     |     unused, PULL:DOWN |            |              | PR6B         |               |           |           |
+| 54/1     |     unused, PULL:DOWN |            |              | PR6A         |               |           |           |
+| 57/1     |     unused, PULL:DOWN |            |              | PR5D         |               |           |           |
+| 58/1     |     unused, PULL:DOWN |            |              | PR5C         |               |           |           |
+| 62/1     |     unused, PULL:DOWN |            |              | PR5B         | PCLKC1_0      |           |           |
+| 63/1     |     unused, PULL:DOWN |            |              | PR5A         | PCLKT1_0      |           |           |
+| 66/1     |     unused, PULL:DOWN |            |              | PR3D         |               |           |           |
+| 67/1     |     unused, PULL:DOWN |            |              | PR3C         |               |           |           |
+| 70/1     |     unused, PULL:DOWN |            |              | PR3B         |               |           |           |
+| 71/1     |     unused, PULL:DOWN |            |              | PR3A         |               |           |           |
+| 74/1     |     unused, PULL:DOWN |            |              | PR2B         |               |           |           |
+| 75/1     |     unused, PULL:DOWN |            |              | PR2A         |               |           |           |
+| 76/0     |     unused, PULL:DOWN |            |              | PT9D         | DONE          |           |           |
+| 77/0     |     unused, PULL:DOWN |            |              | PT9C         | INITN         |           |           |
+| 81/0     |     unused, PULL:DOWN |            |              | PT9B         | PROGRAMN      |           |           |
+| 82/0     |     unused, PULL:DOWN |            |              | PT9A         | JTAGENB       |           |           |
+| 85/0     |     unused, PULL:DOWN |            |              | PT8D         | SDA/PCLKC0_0  |           |           |
+| 86/0     |     unused, PULL:DOWN |            |              | PT8C         | SCL/PCLKT0_0  |           |           |
+| 87/0     |     unused, PULL:DOWN |            |              | PT8B         | PCLKC0_1      |           |           |
+| 88/0     |     unused, PULL:DOWN |            |              | PT8A         | PCLKT0_1      |           |           |
+| 90/0     | Reserved: sysCONFIG   |            |              | TMS          | TMS           |           |           |
+| 91/0     | Reserved: sysCONFIG   |            |              | TCK/TEST_CLK | TCK           |           |           |
+| 94/0     | Reserved: sysCONFIG   |            |              | TDI          | TDI           |           |           |
+| 95/0     | Reserved: sysCONFIG   |            |              | TDO          | TDO           |           |           |
+| 98/0     |     unused, PULL:DOWN |            |              | PT6B         |               |           |           |
+| 99/0     |     unused, PULL:DOWN |            |              | PT6A         |               |           |           |
++----------+-----------------------+------------+--------------+--------------+---------------+-----------+-----------+
+
+sysCONFIG Pins:
++----------+--------------------+--------------------+----------+-------------+-------------------+
+| Pad Name | sysCONFIG Pin Name | sysCONFIG Settings | Pin/Bank | Buffer Type | Config Pull Mode  |
++----------+--------------------+--------------------+----------+-------------+-------------------+
+| PT7B     | TMS                | JTAG_PORT=ENABLE   | 90/0     |             | PULLUP            |
+| PT7A     | TCK/TEST_CLK       | JTAG_PORT=ENABLE   | 91/0     |             | NO pull up/down   |
+| PT6D     | TDI/MD7            | JTAG_PORT=ENABLE   | 94/0     |             | PULLUP            |
+| PT6C     | TDO                | JTAG_PORT=ENABLE   | 95/0     |             | PULLUP            |
++----------+--------------------+--------------------+----------+-------------+-------------------+
+
+
+Locate Preferences for each Pin: 
+
+LOCATE  COMP  "A[0]"  SITE  "3";
+LOCATE  COMP  "A[1]"  SITE  "2";
+LOCATE  COMP  "A[2]"  SITE  "1";
+LOCATE  COMP  "B[0]"  SITE  "8";
+LOCATE  COMP  "B[1]"  SITE  "7";
+LOCATE  COMP  "B[2]"  SITE  "4";
+LOCATE  COMP  "Z[0]"  SITE  "24";
+LOCATE  COMP  "Z[1]"  SITE  "21";
+LOCATE  COMP  "Z[2]"  SITE  "17";
+LOCATE  COMP  "Z[3]"  SITE  "16";
+
+
+
+
+
+PAR: Place And Route Diamond (64-bit) 3.1.0.96.
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2014 Lattice Semiconductor Corporation,  All rights reserved.
+Thu May 10 15:15:40 2018
+
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></FONT>
+</BODY>
+</HTML>

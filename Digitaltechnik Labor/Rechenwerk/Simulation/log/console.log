@@ -1,0 +1,63 @@
+designverincludedir -clear
+designverlibrarysim -PL -clear
+designverlibrarysim -L -clear
+designverlibrarysim -PL pmi_work
+designverlibrarysim ovi_machxo2
+designverdefinemacro -clear
+addfile H:/digitaltechnik_labor/Projects/LAB_ADD/LAB_ADD.vhd
+# Adding file H:\digitaltechnik_labor\Projects\LAB_ADD\LAB_ADD.vhd ... Done
+addfile H:/digitaltechnik_labor/Projects/LAB_ADD/add4_tb.vhd
+# Adding file H:\digitaltechnik_labor\Projects\LAB_ADD\add4_tb.vhd ... Done
+vlib H:/digitaltechnik_labor/Projects/LAB_ADD/Simulation/work
+# Warning: Library work already exists
+adel -all
+# Library contents cleared.
+vcom -dbg -work work H:/digitaltechnik_labor/Projects/LAB_ADD/LAB_ADD.vhd
+# Compile...
+# File: H:\digitaltechnik_labor\Projects\LAB_ADD\LAB_ADD.vhd
+# Compile Entity "add4"
+# Compile Architecture "task" of Entity "add4"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.5 [s]
+vcom -dbg -work work H:/digitaltechnik_labor/Projects/LAB_ADD/add4_tb.vhd
+# Compile...
+# File: H:\digitaltechnik_labor\Projects\LAB_ADD\add4_tb.vhd
+# Compile Entity "testbench"
+# Compile Architecture "behavior" of Entity "testbench"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+entity testbench
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+vsim +access +r testbench -PL pmi_work -L ovi_machxo2
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# vsim: Stack memory: 32MB
+# vsim: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Lattice Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5827 kB (elbread=1023 elab2=4653 kernel=149 sdf=0)
+# KERNEL: ASDB file was created in location H:\digitaltechnik_labor\Projects\LAB_ADD\Simulation\src\wave.asdb
+#  13:55, Donnerstag, 10. Mai 2018
+#  Simulation has been initialized
+#  Selected Top-Level: testbench (behavior)
+add wave *
+# 3 signal(s) traced.
+run 1000ns
+# Waveform file 'untitled.awc' connected to 'H:/digitaltechnik_labor/Projects/LAB_ADD/Simulation/src/wave.asdb'.
+# RUNTIME: Fatal Error: RUNTIME_0046 LAB_ADD.vhd (16): Incompatible ranges; left: (3 downto 0), right: (2 downto 0).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /testbench/uut,  Process: adder.
+# KERNEL: stopped at delta: 0 at time 0 ps.
+# Error: Fatal error occurred during simulation.
+#  Simulation has been stopped

@@ -1,0 +1,7 @@
+<BaliSimProject version="1.3" path="." stage="0" language="-1" name="fff" simType="Active-HDL">
+    <Source worklib="work" path="impl1/test.v" type="VERILOG" include="none"/>
+    <SimLib value="pmi_work ovi_machxo3l"/>
+    <GlbInc value=""/>
+    <Macro value=""/>
+    <TopModule instance="" language="VERILOG" name="test"/>
+</BaliSimProject>

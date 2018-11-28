@@ -1,0 +1,1 @@
+-w -s "H:\digitaltechnik_labor\Projects\LAB_RW\sim\library.cfg"  -j "H:\digitaltechnik_labor\Projects\LAB_RW\sim\projlib.cfg"  -d "H:\digitaltechnik_labor\Projects\LAB_RW\sim\compile"   -work work  -dbg -e 100 "H:\digitaltechnik_labor\Projects\LAB_RW\mult_tb.vhd"

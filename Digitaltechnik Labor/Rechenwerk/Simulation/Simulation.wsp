@@ -1,0 +1,14 @@
+[COMPILESTATUS|.\..\LAB_ADD.vhd]
+FileTimeLow=30664789
+Status=Compiled
+
+[COMPILESTATUS|.\..\add4_tb.vhd]
+FileTimeLow=30664789
+Status=Compiled
+
+[General]
+CurrentVersion=103
+
+[CACHEDOC|Aldec.Project.Generic.7|.\Simulation.adf|]
+Path=/testbench
+

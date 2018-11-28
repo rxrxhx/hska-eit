@@ -1,0 +1,116 @@
+<HTML>
+<HEAD><TITLE>Lattice TCL Log</TITLE>
+<STYLE TYPE="text/css">
+<!--
+ body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
+-->
+</STYLE>
+</HEAD>
+<PRE><A name="pn180613004728"></A><B><U><big>pn180613004728</big></U></B>
+#Start recording tcl command: 6/13/2018 00:22:12
+#Project Location: D:/DT/Stoppuhr; Project name: stp
+prj_project new -name "stp" -impl "stp" -dev LCMXO2-256HC-4TG100C -synthesis "lse"
+prj_project save
+prj_src add "D:/DT/Stoppuhr/Dec1counter.vhd"
+prj_src add "D:/DT/Stoppuhr/DEC7S.vhd" "D:/DT/Stoppuhr/CT.vhd" "D:/DT/Stoppuhr/clkgen.vhd"
+prj_run Synthesis -impl stp
+source "D:/DT/Stoppuhr/hdle_generate_Symbol.tcl"
+source "D:/DT/Stoppuhr/hdle_generate_Symbol.tcl"
+source "D:/DT/Stoppuhr/hdle_generate_Symbol.tcl"
+prj_src add "D:/DT/Stoppuhr/Stopw.sch"
+prj_src add "D:/DT/Stoppuhr/sg7mux.vhd"
+prj_run Synthesis -impl stp
+prj_run Synthesis -impl stp
+prj_run Synthesis -impl stp
+#Stop recording: 6/13/2018 00:47:28
+
+
+
+<A name="pn180616230615"></A><B><U><big>pn180616230615</big></U></B>
+#Start recording tcl command: 6/16/2018 22:48:20
+#Project Location: C:/Users/rrhar/Desktop/DT/Stoppuhr; Project name: stp
+prj_project open "C:/Users/rrhar/Desktop/DT/Stoppuhr/stp.ldf"
+pgr_project open "C:/Users/rrhar/Desktop/DT/Stoppuhr/stp/stp.xcf"
+pgr_program run
+prj_project close
+#Stop recording: 6/16/2018 23:06:15
+
+
+
+<A name="pn180619225814"></A><B><U><big>pn180619225814</big></U></B>
+#Start recording tcl command: 6/19/2018 22:41:34
+#Project Location: C:/Users/rrhar/Desktop/DT/Stoppuhr; Project name: stp
+prj_project open "C:/Users/rrhar/Desktop/DT/Stoppuhr/stp.ldf"
+pgr_project open "C:/Users/rrhar/Desktop/DT/Stoppuhr/stp/stp.xcf"
+pgr_program run
+prj_project close
+#Stop recording: 6/19/2018 22:58:14
+
+
+
+<A name="pn181114134815"></A><B><U><big>pn181114134815</big></U></B>
+#Start recording tcl command: 11/14/2018 13:16:05
+#Project Location: C:/Users/rrhar/Desktop/DIGITALTECHNIK/DT/Stoppuhr; Project name: stp
+prj_project open "C:/Users/rrhar/Desktop/DIGITALTECHNIK/DT/Stoppuhr/stp.ldf"
+pgr_project open "C:/Users/rrhar/Desktop/DIGITALTECHNIK/DT/Stoppuhr/stp/stp.xcf"
+prj_run Export -impl stp -forceAll
+pgr_program run
+pgr_project save "C:/Users/rrhar/Desktop/DIGITALTECHNIK/DT/Stoppuhr/stp/stp.xcf"
+prj_project close
+#Stop recording: 11/14/2018 13:48:15
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></FONT>
+</BODY>
+</HTML>

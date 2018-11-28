@@ -1,0 +1,26 @@
+----------------------------------------------------------------------
+Report for cell ClkGen.behavior
+Register bits:  26 of 192 (13.542%)
+I/O cells:      13
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D         5          100.0
+                                EFB         1          100.0
+                            FD1S3AX         4          100.0
+                            FD1S3IX        22          100.0
+                                GSR         1          100.0
+                                 IB         6          100.0
+                               LUT4        32          100.0
+                                 OB         7          100.0
+                               OSCH         1          100.0
+                              PFUMX         2          100.0
+SUB MODULES
+                                 CT         1
+                              TOTAL        82
+----------------------------------------------------------------------
+Report for cell CT.v1
+Instance Path : CTInst0
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                                EFB         1          100.0
+                              TOTAL         1

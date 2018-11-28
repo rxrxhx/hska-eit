@@ -1,0 +1,30 @@
+---------------------------------------------------
+Report for cell lauflicht
+   Instance path: lauflicht
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      30.00        100.0
+                                  LUT4	      50.00        100.0
+                                 IOBUF	         18        100.0
+                                PFUREG	         34        100.0
+                                RIPPLE	          5        100.0
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                                ClkGen	          1        71.7
+---------------------------------------------------
+Report for cell ClkGen
+   Instance path: lauflicht/Clock
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      21.50        71.7
+                                  LUT4	      33.00        66.0
+                                PFUREG	         26        76.5
+                                RIPPLE	          5        100.0
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                                    CT	          1         0.0
+---------------------------------------------------
+Report for cell CT
+   Instance path: lauflicht/Clock/CTInst0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)

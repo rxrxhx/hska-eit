@@ -1,0 +1,73 @@
+Loading design for application iotiming from file bitcount_bitcount.ncd.
+Design name: lauflicht
+NCD version: 3.2
+Vendor:      LATTICE
+Device:      LCMXO2-256HC
+Package:     TQFP100
+Performance: 5
+Package Status:                     Final          Version 1.37
+Performance Hardware Data Status:   Final)         Version 23.4
+Loading design for application iotiming from file bitcount_bitcount.ncd.
+Design name: lauflicht
+NCD version: 3.2
+Vendor:      LATTICE
+Device:      LCMXO2-256HC
+Package:     TQFP100
+Performance: 6
+Package Status:                     Final          Version 1.37
+Performance Hardware Data Status:   Final)         Version 23.4
+Loading design for application iotiming from file bitcount_bitcount.ncd.
+Design name: lauflicht
+NCD version: 3.2
+Vendor:      LATTICE
+Device:      LCMXO2-256HC
+Package:     TQFP100
+Performance: M
+Package Status:                     Final          Version 1.37
+Performance Hardware Data Status:   Final)         Version 23.4
+// Design: lauflicht
+// Package: TQFP100
+// ncd File: bitcount_bitcount.ncd
+// Version: Diamond (64-bit) 3.1.0.96
+// Written on Fri Jun 01 15:33:43 2018
+// M: Minimum Performance Grade
+// iotiming bitcount_bitcount.ncd bitcount_bitcount.prf -gui
+
+I/O Timing Report (All units are in ns)
+
+Worst Case Results across Performance Grades (M, 6, 5, 4):
+
+// Input Setup and Hold Times
+
+Port  Clock    Edge  Setup Performance_Grade  Hold Performance_Grade
+----------------------------------------------------------------------
+DIR   MLEFT[0] R     1.826      4       0.547     4
+DIR   TLEFT    R     1.371      4       1.198     4
+DIR   MLEFT[1] R     1.664      4       0.549     4
+
+
+// Clock to Output Delay
+
+Port   Clock    Edge  Max_Delay Performance_Grade  Min_Delay Performance_Grade
+------------------------------------------------------------------------
+LED[0] MLEFT[0] R     8.472         4        2.341          M
+LED[0] TLEFT    R     9.123         4        2.490          M
+LED[0] MLEFT[1] R     8.474         4        2.408          M
+LED[1] MLEFT[0] R     8.137         4        2.259          M
+LED[1] TLEFT    R     8.788         4        2.408          M
+LED[1] MLEFT[1] R     8.139         4        2.326          M
+LED[2] MLEFT[0] R     8.665         4        2.393          M
+LED[2] TLEFT    R     9.316         4        2.542          M
+LED[2] MLEFT[1] R     8.667         4        2.460          M
+LED[3] MLEFT[0] R     8.460         4        2.339          M
+LED[3] TLEFT    R     9.111         4        2.488          M
+LED[3] MLEFT[1] R     8.462         4        2.406          M
+
+
+// Internal_Clock to Output
+
+Port  Internal_Clock
+--------------------------------------------------------
+D14   Clock/Clk200Hz
+D15   Clock/Clk200Hz
+WARNING: you must also run trce with hold speed: 4

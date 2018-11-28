@@ -1,0 +1,5 @@
+#Start recording tcl command: 6/8/2018 16:09:16
+#Project Location: F:/Ampel; Project name: Ampelsteuerung
+prj_project open "F:/Ampel/Ampelsteuerung.ldf"
+pgr_project close
+#Stop recording: 6/8/2018 16:12:20

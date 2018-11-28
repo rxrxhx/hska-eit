@@ -1,0 +1,5 @@
+11
+~E 1 "./../../LAB_ADD.vhd" 5 add4
+~A 1 "./../../LAB_ADD.vhd" 12 task
+~E 1 "./../../add4_tb.vhd" 25 testbench
+~A 1 "./../../add4_tb.vhd" 28 behavior

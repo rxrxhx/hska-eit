@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliProject version="3.0" title="Cout7Dez" device="LCMXO2-256HC-4TG100C" default_implementation="Cout7Dez">
+    <Options/>
+    <Implementation title="Cout7Dez" dir="Cout7Dez" description="Cout7Dez" synthesis="lse" default_strategy="Strategy1">
+        <Options/>
+        <Source name="Cout7Dez.lpf" type="Logic Preference" type_short="LPF">
+            <Options/>
+        </Source>
+    </Implementation>
+    <Strategy name="Strategy1" file="Cout7Dez1.sty"/>
+</BaliProject>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BuildStatus>
+    <Strategy name="Strategy1">
+        <Milestone name="Convert_HDL" build_result="2" build_time="1529063062">
+            <Task name="HDL_Conv" build_result="2" update_result="0" update_time="1529063062"/>
+        </Milestone>
+        <Milestone name="Export" build_result="0" build_time="0">
+            <Task name="IBIS" build_result="0" update_result="2" update_time="1528896042"/>
+            <Task name="TimingSimFileVlg" build_result="0" update_result="2" update_time="1528896046"/>
+            <Task name="TimingSimFileVHD" build_result="0" update_result="2" update_time="1528896050"/>
+            <Task name="Jedecgen" build_result="2" update_result="0" update_time="1529063106"/>
+            <Task name="Bitgen" build_result="0" update_result="2" update_time="1528896093"/>
+        </Milestone>
+        <Milestone name="Generate_HDL" build_result="2" build_time="1529063062">
+            <Task name="HDL_Gen" build_result="2" update_result="0" update_time="1529063062"/>
+        </Milestone>
+        <Milestone name="Map" build_result="2" build_time="1529063071">
+            <Task name="Map" build_result="2" update_result="0" update_time="1529063071"/>
+            <Task name="MapTrace" build_result="2" update_result="0" update_time="1529063073"/>
+            <Task name="MapVerilogSimFile" build_result="0" update_result="2" update_time="1528896013"/>
+            <Task name="MapVHDLSimFile" build_result="2" update_result="0" update_time="1529063076"/>
+        </Milestone>
+        <Milestone name="PAR" build_result="2" build_time="1529063083">
+            <Task name="PAR" build_result="2" update_result="0" update_time="1529063083"/>
+            <Task name="PARTrace" build_result="2" update_result="0" update_time="1529063085"/>
+            <Task name="IOTiming" build_result="2" update_result="0" update_time="1529063089"/>
+        </Milestone>
+        <Milestone name="Synthesis" build_result="2" build_time="1529063070">
+            <Task name="Lattice_Synthesis" build_result="2" update_result="0" update_time="1529063070"/>
+            <Task name="LSE_Compile" build_result="2" update_result="0" update_time="1529063106"/>
+        </Milestone>
+        <Milestone name="TOOL_Report" build_result="0" build_time="0">
+            <Task name="HDLE" build_result="0" update_result="2" update_time="1529062642"/>
+            <Task name="BKM" build_result="0" update_result="2" update_time="1529061478"/>
+            <Task name="SSO" build_result="0" update_result="2" update_time="0"/>
+            <Task name="PIODRC" build_result="0" update_result="2" update_time="0"/>
+        </Milestone>
+        <Report name="AMPELMEALY.v" last_build_time="1529063062" last_build_size="733"/>
+        <Report name="Ampelsteuerung_Ampelsteuerung.bgn" last_build_time="1529063106" last_build_size="3697"/>
+        <Report name="Ampelsteuerung_Ampelsteuerung.bit" last_build_time="1528896093" last_build_size="2771"/>
+        <Report name="Ampelsteuerung_Ampelsteuerung.ibs" last_build_time="1528896042" last_build_size="67302"/>
+        <Report name="Ampelsteuerung_Ampelsteuerung.ior" last_build_time="1529063089" last_build_size="2141"/>
+        <Report name="Ampelsteuerung_Ampelsteuerung.jed" last_build_time="1529063106" last_build_size="75627"/>
+        <Report name="Ampelsteuerung_Ampelsteuerung.lsedata" last_build_time="1529063068" last_build_size="68040"/>
+        <Report name="Ampelsteuerung_Ampelsteuerung.ncd" last_build_time="1529063083" last_build_size="55145"/>
+        <Report name="Ampelsteuerung_Ampelsteuerung.ngd" last_build_time="1529063070" last_build_size="46818"/>
+        <Report name="Ampelsteuerung_Ampelsteuerung.tw1" last_build_time="1529063073" last_build_size="7076"/>
+        <Report name="Ampelsteuerung_Ampelsteuerung.twr" last_build_time="1529063084" last_build_size="7066"/>
+        <Report name="Ampelsteuerung_Ampelsteuerung_map.ncd" last_build_time="1529063071" last_build_size="41334"/>
+        <Report name="Ampelsteuerung_Ampelsteuerung_mapvho.sdf" last_build_time="1529063076" last_build_size="31426"/>
+        <Report name="Ampelsteuerung_Ampelsteuerung_mapvho.vho" last_build_time="1529063076" last_build_size="340838"/>
+        <Report name="Ampelsteuerung_Ampelsteuerung_mapvo.sdf" last_build_time="1528896013" last_build_size="57904"/>
+        <Report name="Ampelsteuerung_Ampelsteuerung_mapvo.vo" last_build_time="1528896012" last_build_size="93827"/>
+        <Report name="Ampelsteuerung_Ampelsteuerung_vho.sdf" last_build_time="1528896050" last_build_size="65678"/>
+        <Report name="Ampelsteuerung_Ampelsteuerung_vho.vho" last_build_time="1528896050" last_build_size="570970"/>
+        <Report name="Ampelsteuerung_Ampelsteuerung_vo.sdf" last_build_time="1528896046" last_build_size="65118"/>
+        <Report name="Ampelsteuerung_Ampelsteuerung_vo.vo" last_build_time="1528896045" last_build_size="96105"/>
+    </Strategy>
+</BuildStatus>

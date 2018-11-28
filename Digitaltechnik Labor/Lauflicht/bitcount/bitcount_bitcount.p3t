@@ -1,0 +1,5 @@
+-rem
+-distrce
+-log "bitcount_bitcount.log"
+-o "bitcount_bitcount.csv"
+-pr "bitcount_bitcount.prf"

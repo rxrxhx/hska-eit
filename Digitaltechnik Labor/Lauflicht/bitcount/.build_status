@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BuildStatus>
+    <Strategy name="Strategy1">
+        <Milestone name="Export" build_result="0" build_time="0">
+            <Task name="IBIS" build_result="0" update_result="3" update_time="0"/>
+            <Task name="TimingSimFileVlg" build_result="0" update_result="3" update_time="0"/>
+            <Task name="TimingSimFileVHD" build_result="0" update_result="3" update_time="0"/>
+            <Task name="Jedecgen" build_result="2" update_result="0" update_time="1527860053"/>
+            <Task name="Bitgen" build_result="0" update_result="3" update_time="0"/>
+        </Milestone>
+        <Milestone name="Map" build_result="2" build_time="1527859994">
+            <Task name="Map" build_result="2" update_result="0" update_time="1527859994"/>
+            <Task name="MapTrace" build_result="2" update_result="0" update_time="1527859997"/>
+            <Task name="MapVerilogSimFile" build_result="0" update_result="3" update_time="0"/>
+            <Task name="MapVHDLSimFile" build_result="2" update_result="0" update_time="1527860001"/>
+        </Milestone>
+        <Milestone name="PAR" build_result="2" build_time="1527860012">
+            <Task name="PAR" build_result="2" update_result="0" update_time="1527860012"/>
+            <Task name="PARTrace" build_result="2" update_result="0" update_time="1527860015"/>
+            <Task name="IOTiming" build_result="2" update_result="0" update_time="1527860023"/>
+        </Milestone>
+        <Milestone name="Synthesis" build_result="2" build_time="1527859992">
+            <Task name="Lattice_Synthesis" build_result="2" update_result="0" update_time="1527859992"/>
+            <Task name="LSE_Compile" build_result="2" update_result="0" update_time="1527860053"/>
+        </Milestone>
+        <Milestone name="TOOL_Report" build_result="0" build_time="0">
+            <Task name="HDLE" build_result="0" update_result="2" update_time="1527859979"/>
+            <Task name="BKM" build_result="0" update_result="2" update_time="0"/>
+            <Task name="SSO" build_result="0" update_result="2" update_time="0"/>
+            <Task name="PIODRC" build_result="0" update_result="2" update_time="0"/>
+        </Milestone>
+        <Report name="bitcount_bitcount.bgn" last_build_time="1527860054" last_build_size="3610"/>
+        <Report name="bitcount_bitcount.ior" last_build_time="1527860024" last_build_size="2846"/>
+        <Report name="bitcount_bitcount.jed" last_build_time="1527860054" last_build_size="75764"/>
+        <Report name="bitcount_bitcount.lsedata" last_build_time="1527859990" last_build_size="44516"/>
+        <Report name="bitcount_bitcount.ncd" last_build_time="1527860014" last_build_size="63577"/>
+        <Report name="bitcount_bitcount.ngd" last_build_time="1527859992" last_build_size="54117"/>
+        <Report name="bitcount_bitcount.tw1" last_build_time="1527859998" last_build_size="6246"/>
+        <Report name="bitcount_bitcount.twr" last_build_time="1527860016" last_build_size="6236"/>
+        <Report name="bitcount_bitcount_map.ncd" last_build_time="1527859996" last_build_size="48490"/>
+        <Report name="bitcount_bitcount_mapvho.sdf" last_build_time="1527860002" last_build_size="37506"/>
+        <Report name="bitcount_bitcount_mapvho.vho" last_build_time="1527860002" last_build_size="384220"/>
+    </Strategy>
+</BuildStatus>

@@ -1,0 +1,9 @@
+#Start recording tcl command: 6/13/2018 00:21:17
+#Project Location: D:/DT/Stoppuhr; Project name: dek4counter
+prj_project open "D:/DT/Stoppuhr/dek4counter.ldf"
+prj_run Synthesis -impl dek4counter
+prj_src remove "D:/DT/Stoppuhr/Dec4Cnt.sch"
+prj_run Synthesis -impl dek4counter
+prj_project save
+prj_project close
+#Stop recording: 6/13/2018 00:22:12

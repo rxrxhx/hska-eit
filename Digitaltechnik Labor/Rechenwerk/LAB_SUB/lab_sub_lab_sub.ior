@@ -1,0 +1,51 @@
+Loading design for application iotiming from file lab_sub_lab_sub.ncd.
+Design name: sub4
+NCD version: 3.2
+Vendor:      LATTICE
+Device:      LCMXO2-256HC
+Package:     TQFP100
+Performance: 5
+Package Status:                     Final          Version 1.37
+Performance Hardware Data Status:   Final)         Version 23.4
+Loading design for application iotiming from file lab_sub_lab_sub.ncd.
+Design name: sub4
+NCD version: 3.2
+Vendor:      LATTICE
+Device:      LCMXO2-256HC
+Package:     TQFP100
+Performance: 6
+Package Status:                     Final          Version 1.37
+Performance Hardware Data Status:   Final)         Version 23.4
+Loading design for application iotiming from file lab_sub_lab_sub.ncd.
+Design name: sub4
+NCD version: 3.2
+Vendor:      LATTICE
+Device:      LCMXO2-256HC
+Package:     TQFP100
+Performance: M
+Package Status:                     Final          Version 1.37
+Performance Hardware Data Status:   Final)         Version 23.4
+// Design: sub4
+// Package: TQFP100
+// ncd File: lab_sub_lab_sub.ncd
+// Version: Diamond (64-bit) 3.1.0.96
+// Written on Thu May 10 15:26:41 2018
+// M: Minimum Performance Grade
+// iotiming LAB_SUB_LAB_SUB.ncd LAB_SUB_LAB_SUB.prf -gui
+
+I/O Timing Report (All units are in ns)
+
+Worst Case Results across Performance Grades (M, 6, 5, 4):
+
+// Input Setup and Hold Times
+
+Port  Clock Edge  Setup Performance_Grade  Hold Performance_Grade
+----------------------------------------------------------------------
+(no input setup/hold data)
+
+
+// Clock to Output Delay
+
+Port  Clock Edge  Max_Delay Performance_Grade  Min_Delay Performance_Grade
+------------------------------------------------------------------------
+(no clock to output min/max data)

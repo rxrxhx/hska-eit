@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliProject version="3.0" title="bit4verglnegundpos" device="LCMXO2-256HC-4TG100C" default_implementation="bit4verglnegundpos">
+    <Options/>
+    <Implementation title="bit4verglnegundpos" dir="bit4verglnegundpos" description="bit4verglnegundpos" synthesis="lse" default_strategy="Strategy1">
+        <Options/>
+        <Source name="verglposuneg.vhd" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="bit4verglnegundpos.lpf" type="Logic Preference" type_short="LPF">
+            <Options/>
+        </Source>
+    </Implementation>
+    <Strategy name="Strategy1" file="bit4verglnegundpos1.sty"/>
+</BaliProject>

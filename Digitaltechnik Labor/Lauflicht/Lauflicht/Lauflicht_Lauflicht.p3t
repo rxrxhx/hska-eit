@@ -1,0 +1,5 @@
+-rem
+-distrce
+-log "Lauflicht_Lauflicht.log"
+-o "Lauflicht_Lauflicht.csv"
+-pr "Lauflicht_Lauflicht.prf"

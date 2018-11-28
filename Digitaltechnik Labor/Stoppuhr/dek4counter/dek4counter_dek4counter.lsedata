@@ -1,0 +1,895 @@
+<top name = "ClkGen"  library = "work"  arch = "behavior"  entry = "VHDL">
+
+<clocks>
+    <clockitem name = "ClkOsc"  type = "port" />
+    <clockitem name = "Clk200Hz"  type = "port" />
+</clocks>
+
+<!--
+    //=============================================================
+    //  Number of Clocks processed: 2
+    //
+    //  If a clock cannot be found in the top level pins section,
+    //  that means it is an internal clock.
+    //
+    //=============================================================
+-->
+
+<library name = "machxo2">
+
+</library>
+
+<library name = "work">
+
+<unit name = "ClkGen">
+
+    <!--
+        Top Level Pins: 13
+    -->
+
+    <pins>
+        <pitem  name = "ClkModeLeft[1]"  direction = "in"  />
+        <pitem  name = "ClkModeLeft[0]"  direction = "in"  />
+        <pitem  name = "ClkModeRight[1]"  direction = "in"  />
+        <pitem  name = "ClkModeRight[0]"  direction = "in"  />
+        <pitem  name = "PulseLeft"  direction = "in"  />
+        <pitem  name = "PulseRight"  direction = "in"  />
+        <pitem  name = "ClkLeft"  direction = "out"  />
+        <pitem  name = "ClkRight"  direction = "out"  />
+        <pitem  name = "SignalLeft"  direction = "out"  />
+        <pitem  name = "SignalRight"  direction = "out"  />
+        <pitem  name = "Clk100Hz"  direction = "out"  />
+        <pitem  name = "Clk200Hz"  direction = "out"  />
+        <pitem  name = "ClkOsc"  direction = "out"  />
+    </pins>
+
+    <!--
+        Instances in netlist: 28
+    -->
+
+    <instance  name = "i1"  library = "work"  arch = "behavior"  type = "comb">
+        <pins>
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "n1"  />
+        </nets>
+    </instance>
+
+    <instance  name = "i2"  library = "work"  arch = "behavior"  type = "comb">
+        <pins>
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "n2"  />
+        </nets>
+    </instance>
+
+    <instance  name = "i38"  library = "work"  arch = "behavior"  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "Counter.Clk3Hz"  />
+        <nitem  name = "n9"  />
+        <nitem  name = "n26"  />
+        </nets>
+    </instance>
+
+    <instance  name = "OscInst0"  library = "work"  arch = "behavior"  type = "comb">
+        <pins>
+        <pitem  name = "STDBY"  direction = "in"  />
+        <pitem  name = "OSC"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "n1"  />
+        <nitem  name = "ClkOsc"  />
+        </nets>
+    </instance>
+
+    <instance  name = "LessThan_3"  library = "work"  arch = "behavior"  type = "comb">
+        <pins>
+        <pitem  name = "cin"  direction = "in"  />
+        <pitem  name = "a[5]"  direction = "in"  />
+        <pitem  name = "a[4]"  direction = "in"  />
+        <pitem  name = "a[3]"  direction = "in"  />
+        <pitem  name = "a[2]"  direction = "in"  />
+        <pitem  name = "a[1]"  direction = "in"  />
+        <pitem  name = "a[0]"  direction = "in"  />
+        <pitem  name = "b[5]"  direction = "in"  />
+        <pitem  name = "b[4]"  direction = "in"  />
+        <pitem  name = "b[3]"  direction = "in"  />
+        <pitem  name = "b[2]"  direction = "in"  />
+        <pitem  name = "b[1]"  direction = "in"  />
+        <pitem  name = "b[0]"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "n1"  />
+        <nitem  name = "Counter.Counter3Hz[5]"  />
+        <nitem  name = "Counter.Counter3Hz[4]"  />
+        <nitem  name = "Counter.Counter3Hz[3]"  />
+        <nitem  name = "Counter.Counter3Hz[2]"  />
+        <nitem  name = "Counter.Counter3Hz[1]"  />
+        <nitem  name = "Counter.Counter3Hz[0]"  />
+        <nitem  name = "n2"  />
+        <nitem  name = "n9"  />
+        </nets>
+    </instance>
+
+    <instance  name = "add_4"  library = "work"  arch = "behavior"  type = "comb">
+        <pins>
+        <pitem  name = "cin"  direction = "in"  />
+        <pitem  name = "a[5]"  direction = "in"  />
+        <pitem  name = "a[4]"  direction = "in"  />
+        <pitem  name = "a[3]"  direction = "in"  />
+        <pitem  name = "a[2]"  direction = "in"  />
+        <pitem  name = "a[1]"  direction = "in"  />
+        <pitem  name = "a[0]"  direction = "in"  />
+        <pitem  name = "b[5]"  direction = "in"  />
+        <pitem  name = "b[4]"  direction = "in"  />
+        <pitem  name = "b[3]"  direction = "in"  />
+        <pitem  name = "b[2]"  direction = "in"  />
+        <pitem  name = "b[1]"  direction = "in"  />
+        <pitem  name = "b[0]"  direction = "in"  />
+        <pitem  name = "o[5]"  direction = "out"  />
+        <pitem  name = "o[4]"  direction = "out"  />
+        <pitem  name = "o[3]"  direction = "out"  />
+        <pitem  name = "o[2]"  direction = "out"  />
+        <pitem  name = "o[1]"  direction = "out"  />
+        <pitem  name = "o[0]"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "n1"  />
+        <nitem  name = "Counter.Counter3Hz[5]"  />
+        <nitem  name = "Counter.Counter3Hz[4]"  />
+        <nitem  name = "Counter.Counter3Hz[3]"  />
+        <nitem  name = "Counter.Counter3Hz[2]"  />
+        <nitem  name = "Counter.Counter3Hz[1]"  />
+        <nitem  name = "Counter.Counter3Hz[0]"  />
+        <nitem  name = "n2"  />
+        <nitem  name = "n12"  />
+        <nitem  name = "n13"  />
+        <nitem  name = "n14"  />
+        <nitem  name = "n15"  />
+        <nitem  name = "n16"  />
+        <nitem  name = "n17"  />
+        </nets>
+    </instance>
+
+    <instance  name = "mux_6"  library = "work"  arch = "behavior"  type = "comb">
+        <pins>
+        <pitem  name = "d0[5]"  direction = "in"  />
+        <pitem  name = "d0[4]"  direction = "in"  />
+        <pitem  name = "d0[3]"  direction = "in"  />
+        <pitem  name = "d0[2]"  direction = "in"  />
+        <pitem  name = "d0[1]"  direction = "in"  />
+        <pitem  name = "d0[0]"  direction = "in"  />
+        <pitem  name = "d1[5]"  direction = "in"  />
+        <pitem  name = "d1[4]"  direction = "in"  />
+        <pitem  name = "d1[3]"  direction = "in"  />
+        <pitem  name = "d1[2]"  direction = "in"  />
+        <pitem  name = "d1[1]"  direction = "in"  />
+        <pitem  name = "d1[0]"  direction = "in"  />
+        <pitem  name = "cond"  direction = "in"  />
+        <pitem  name = "o[5]"  direction = "out"  />
+        <pitem  name = "o[4]"  direction = "out"  />
+        <pitem  name = "o[3]"  direction = "out"  />
+        <pitem  name = "o[2]"  direction = "out"  />
+        <pitem  name = "o[1]"  direction = "out"  />
+        <pitem  name = "o[0]"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "n1"  />
+        <nitem  name = "n12"  />
+        <nitem  name = "n13"  />
+        <nitem  name = "n14"  />
+        <nitem  name = "n15"  />
+        <nitem  name = "n16"  />
+        <nitem  name = "n17"  />
+        <nitem  name = "n9"  />
+        <nitem  name = "n20"  />
+        <nitem  name = "n21"  />
+        <nitem  name = "n22"  />
+        <nitem  name = "n23"  />
+        <nitem  name = "n24"  />
+        <nitem  name = "n25"  />
+        </nets>
+    </instance>
+
+    <instance  name = "i39"  library = "work"  arch = "behavior"  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "Counter.Clk1Hz"  />
+        <nitem  name = "n27"  />
+        <nitem  name = "n46"  />
+        </nets>
+    </instance>
+
+    <instance  name = "LessThan_8"  library = "work"  arch = "behavior"  type = "comb">
+        <pins>
+        <pitem  name = "cin"  direction = "in"  />
+        <pitem  name = "a[6]"  direction = "in"  />
+        <pitem  name = "a[5]"  direction = "in"  />
+        <pitem  name = "a[4]"  direction = "in"  />
+        <pitem  name = "a[3]"  direction = "in"  />
+        <pitem  name = "a[2]"  direction = "in"  />
+        <pitem  name = "a[1]"  direction = "in"  />
+        <pitem  name = "a[0]"  direction = "in"  />
+        <pitem  name = "b[6]"  direction = "in"  />
+        <pitem  name = "b[5]"  direction = "in"  />
+        <pitem  name = "b[4]"  direction = "in"  />
+        <pitem  name = "b[3]"  direction = "in"  />
+        <pitem  name = "b[2]"  direction = "in"  />
+        <pitem  name = "b[1]"  direction = "in"  />
+        <pitem  name = "b[0]"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "n1"  />
+        <nitem  name = "Counter.Counter1Hz[6]"  />
+        <nitem  name = "Counter.Counter1Hz[5]"  />
+        <nitem  name = "Counter.Counter1Hz[4]"  />
+        <nitem  name = "Counter.Counter1Hz[3]"  />
+        <nitem  name = "Counter.Counter1Hz[2]"  />
+        <nitem  name = "Counter.Counter1Hz[1]"  />
+        <nitem  name = "Counter.Counter1Hz[0]"  />
+        <nitem  name = "n2"  />
+        <nitem  name = "n27"  />
+        </nets>
+    </instance>
+
+    <instance  name = "add_9"  library = "work"  arch = "behavior"  type = "comb">
+        <pins>
+        <pitem  name = "cin"  direction = "in"  />
+        <pitem  name = "a[6]"  direction = "in"  />
+        <pitem  name = "a[5]"  direction = "in"  />
+        <pitem  name = "a[4]"  direction = "in"  />
+        <pitem  name = "a[3]"  direction = "in"  />
+        <pitem  name = "a[2]"  direction = "in"  />
+        <pitem  name = "a[1]"  direction = "in"  />
+        <pitem  name = "a[0]"  direction = "in"  />
+        <pitem  name = "b[6]"  direction = "in"  />
+        <pitem  name = "b[5]"  direction = "in"  />
+        <pitem  name = "b[4]"  direction = "in"  />
+        <pitem  name = "b[3]"  direction = "in"  />
+        <pitem  name = "b[2]"  direction = "in"  />
+        <pitem  name = "b[1]"  direction = "in"  />
+        <pitem  name = "b[0]"  direction = "in"  />
+        <pitem  name = "o[6]"  direction = "out"  />
+        <pitem  name = "o[5]"  direction = "out"  />
+        <pitem  name = "o[4]"  direction = "out"  />
+        <pitem  name = "o[3]"  direction = "out"  />
+        <pitem  name = "o[2]"  direction = "out"  />
+        <pitem  name = "o[1]"  direction = "out"  />
+        <pitem  name = "o[0]"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "n1"  />
+        <nitem  name = "Counter.Counter1Hz[6]"  />
+        <nitem  name = "Counter.Counter1Hz[5]"  />
+        <nitem  name = "Counter.Counter1Hz[4]"  />
+        <nitem  name = "Counter.Counter1Hz[3]"  />
+        <nitem  name = "Counter.Counter1Hz[2]"  />
+        <nitem  name = "Counter.Counter1Hz[1]"  />
+        <nitem  name = "Counter.Counter1Hz[0]"  />
+        <nitem  name = "n2"  />
+        <nitem  name = "n30"  />
+        <nitem  name = "n31"  />
+        <nitem  name = "n32"  />
+        <nitem  name = "n33"  />
+        <nitem  name = "n34"  />
+        <nitem  name = "n35"  />
+        <nitem  name = "n36"  />
+        </nets>
+    </instance>
+
+    <instance  name = "mux_11"  library = "work"  arch = "behavior"  type = "comb">
+        <pins>
+        <pitem  name = "d0[6]"  direction = "in"  />
+        <pitem  name = "d0[5]"  direction = "in"  />
+        <pitem  name = "d0[4]"  direction = "in"  />
+        <pitem  name = "d0[3]"  direction = "in"  />
+        <pitem  name = "d0[2]"  direction = "in"  />
+        <pitem  name = "d0[1]"  direction = "in"  />
+        <pitem  name = "d0[0]"  direction = "in"  />
+        <pitem  name = "d1[6]"  direction = "in"  />
+        <pitem  name = "d1[5]"  direction = "in"  />
+        <pitem  name = "d1[4]"  direction = "in"  />
+        <pitem  name = "d1[3]"  direction = "in"  />
+        <pitem  name = "d1[2]"  direction = "in"  />
+        <pitem  name = "d1[1]"  direction = "in"  />
+        <pitem  name = "d1[0]"  direction = "in"  />
+        <pitem  name = "cond"  direction = "in"  />
+        <pitem  name = "o[6]"  direction = "out"  />
+        <pitem  name = "o[5]"  direction = "out"  />
+        <pitem  name = "o[4]"  direction = "out"  />
+        <pitem  name = "o[3]"  direction = "out"  />
+        <pitem  name = "o[2]"  direction = "out"  />
+        <pitem  name = "o[1]"  direction = "out"  />
+        <pitem  name = "o[0]"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "n1"  />
+        <nitem  name = "n30"  />
+        <nitem  name = "n31"  />
+        <nitem  name = "n32"  />
+        <nitem  name = "n33"  />
+        <nitem  name = "n34"  />
+        <nitem  name = "n35"  />
+        <nitem  name = "n36"  />
+        <nitem  name = "n27"  />
+        <nitem  name = "n39"  />
+        <nitem  name = "n40"  />
+        <nitem  name = "n41"  />
+        <nitem  name = "n42"  />
+        <nitem  name = "n43"  />
+        <nitem  name = "n44"  />
+        <nitem  name = "n45"  />
+        </nets>
+    </instance>
+
+    <instance  name = "i40"  library = "work"  arch = "behavior"  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "Counter.Clk03Hz"  />
+        <nitem  name = "n47"  />
+        <nitem  name = "n70"  />
+        </nets>
+    </instance>
+
+    <instance  name = "LessThan_13"  library = "work"  arch = "behavior"  type = "comb">
+        <pins>
+        <pitem  name = "cin"  direction = "in"  />
+        <pitem  name = "a[8]"  direction = "in"  />
+        <pitem  name = "a[7]"  direction = "in"  />
+        <pitem  name = "a[6]"  direction = "in"  />
+        <pitem  name = "a[5]"  direction = "in"  />
+        <pitem  name = "a[4]"  direction = "in"  />
+        <pitem  name = "a[3]"  direction = "in"  />
+        <pitem  name = "a[2]"  direction = "in"  />
+        <pitem  name = "a[1]"  direction = "in"  />
+        <pitem  name = "a[0]"  direction = "in"  />
+        <pitem  name = "b[8]"  direction = "in"  />
+        <pitem  name = "b[7]"  direction = "in"  />
+        <pitem  name = "b[6]"  direction = "in"  />
+        <pitem  name = "b[5]"  direction = "in"  />
+        <pitem  name = "b[4]"  direction = "in"  />
+        <pitem  name = "b[3]"  direction = "in"  />
+        <pitem  name = "b[2]"  direction = "in"  />
+        <pitem  name = "b[1]"  direction = "in"  />
+        <pitem  name = "b[0]"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "n1"  />
+        <nitem  name = "Counter.Counter03Hz[8]"  />
+        <nitem  name = "Counter.Counter03Hz[7]"  />
+        <nitem  name = "Counter.Counter03Hz[6]"  />
+        <nitem  name = "Counter.Counter03Hz[5]"  />
+        <nitem  name = "Counter.Counter03Hz[4]"  />
+        <nitem  name = "Counter.Counter03Hz[3]"  />
+        <nitem  name = "Counter.Counter03Hz[2]"  />
+        <nitem  name = "Counter.Counter03Hz[1]"  />
+        <nitem  name = "Counter.Counter03Hz[0]"  />
+        <nitem  name = "n2"  />
+        <nitem  name = "n47"  />
+        </nets>
+    </instance>
+
+    <instance  name = "add_14"  library = "work"  arch = "behavior"  type = "comb">
+        <pins>
+        <pitem  name = "cin"  direction = "in"  />
+        <pitem  name = "a[8]"  direction = "in"  />
+        <pitem  name = "a[7]"  direction = "in"  />
+        <pitem  name = "a[6]"  direction = "in"  />
+        <pitem  name = "a[5]"  direction = "in"  />
+        <pitem  name = "a[4]"  direction = "in"  />
+        <pitem  name = "a[3]"  direction = "in"  />
+        <pitem  name = "a[2]"  direction = "in"  />
+        <pitem  name = "a[1]"  direction = "in"  />
+        <pitem  name = "a[0]"  direction = "in"  />
+        <pitem  name = "b[8]"  direction = "in"  />
+        <pitem  name = "b[7]"  direction = "in"  />
+        <pitem  name = "b[6]"  direction = "in"  />
+        <pitem  name = "b[5]"  direction = "in"  />
+        <pitem  name = "b[4]"  direction = "in"  />
+        <pitem  name = "b[3]"  direction = "in"  />
+        <pitem  name = "b[2]"  direction = "in"  />
+        <pitem  name = "b[1]"  direction = "in"  />
+        <pitem  name = "b[0]"  direction = "in"  />
+        <pitem  name = "o[8]"  direction = "out"  />
+        <pitem  name = "o[7]"  direction = "out"  />
+        <pitem  name = "o[6]"  direction = "out"  />
+        <pitem  name = "o[5]"  direction = "out"  />
+        <pitem  name = "o[4]"  direction = "out"  />
+        <pitem  name = "o[3]"  direction = "out"  />
+        <pitem  name = "o[2]"  direction = "out"  />
+        <pitem  name = "o[1]"  direction = "out"  />
+        <pitem  name = "o[0]"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "n1"  />
+        <nitem  name = "Counter.Counter03Hz[8]"  />
+        <nitem  name = "Counter.Counter03Hz[7]"  />
+        <nitem  name = "Counter.Counter03Hz[6]"  />
+        <nitem  name = "Counter.Counter03Hz[5]"  />
+        <nitem  name = "Counter.Counter03Hz[4]"  />
+        <nitem  name = "Counter.Counter03Hz[3]"  />
+        <nitem  name = "Counter.Counter03Hz[2]"  />
+        <nitem  name = "Counter.Counter03Hz[1]"  />
+        <nitem  name = "Counter.Counter03Hz[0]"  />
+        <nitem  name = "n2"  />
+        <nitem  name = "n50"  />
+        <nitem  name = "n51"  />
+        <nitem  name = "n52"  />
+        <nitem  name = "n53"  />
+        <nitem  name = "n54"  />
+        <nitem  name = "n55"  />
+        <nitem  name = "n56"  />
+        <nitem  name = "n57"  />
+        <nitem  name = "n58"  />
+        </nets>
+    </instance>
+
+    <instance  name = "\CTInst0/EFBInst_0"  library = "work"  arch = "behavior"  type = "comb">
+        <pins>
+        <pitem  name = "TCCLKI"  direction = "in"  />
+        <pitem  name = "TCRSTN"  direction = "in"  />
+        <pitem  name = "TCINT"  direction = "out"  />
+        <pitem  name = "TCOC"  direction = "out"  />
+        <pitem  name = "UFMSN"  direction = "in"  />
+        <pitem  name = "TCIC"  direction = "in"  />
+        <pitem  name = "SPISCSN"  direction = "in"  />
+        <pitem  name = "SPIMOSII"  direction = "in"  />
+        <pitem  name = "SPIMISOI"  direction = "in"  />
+        <pitem  name = "SPISCKI"  direction = "in"  />
+        <pitem  name = "I2C2SDAI"  direction = "in"  />
+        <pitem  name = "I2C2SCLI"  direction = "in"  />
+        <pitem  name = "I2C1SDAI"  direction = "in"  />
+        <pitem  name = "I2C1SCLI"  direction = "in"  />
+        <pitem  name = "PLL1ACKI"  direction = "in"  />
+        <pitem  name = "PLL1DATI0"  direction = "in"  />
+        <pitem  name = "PLL1DATI1"  direction = "in"  />
+        <pitem  name = "PLL1DATI2"  direction = "in"  />
+        <pitem  name = "PLL1DATI3"  direction = "in"  />
+        <pitem  name = "PLL1DATI4"  direction = "in"  />
+        <pitem  name = "PLL1DATI5"  direction = "in"  />
+        <pitem  name = "PLL1DATI6"  direction = "in"  />
+        <pitem  name = "PLL1DATI7"  direction = "in"  />
+        <pitem  name = "PLL0ACKI"  direction = "in"  />
+        <pitem  name = "PLL0DATI0"  direction = "in"  />
+        <pitem  name = "PLL0DATI1"  direction = "in"  />
+        <pitem  name = "PLL0DATI2"  direction = "in"  />
+        <pitem  name = "PLL0DATI3"  direction = "in"  />
+        <pitem  name = "PLL0DATI4"  direction = "in"  />
+        <pitem  name = "PLL0DATI5"  direction = "in"  />
+        <pitem  name = "PLL0DATI6"  direction = "in"  />
+        <pitem  name = "PLL0DATI7"  direction = "in"  />
+        <pitem  name = "WBDATI0"  direction = "in"  />
+        <pitem  name = "WBDATI1"  direction = "in"  />
+        <pitem  name = "WBDATI2"  direction = "in"  />
+        <pitem  name = "WBDATI3"  direction = "in"  />
+        <pitem  name = "WBDATI4"  direction = "in"  />
+        <pitem  name = "WBDATI5"  direction = "in"  />
+        <pitem  name = "WBDATI6"  direction = "in"  />
+        <pitem  name = "WBDATI7"  direction = "in"  />
+        <pitem  name = "WBADRI0"  direction = "in"  />
+        <pitem  name = "WBADRI1"  direction = "in"  />
+        <pitem  name = "WBADRI2"  direction = "in"  />
+        <pitem  name = "WBADRI3"  direction = "in"  />
+        <pitem  name = "WBADRI4"  direction = "in"  />
+        <pitem  name = "WBADRI5"  direction = "in"  />
+        <pitem  name = "WBADRI6"  direction = "in"  />
+        <pitem  name = "WBADRI7"  direction = "in"  />
+        <pitem  name = "WBWEI"  direction = "in"  />
+        <pitem  name = "WBSTBI"  direction = "in"  />
+        <pitem  name = "WBCYCI"  direction = "in"  />
+        <pitem  name = "WBRSTI"  direction = "in"  />
+        <pitem  name = "WBCLKI"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "ClkOsc"  />
+        <nitem  name = "n2"  />
+        <nitem  name = "\CTInst0/tc_int"  />
+        <nitem  name = "Clk200Hz"  />
+        <nitem  name = "\CTInst0/scuba_vhi"  />
+        <nitem  name = "\CTInst0/scuba_vlo"  />
+        </nets>
+    </instance>
+
+    <instance  name = "mux_16"  library = "work"  arch = "behavior"  type = "comb">
+        <pins>
+        <pitem  name = "d0[8]"  direction = "in"  />
+        <pitem  name = "d0[7]"  direction = "in"  />
+        <pitem  name = "d0[6]"  direction = "in"  />
+        <pitem  name = "d0[5]"  direction = "in"  />
+        <pitem  name = "d0[4]"  direction = "in"  />
+        <pitem  name = "d0[3]"  direction = "in"  />
+        <pitem  name = "d0[2]"  direction = "in"  />
+        <pitem  name = "d0[1]"  direction = "in"  />
+        <pitem  name = "d0[0]"  direction = "in"  />
+        <pitem  name = "d1[8]"  direction = "in"  />
+        <pitem  name = "d1[7]"  direction = "in"  />
+        <pitem  name = "d1[6]"  direction = "in"  />
+        <pitem  name = "d1[5]"  direction = "in"  />
+        <pitem  name = "d1[4]"  direction = "in"  />
+        <pitem  name = "d1[3]"  direction = "in"  />
+        <pitem  name = "d1[2]"  direction = "in"  />
+        <pitem  name = "d1[1]"  direction = "in"  />
+        <pitem  name = "d1[0]"  direction = "in"  />
+        <pitem  name = "cond"  direction = "in"  />
+        <pitem  name = "o[8]"  direction = "out"  />
+        <pitem  name = "o[7]"  direction = "out"  />
+        <pitem  name = "o[6]"  direction = "out"  />
+        <pitem  name = "o[5]"  direction = "out"  />
+        <pitem  name = "o[4]"  direction = "out"  />
+        <pitem  name = "o[3]"  direction = "out"  />
+        <pitem  name = "o[2]"  direction = "out"  />
+        <pitem  name = "o[1]"  direction = "out"  />
+        <pitem  name = "o[0]"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "n1"  />
+        <nitem  name = "n50"  />
+        <nitem  name = "n51"  />
+        <nitem  name = "n52"  />
+        <nitem  name = "n53"  />
+        <nitem  name = "n54"  />
+        <nitem  name = "n55"  />
+        <nitem  name = "n56"  />
+        <nitem  name = "n57"  />
+        <nitem  name = "n58"  />
+        <nitem  name = "n47"  />
+        <nitem  name = "n61"  />
+        <nitem  name = "n62"  />
+        <nitem  name = "n63"  />
+        <nitem  name = "n64"  />
+        <nitem  name = "n65"  />
+        <nitem  name = "n66"  />
+        <nitem  name = "n67"  />
+        <nitem  name = "n68"  />
+        <nitem  name = "n69"  />
+        </nets>
+    </instance>
+
+    <instance  name = "i19"  library = "work"  arch = "behavior"  type = "comb">
+        <pins>
+        <pitem  name = "i"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "Clk100Hz"  />
+        <nitem  name = "n71"  />
+        </nets>
+    </instance>
+
+    <instance  name = "Counter.Clk3Hz_32"  library = "work"  arch = "behavior"  type = "reg">
+        <pins>
+        <pitem  name = "d"  direction = "in"  />
+        <pitem  name = "clk"  direction = "in"  />
+        <pitem  name = "s"  direction = "in"  />
+        <pitem  name = "r"  direction = "in"  />
+        <pitem  name = "q"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "n26"  />
+        <nitem  name = "Clk200Hz"  />
+        <nitem  name = "n1"  />
+        <nitem  name = "Counter.Clk3Hz"  />
+        </nets>
+    </instance>
+
+    <instance  name = "Counter.Counter1Hz"  library = "work"  arch = "behavior"  type = "reg">
+        <pins>
+        <pitem  name = "d[6]"  direction = "in"  />
+        <pitem  name = "d[5]"  direction = "in"  />
+        <pitem  name = "d[4]"  direction = "in"  />
+        <pitem  name = "d[3]"  direction = "in"  />
+        <pitem  name = "d[2]"  direction = "in"  />
+        <pitem  name = "d[1]"  direction = "in"  />
+        <pitem  name = "d[0]"  direction = "in"  />
+        <pitem  name = "set[6]"  direction = "in"  />
+        <pitem  name = "set[5]"  direction = "in"  />
+        <pitem  name = "set[4]"  direction = "in"  />
+        <pitem  name = "set[3]"  direction = "in"  />
+        <pitem  name = "set[2]"  direction = "in"  />
+        <pitem  name = "set[1]"  direction = "in"  />
+        <pitem  name = "set[0]"  direction = "in"  />
+        <pitem  name = "reset[6]"  direction = "in"  />
+        <pitem  name = "reset[5]"  direction = "in"  />
+        <pitem  name = "reset[4]"  direction = "in"  />
+        <pitem  name = "reset[3]"  direction = "in"  />
+        <pitem  name = "reset[2]"  direction = "in"  />
+        <pitem  name = "reset[1]"  direction = "in"  />
+        <pitem  name = "reset[0]"  direction = "in"  />
+        <pitem  name = "clock"  direction = "in"  />
+        <pitem  name = "q[6]"  direction = "out"  />
+        <pitem  name = "q[5]"  direction = "out"  />
+        <pitem  name = "q[4]"  direction = "out"  />
+        <pitem  name = "q[3]"  direction = "out"  />
+        <pitem  name = "q[2]"  direction = "out"  />
+        <pitem  name = "q[1]"  direction = "out"  />
+        <pitem  name = "q[0]"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "n39"  />
+        <nitem  name = "n40"  />
+        <nitem  name = "n41"  />
+        <nitem  name = "n42"  />
+        <nitem  name = "n43"  />
+        <nitem  name = "n44"  />
+        <nitem  name = "n45"  />
+        <nitem  name = "n1"  />
+        <nitem  name = "Clk200Hz"  />
+        <nitem  name = "Counter.Counter1Hz[6]"  />
+        <nitem  name = "Counter.Counter1Hz[5]"  />
+        <nitem  name = "Counter.Counter1Hz[4]"  />
+        <nitem  name = "Counter.Counter1Hz[3]"  />
+        <nitem  name = "Counter.Counter1Hz[2]"  />
+        <nitem  name = "Counter.Counter1Hz[1]"  />
+        <nitem  name = "Counter.Counter1Hz[0]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "Counter.Clk1Hz_34"  library = "work"  arch = "behavior"  type = "reg">
+        <pins>
+        <pitem  name = "d"  direction = "in"  />
+        <pitem  name = "clk"  direction = "in"  />
+        <pitem  name = "s"  direction = "in"  />
+        <pitem  name = "r"  direction = "in"  />
+        <pitem  name = "q"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "n46"  />
+        <nitem  name = "Clk200Hz"  />
+        <nitem  name = "n1"  />
+        <nitem  name = "Counter.Clk1Hz"  />
+        </nets>
+    </instance>
+
+    <instance  name = "Counter.Counter03Hz"  library = "work"  arch = "behavior"  type = "reg">
+        <pins>
+        <pitem  name = "d[8]"  direction = "in"  />
+        <pitem  name = "d[7]"  direction = "in"  />
+        <pitem  name = "d[6]"  direction = "in"  />
+        <pitem  name = "d[5]"  direction = "in"  />
+        <pitem  name = "d[4]"  direction = "in"  />
+        <pitem  name = "d[3]"  direction = "in"  />
+        <pitem  name = "d[2]"  direction = "in"  />
+        <pitem  name = "d[1]"  direction = "in"  />
+        <pitem  name = "d[0]"  direction = "in"  />
+        <pitem  name = "set[8]"  direction = "in"  />
+        <pitem  name = "set[7]"  direction = "in"  />
+        <pitem  name = "set[6]"  direction = "in"  />
+        <pitem  name = "set[5]"  direction = "in"  />
+        <pitem  name = "set[4]"  direction = "in"  />
+        <pitem  name = "set[3]"  direction = "in"  />
+        <pitem  name = "set[2]"  direction = "in"  />
+        <pitem  name = "set[1]"  direction = "in"  />
+        <pitem  name = "set[0]"  direction = "in"  />
+        <pitem  name = "reset[8]"  direction = "in"  />
+        <pitem  name = "reset[7]"  direction = "in"  />
+        <pitem  name = "reset[6]"  direction = "in"  />
+        <pitem  name = "reset[5]"  direction = "in"  />
+        <pitem  name = "reset[4]"  direction = "in"  />
+        <pitem  name = "reset[3]"  direction = "in"  />
+        <pitem  name = "reset[2]"  direction = "in"  />
+        <pitem  name = "reset[1]"  direction = "in"  />
+        <pitem  name = "reset[0]"  direction = "in"  />
+        <pitem  name = "clock"  direction = "in"  />
+        <pitem  name = "q[8]"  direction = "out"  />
+        <pitem  name = "q[7]"  direction = "out"  />
+        <pitem  name = "q[6]"  direction = "out"  />
+        <pitem  name = "q[5]"  direction = "out"  />
+        <pitem  name = "q[4]"  direction = "out"  />
+        <pitem  name = "q[3]"  direction = "out"  />
+        <pitem  name = "q[2]"  direction = "out"  />
+        <pitem  name = "q[1]"  direction = "out"  />
+        <pitem  name = "q[0]"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "n61"  />
+        <nitem  name = "n62"  />
+        <nitem  name = "n63"  />
+        <nitem  name = "n64"  />
+        <nitem  name = "n65"  />
+        <nitem  name = "n66"  />
+        <nitem  name = "n67"  />
+        <nitem  name = "n68"  />
+        <nitem  name = "n69"  />
+        <nitem  name = "n1"  />
+        <nitem  name = "Clk200Hz"  />
+        <nitem  name = "Counter.Counter03Hz[8]"  />
+        <nitem  name = "Counter.Counter03Hz[7]"  />
+        <nitem  name = "Counter.Counter03Hz[6]"  />
+        <nitem  name = "Counter.Counter03Hz[5]"  />
+        <nitem  name = "Counter.Counter03Hz[4]"  />
+        <nitem  name = "Counter.Counter03Hz[3]"  />
+        <nitem  name = "Counter.Counter03Hz[2]"  />
+        <nitem  name = "Counter.Counter03Hz[1]"  />
+        <nitem  name = "Counter.Counter03Hz[0]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "Counter.Clk03Hz_36"  library = "work"  arch = "behavior"  type = "reg">
+        <pins>
+        <pitem  name = "d"  direction = "in"  />
+        <pitem  name = "clk"  direction = "in"  />
+        <pitem  name = "s"  direction = "in"  />
+        <pitem  name = "r"  direction = "in"  />
+        <pitem  name = "q"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "n70"  />
+        <nitem  name = "Clk200Hz"  />
+        <nitem  name = "n1"  />
+        <nitem  name = "Counter.Clk03Hz"  />
+        </nets>
+    </instance>
+
+    <instance  name = "SigClk100Hz_37"  library = "work"  arch = "behavior"  type = "reg">
+        <pins>
+        <pitem  name = "d"  direction = "in"  />
+        <pitem  name = "clk"  direction = "in"  />
+        <pitem  name = "s"  direction = "in"  />
+        <pitem  name = "r"  direction = "in"  />
+        <pitem  name = "q"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "n71"  />
+        <nitem  name = "Clk200Hz"  />
+        <nitem  name = "n1"  />
+        <nitem  name = "Clk100Hz"  />
+        </nets>
+    </instance>
+
+    <instance  name = "Mux_26"  library = "work"  arch = "behavior"  type = "comb">
+        <pins>
+        <pitem  name = "sel[1]"  direction = "in"  />
+        <pitem  name = "sel[0]"  direction = "in"  />
+        <pitem  name = "data[3]"  direction = "in"  />
+        <pitem  name = "data[2]"  direction = "in"  />
+        <pitem  name = "data[1]"  direction = "in"  />
+        <pitem  name = "data[0]"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "ClkModeLeft[1]"  />
+        <nitem  name = "ClkModeLeft[0]"  />
+        <nitem  name = "Counter.Clk3Hz"  />
+        <nitem  name = "Counter.Clk1Hz"  />
+        <nitem  name = "Counter.Clk03Hz"  />
+        <nitem  name = "PulseLeft"  />
+        <nitem  name = "ClkLeft"  />
+        </nets>
+    </instance>
+
+    <instance  name = "\CTInst0/scuba_vlo_inst"  library = "work"  arch = "behavior"  type = "comb">
+        <pins>
+        <pitem  name = "Z"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "\CTInst0/scuba_vlo"  />
+        </nets>
+    </instance>
+
+    <instance  name = "Mux_28"  library = "work"  arch = "behavior"  type = "comb">
+        <pins>
+        <pitem  name = "sel[1]"  direction = "in"  />
+        <pitem  name = "sel[0]"  direction = "in"  />
+        <pitem  name = "data[3]"  direction = "in"  />
+        <pitem  name = "data[2]"  direction = "in"  />
+        <pitem  name = "data[1]"  direction = "in"  />
+        <pitem  name = "data[0]"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "ClkModeRight[1]"  />
+        <nitem  name = "ClkModeRight[0]"  />
+        <nitem  name = "Clk100Hz"  />
+        <nitem  name = "Counter.Clk3Hz"  />
+        <nitem  name = "Counter.Clk1Hz"  />
+        <nitem  name = "PulseRight"  />
+        <nitem  name = "ClkRight"  />
+        </nets>
+    </instance>
+
+    <instance  name = "\CTInst0/scuba_vhi_inst"  library = "work"  arch = "behavior"  type = "comb">
+        <pins>
+        <pitem  name = "Z"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "\CTInst0/scuba_vhi"  />
+        </nets>
+    </instance>
+
+    <instance  name = "Counter.Counter3Hz"  library = "work"  arch = "behavior"  type = "reg">
+        <pins>
+        <pitem  name = "d[5]"  direction = "in"  />
+        <pitem  name = "d[4]"  direction = "in"  />
+        <pitem  name = "d[3]"  direction = "in"  />
+        <pitem  name = "d[2]"  direction = "in"  />
+        <pitem  name = "d[1]"  direction = "in"  />
+        <pitem  name = "d[0]"  direction = "in"  />
+        <pitem  name = "set[5]"  direction = "in"  />
+        <pitem  name = "set[4]"  direction = "in"  />
+        <pitem  name = "set[3]"  direction = "in"  />
+        <pitem  name = "set[2]"  direction = "in"  />
+        <pitem  name = "set[1]"  direction = "in"  />
+        <pitem  name = "set[0]"  direction = "in"  />
+        <pitem  name = "reset[5]"  direction = "in"  />
+        <pitem  name = "reset[4]"  direction = "in"  />
+        <pitem  name = "reset[3]"  direction = "in"  />
+        <pitem  name = "reset[2]"  direction = "in"  />
+        <pitem  name = "reset[1]"  direction = "in"  />
+        <pitem  name = "reset[0]"  direction = "in"  />
+        <pitem  name = "clock"  direction = "in"  />
+        <pitem  name = "q[5]"  direction = "out"  />
+        <pitem  name = "q[4]"  direction = "out"  />
+        <pitem  name = "q[3]"  direction = "out"  />
+        <pitem  name = "q[2]"  direction = "out"  />
+        <pitem  name = "q[1]"  direction = "out"  />
+        <pitem  name = "q[0]"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "n20"  />
+        <nitem  name = "n21"  />
+        <nitem  name = "n22"  />
+        <nitem  name = "n23"  />
+        <nitem  name = "n24"  />
+        <nitem  name = "n25"  />
+        <nitem  name = "n1"  />
+        <nitem  name = "Clk200Hz"  />
+        <nitem  name = "Counter.Counter3Hz[5]"  />
+        <nitem  name = "Counter.Counter3Hz[4]"  />
+        <nitem  name = "Counter.Counter3Hz[3]"  />
+        <nitem  name = "Counter.Counter3Hz[2]"  />
+        <nitem  name = "Counter.Counter3Hz[1]"  />
+        <nitem  name = "Counter.Counter3Hz[0]"  />
+        </nets>
+    </instance>
+
+</unit>
+
+</library>
+
+</top>

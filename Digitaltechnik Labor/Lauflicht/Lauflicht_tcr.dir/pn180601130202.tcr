@@ -1,0 +1,10 @@
+#Start recording tcl command: 6/1/2018 12:46:38
+#Project Location: D:/DT; Project name: Lauflicht
+prj_project open "D:/DT/Lauflicht.ldf"
+prj_run Export -impl Lauflicht
+prj_run Export -impl Lauflicht
+prj_run Export -impl Lauflicht
+prj_run Export -impl Lauflicht
+prj_run Export -impl Lauflicht
+prj_run Export -impl Lauflicht
+#Stop recording: 6/1/2018 13:02:02

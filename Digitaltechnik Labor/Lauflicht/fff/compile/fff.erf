@@ -1,0 +1,18 @@
+MESSAGE "Pass 1. Scanning modules hierarchy."
+BEGINPROGRESS Compiling...
+UPDATEPROGRESS 35
+MESSAGE "Pass 2. Processing instantiations."
+UPDATEPROGRESS 45
+MESSAGE "Pass 3. Processing behavioral statements."
+UPDATEPROGRESS 80
+MESSAGE "ELB/DAG code generating."
+UPDATEPROGRESS 83
+UPDATEPROGRESS 86
+UPDATEPROGRESS 90
+UPDATEPROGRESS 93
+MESSAGE "Unit top modules: test."
+MESSAGE "$root top modules: test."
+UPDATEPROGRESS 100
+ENDPROGRESS Compiling...
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time: 0[s]."
+MESSAGE "done"

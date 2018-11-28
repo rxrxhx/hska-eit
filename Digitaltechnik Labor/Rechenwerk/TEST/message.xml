@@ -1,0 +1,109 @@
+<?xml version='1.0' encoding='utf-8'?>
+<BaliMessageLog>
+    <Milestone name="Synthesis">
+        <Task name="Lattice_Synthesis">
+            <Engine name="gen_lattice_prj"/>
+            <Engine name="synthesis">
+                <Message>
+                    <ID>35901018</ID>
+                    <Severity>Info</Severity>
+                    <Text>INFO - mult_3s_3s.v(8): compiling module mult_3s_3s. VERI-1018</Text>
+                    <Dynamic>mult_3s_3s.v(8): </Dynamic>
+                    <Dynamic>mult_3s_3s</Dynamic>
+                    <Navigation>mult_3s_3s.v</Navigation>
+                    <Navigation>8</Navigation>
+                </Message>
+                <Message>
+                    <ID>35931013</ID>
+                    <Severity>Warning</Severity>
+                    <Text>WARNING - h:/digitaltechnik_labor/projects/lab_rw/test.vhd(33): input port a[2] is not connected on this instance. VDB-1013</Text>
+                    <Dynamic>h:/digitaltechnik_labor/projects/lab_rw/test.vhd(33): </Dynamic>
+                    <Dynamic>a[2]</Dynamic>
+                    <Navigation>h:/digitaltechnik_labor/projects/lab_rw/test.vhd</Navigation>
+                    <Navigation>33</Navigation>
+                </Message>
+                <Message>
+                    <ID>35001609</ID>
+                    <Severity>Warning</Severity>
+                    <Text>WARNING - No .lpf file will be written because the -lpf option is not used or is set to zero.</Text>
+                </Message>
+                <Message>
+                    <ID>1166052</ID>
+                    <Severity>Warning</Severity>
+                    <Text>WARNING - logical net 'mult_3s_3s_0_cin_lr_add_0/S0' has no load</Text>
+                    <Dynamic>logical</Dynamic>
+                    <Dynamic>mult_3s_3s_0_cin_lr_add_0/S0</Dynamic>
+                </Message>
+                <Message>
+                    <ID>1166052</ID>
+                    <Severity>Warning</Severity>
+                    <Text>WARNING - logical net 'mult_3s_3s_0_cin_lr_add_0/S1' has no load</Text>
+                    <Dynamic>logical</Dynamic>
+                    <Dynamic>mult_3s_3s_0_cin_lr_add_0/S1</Dynamic>
+                </Message>
+                <Message>
+                    <ID>1166052</ID>
+                    <Severity>Warning</Severity>
+                    <Text>WARNING - logical net 'Cadd_t_mult_3s_3s_0_0_1/S0' has no load</Text>
+                    <Dynamic>logical</Dynamic>
+                    <Dynamic>Cadd_t_mult_3s_3s_0_0_1/S0</Dynamic>
+                </Message>
+                <Message>
+                    <ID>1166052</ID>
+                    <Severity>Warning</Severity>
+                    <Text>WARNING - logical net 't_mult_3s_3s_0_add_0_3/COUT' has no load</Text>
+                    <Dynamic>logical</Dynamic>
+                    <Dynamic>t_mult_3s_3s_0_add_0_3/COUT</Dynamic>
+                </Message>
+                <Message>
+                    <ID>1166052</ID>
+                    <Severity>Warning</Severity>
+                    <Text>WARNING - logical net 't_mult_3s_3s_0_add_0_3/S1' has no load</Text>
+                    <Dynamic>logical</Dynamic>
+                    <Dynamic>t_mult_3s_3s_0_add_0_3/S1</Dynamic>
+                </Message>
+                <Message>
+                    <ID>1166052</ID>
+                    <Severity>Warning</Severity>
+                    <Text>WARNING - logical net 'mult_3s_3s_0_mult_0_1/CO' has no load</Text>
+                    <Dynamic>logical</Dynamic>
+                    <Dynamic>mult_3s_3s_0_mult_0_1/CO</Dynamic>
+                </Message>
+                <Message>
+                    <ID>1163101</ID>
+                    <Severity>Warning</Severity>
+                    <Text>WARNING - DRC complete with 6 warnings</Text>
+                    <Dynamic>6</Dynamic>
+                </Message>
+            </Engine>
+        </Task>
+    </Milestone>
+    <Milestone name="Map">
+        <Task name="Map">
+            <Engine name="map"/>
+        </Task>
+        <Task name="MapTrace">
+            <Engine name="trce"/>
+        </Task>
+        <Task name="MapVerilogSimFile">
+            <Engine name="ldbanno">
+                <Message>
+                    <ID>35400250</ID>
+                    <Severity>Info</Severity>
+                    <Text>INFO - ldbanno finished with 0 posted error messages.</Text>
+                    <Dynamic>0</Dynamic>
+                </Message>
+            </Engine>
+        </Task>
+        <Task name="MapVHDLSimFile">
+            <Engine name="ldbanno">
+                <Message>
+                    <ID>35400250</ID>
+                    <Severity>Info</Severity>
+                    <Text>INFO - ldbanno finished with 0 posted error messages.</Text>
+                    <Dynamic>0</Dynamic>
+                </Message>
+            </Engine>
+        </Task>
+    </Milestone>
+</BaliMessageLog>
