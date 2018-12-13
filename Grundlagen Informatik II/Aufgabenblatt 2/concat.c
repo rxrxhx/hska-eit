@@ -1,8 +1,8 @@
-#include <stdlib.h>
 #include <stdio.h>
+#include <stdlib.h>
 #include <string.h>
 
-#define BUFFER_SIZE 10
+#define BUFFER_SIZE 100
 
 int main(int argc, char **argv)
 {
@@ -24,10 +24,20 @@ int main(int argc, char **argv)
       return (1);
   }
 
-  while (!feof(source))
+  if (atoi(argv[3]) < 0)
   {
-    fgets(buffer, BUFFER_SIZE, source);
-    fprintf(dest,"%s", buffer);
+      printf("Fehler: %d ist keine moegliche Zahl", atoi(argv[3]));
+      return (1);
+  }
+
+  for (int i = 0; i < atoi(argv[3]); i++)
+  {
+    source = fopen(argv[1], "r");
+    while (!feof(source))
+    {
+      fgets(buffer, BUFFER_SIZE, source);
+      fprintf(dest,"%s", buffer);
+    }
   }
 
   printf("\n");
